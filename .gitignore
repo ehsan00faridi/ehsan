@@ -9,3 +9,4 @@ obj/
 
 # Secrets
 appsettings.Development.json
+AppWebAPI/logs/
