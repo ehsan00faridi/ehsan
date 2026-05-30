@@ -1,4 +1,4 @@
-﻿using Application.Command.Exception;
+﻿using Application.Command.Exceptions;
 using Domain.Models.Products;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
@@ -26,12 +26,12 @@ namespace Application.Features.Products.Command
             //i.Enable &&
             if (data is null) {
 
-                throw new CustomException("محصول یافت نشد");
+               // throw new CustomException("محصول یافت نشد");
             }
             data.Update(request.name, request.price, request.qty);
             data.SetProperty(new Mechanicalproppertis(request.weight,request.material));
 
-            _repository.Update(data);
+           await _repository.UpdateAsync(data);
            await  _repository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
 
 

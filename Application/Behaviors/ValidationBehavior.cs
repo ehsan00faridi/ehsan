@@ -1,34 +1,41 @@
-﻿using Application.Command.Exception;
+﻿using Application.Command.Exceptions;
 using FluentValidation;
 using MediatR;
 
-namespace Application.Behaviors
+public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse>
+    where TRequest : notnull
 {
-    public class ValidationBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>
+    private readonly IEnumerable<IValidator<TRequest>> _validators;
+
+    public ValidationBehavior(IEnumerable<IValidator<TRequest>> validators)
+        => _validators = validators;
+
+    public async Task<TResponse> Handle(TRequest request,RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
     {
-        private readonly  IEnumerable< IValidator<TRequest>> _validator;
-
-        public ValidationBehavior(IEnumerable<IValidator<TRequest>> validator)
-        {
-            _validator = validator;
-        }
-
-        public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
-        {
-            var context = new ValidationContext<TRequest>(request);
-            var failures=_validator
-                .Select(i=>i.Validate(context))
-                .SelectMany(i=>i.Errors)
-                .Where(i=> i !=null)
-                .Select(error=>error.ErrorMessage)
-                .ToList();
-
-            if (failures.Any()) {
-                throw new CustomException(String.Join(" , ",failures) );
-            }
-
+        if (!_validators.Any())
             return await next();
-                
+
+        var context = new ValidationContext<TRequest>(request);
+
+        var results = await Task.WhenAll(_validators.Select(v => v.ValidateAsync(context, cancellationToken)));
+
+        var failures = results
+            .SelectMany(r => r.Errors)
+            .Where(f => f is not null)
+            .ToList();
+
+        if (failures.Count > 0)
+        {
+            var errors = failures
+                .GroupBy(f => f.PropertyName)
+                .ToDictionary(
+                    g => g.Key,
+                    g => g.Select(x => x.ErrorMessage).Distinct().ToArray()
+                );
+
+            throw new CustomException(errors);
         }
+
+        return await next();
     }
 }

@@ -27,7 +27,8 @@ namespace Application.Features.Products.Command
             if (Product is null) {
                 throw new ArgumentException();
             }
-            Product.Enable=false;
+            Product.Enable = false;
+            await _productRepository.UpdateAsync(Product);
             await _productRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
             return true;
 

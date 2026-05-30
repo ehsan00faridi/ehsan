@@ -15,7 +15,7 @@ namespace Application.Features.Products.Command
         {
             var product = new Product(request.Name, request.Price, request.Qty);
             product.SetProperty(new Mechanicalproppertis( request.Weight,request.material));
-            _ProductRepository.Add(product);
+            await _ProductRepository.AddAsync(product);
             await   _ProductRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
             return true;
         }

@@ -28,12 +28,12 @@ namespace Application
             .UseRecommendedSerializerSettings()
             .UseSqlServerStorage(configuration.GetConnectionString("HangfireConnection"), new SqlServerStorageOptions
             {
-                CommandBatchMaxTimeout= TimeSpan.FromSeconds(5),
-                SlidingInvisibilityTimeout= TimeSpan.FromMinutes(5),
-                QueuePollInterval= TimeSpan.Zero,
-                UseRecommendedIsolationLevel= true,
-                UsePageLocksOnDequeue= true,
-                DisableGlobalLocks= true,
+                CommandBatchMaxTimeout = TimeSpan.FromSeconds(5),
+                SlidingInvisibilityTimeout = TimeSpan.FromMinutes(5),
+                QueuePollInterval = TimeSpan.Zero,
+                UseRecommendedIsolationLevel = true,
+                UsePageLocksOnDequeue = true,
+                DisableGlobalLocks = true,
 
             }));
             services.AddHangfireServer();

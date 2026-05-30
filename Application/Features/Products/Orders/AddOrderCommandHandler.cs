@@ -28,7 +28,7 @@ namespace Application.Features.Products.Orders
             customer.setaddress( address);
 
 
-            _customerRepository.Add(customer);
+            await _customerRepository.AddAsync(customer);
             await _customerRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
 
             var order = new Order()  { 
@@ -65,7 +65,7 @@ namespace Application.Features.Products.Orders
             //    UserName = "Ehsan"
             //});
 
-            _orderRepository.Add(order);
+           await  _orderRepository.AddAsync(order);
            await  _orderRepository.UnitOfWork.SaveEntitiesAsync();
            return true;
         }
