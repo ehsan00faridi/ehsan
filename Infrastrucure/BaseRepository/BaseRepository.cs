@@ -11,68 +11,63 @@ using System.Threading.Tasks;
 
 namespace Infrastrucure.BaseRepository
 {
-    public class BaseRepository<T, K> : IBaseRepository<T, K> where T : BaseEntity<K>
-        where K : IEquatable<K>
+    public class BaseRepository<T, K> : IBaseRepository<T, K>
+       where T : BaseEntity<K>
+       where K : IEquatable<K>
     {
         protected readonly ApplicationDbContext _context;
         protected readonly DbSet<T> _dbset;
+
         public BaseRepository(ApplicationDbContext context)
         {
             _context = context;
-            _dbset=_context.Set<T>();
+            _dbset = _context.Set<T>();
         }
 
-        public IUnitOfWork UnitOfWork { get { 
-                return _context;
-            } 
+        public IUnitOfWork UnitOfWork => _context;
+
+        public async Task<T> AddAsync(T entity)
+        { 
+            await _dbset.AddAsync(entity);
+            return entity;
         }
 
-        public T Add(T entity)
+        public async Task AddRangeAsync(IEnumerable<T> entities)
+            => await _dbset.AddRangeAsync(entities);
+
+        public Task DeleteAsync(T entity)
         {
-         return _dbset.Add(entity).Entity;
+            _dbset.Remove(entity);
+            return Task.CompletedTask;
         }
 
-        public void AddRange(List<T> entities)
+        public Task DeleteRangeAsync(IEnumerable<T> entities)
         {
-            _dbset.AddRange(entities);
+            _dbset.RemoveRange(entities);
+            return Task.CompletedTask;
         }
 
-        public void Delete(T entities)
+        public async Task<T?> FindAsync(K key)
+            => await _dbset.FindAsync(key);
+
+        public IQueryable<T> Get(Expression<Func<T, bool>>? predicate = null)
         {
-            _dbset.Remove(entities);
+            IQueryable<T> query = _dbset.AsNoTracking();
+            if (predicate != null) query = query.Where(predicate);
+            return query;
         }
 
-        public void DeleteRange(List<T> entities)
+        public Task UpdateAsync(T entity)
         {
-           _dbset.RemoveRange(entities);
+            _dbset.Update(entity);
+            return Task.CompletedTask;
         }
 
-        public Task<T> FindAsync(K key)
-        {
-            var data= _dbset.Where(a=>a.Id.Equals(key));
-            return  data.FirstOrDefaultAsync();
-        }
-
-        public IQueryable<T> Get(Expression<Func<T, bool>>? Predicate)
-        {
-            var data = _dbset.AsQueryable();
-            if (Predicate != null) {
-                data = data.Where(Predicate);
-            
-            }
-            return data;
-            
-            
-        }
-
-        public T Update(T entity)
-        {
-            return _dbset.Update(entity).Entity;
-        }
-
-        public void UpdateRange(List<T> entities)
+        public Task UpdateRangeAsync(IEnumerable<T> entities)
         {
             _dbset.UpdateRange(entities);
+            return Task.CompletedTask;
         }
     }
+
 }

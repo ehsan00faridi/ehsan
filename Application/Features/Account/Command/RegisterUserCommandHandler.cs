@@ -1,4 +1,6 @@
 ﻿using Application.Command.Exceptions;
+using Application.Interfaces;
+using Application.Services.Sms;
 using Domain.Models.User;
 // Application Layer
 using MediatR;
@@ -12,44 +14,34 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Account.Command
 {
-    public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, bool>
+    public class RegisterUserCommandHandler : IRequestHandler<RegisterUserCommand, RegisterResult>
     {
         private readonly UserManager<User> _userManager;
-        private readonly SignInManager<User> _signInManager;
-
+        //private readonly SignInManager<User> _signInManager;
+        //private readonly ISmsService _smsService;
+        private readonly IOtpService _otpService;
         public RegisterUserCommandHandler(
             UserManager<User> userManager,
-            SignInManager<User> signInManager)
+            SignInManager<User> signInManager,
+            ISmsService smsService = null,
+            IOtpService otpService = null)
+
         {
             _userManager = userManager;
-            _signInManager = signInManager;
+            //_signInManager = signInManager;
+            //_smsService = smsService;
+            _otpService = otpService;
         }
 
-        public async Task<bool> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
+        public async Task<RegisterResult> Handle(RegisterUserCommand request, CancellationToken cancellationToken)
         {
-            // نکته: ConfirmPassword را بهتر است با FluentValidation چک کنی
-            // (اینجا هم می‌تونیم Defensive چک کنیم)
+           
             if (request.Password != request.ConfirmPassword)
                 throw new CustomException(new Dictionary<string, string[]>
                 {
                     ["ConfirmPassword"] = ["The Password and Confirm password do not match"]
                 });
-            //[HttpPost]
-            //public async Task<IActionResult> Register(RegisterDto register)
-            //{
-            //    if (ModelState.IsValid)
-            //    {
-            //        
-            //        var res = await _userManager.CreateAsync(user, register.Password);
-            //        if (res.Succeeded)
-            //        {
-            //            await _signInManager.SignInAsync(user, isPersistent: false);
-            //            return RedirectToAction("Index", "Home");
-            //        }
-
-            //    }
-            //    return View(register);
-            //}
+         
 
             var user = new User {
                 FirstName = request.FirstName,
@@ -57,23 +49,25 @@ namespace Application.Features.Account.Command
                 UserName = request.Email,
                 Email = request.Email,
                 PhoneNumber = request.PhoneNumber };
-
             //var user = new User
             //{
+
             //    FirstName = request.FirstName,
             //    LastName = request.LastName,
-            //    UserName = request.Email,
             //    Email = request.Email,
-            //    PhoneNumber = request.PhoneNumber
+            //    PhoneNumber = request.PhoneNumber,
+            //    PhoneConfirmed = false
             //};
+
+            var code = GenerateOtp6Digits();
 
             var result = await _userManager.CreateAsync(user, request.Password);
 
             if (!result.Succeeded)
             {
-                // تبدیل خطاهای Identity به همون فرمت CustomException.Errors
+               
                 var errors = result.Errors
-                    .GroupBy(e => e.Code) // یا "Identity" / یا هر کلید دلخواه مثل ""
+                    .GroupBy(e => e.Code) 
                     .ToDictionary(
                         g => g.Key,
                         g => g.Select(x => x.Description).ToArray()
@@ -81,15 +75,22 @@ namespace Application.Features.Account.Command
 
                 throw new CustomException(errors);
             }
+            // await _smsService.SendOtpAsync(user.PhoneNumber, code);
 
-            await _signInManager.SignInAsync(user, isPersistent: false);
 
-            // اگر User.Id از نوع Guid است:
-            return true;
+            await _otpService.SendOtpAsync(user.PhoneNumber);
+            //Console.WriteLine("\n\n\n Code="+ code +"\n\n\n" );
 
-            // اگر User.Id رشته‌ای است (IdentityUser<string>)، اینطور برگردون:
-            // return Guid.Parse(user.Id);
+            //   await _userManager.CreateAsync(user);
+            //  await _signInManager.SignInAsync(user, isPersistent: false);
+
+            return new RegisterResult(user.Id, user.PhoneNumber,code);
+
+           
         }
+        private static string GenerateOtp6Digits()
+    => Random.Shared.Next(100000, 999999).ToString();
     }
+
 
 }

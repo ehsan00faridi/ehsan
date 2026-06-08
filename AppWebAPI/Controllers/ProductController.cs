@@ -17,7 +17,7 @@ namespace AppWebAPI.Controllers
             _mediator = mediator;
         }
         [HttpGet("GetProduct/{Id}")]
-        public async Task<IActionResult> GetProduct(int Id)
+        public async Task<IActionResult> GetProduct(int Id)////valifation nadarad
         {
             var Query = new GetProductByIdQuery() { Id=Id};
             var data = await _mediator.Send(Query);
@@ -36,6 +36,7 @@ namespace AppWebAPI.Controllers
             [HttpPost("DeleteProduct")]
         public async Task<IActionResult> DeleteProduct([FromBody] DeleteProductCommand command)
         {
+
           //  var Query = new GetProductByIdQuery() { Id = Id };
             var data = await _mediator.Send(command);
             return Ok(data);

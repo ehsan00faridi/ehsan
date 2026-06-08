@@ -10,6 +10,8 @@
 
 		<PackageReference Include="Dapper" Version="2.1.79" />
 
+		<PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="9.0.11" />
+
 		<PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="9.0.11">
 			<PrivateAssets>all</PrivateAssets>
 			<IncludeAssets>
@@ -25,7 +27,7 @@
 				runtime; build; native; contentfiles; analyzers; buildtransitive
 			</IncludeAssets>
 		</PackageReference>
-
+		<PackageReference Include="StackExchange.Redis" Version="2.8.24" />
 	</ItemGroup>
 
 	<ItemGroup>

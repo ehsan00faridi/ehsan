@@ -18,7 +18,7 @@ namespace Application.Features.Account.Command.Validation
 
             RuleFor(x => x.Email)
                 .NotEmpty()
-                .EmailAddress();
+                .EmailAddress().WithMessage("ایمیل درست نیست!");
 
             RuleFor(x => x.Password)
                 .NotEmpty()
@@ -26,7 +26,7 @@ namespace Application.Features.Account.Command.Validation
 
             RuleFor(x => x.ConfirmPassword)
                 .Equal(x => x.Password)
-                .WithMessage("The Password and Confirm password do not match");
+                .WithMessage("تکرار پسورد اشتباه هست!");
 
             RuleFor(x => x.PhoneNumber)
                 .NotEmpty()

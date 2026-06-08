@@ -5,6 +5,7 @@ using Domain.Models.Customers;
 using Domain.Models.Ordera;
 using Domain.Models.Products;
 using Infrastructure.Queries;
+using Infrastructure.Redis;
 using Infrastrucure.Email;
 using Infrastrucure.Repository;
 using Infrastrucure.Services.Sms;
@@ -12,6 +13,7 @@ using Microsoft.Data.SqlClient;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
+using StackExchange.Redis;
 using System.Data;
 
 namespace Infrastrucure
@@ -39,6 +41,22 @@ namespace Infrastrucure
 
             services.Configure<EmailSettings>(configuration.GetSection("Email"));
             services.AddScoped<IEmailService, SmtpEmailService>();
+            services.AddScoped<IOtpService, OtpService>();
+
+
+
+
+            string redisConnectionString = configuration.GetConnectionString("RedisConnection");
+
+            services.AddSingleton<IConnectionMultiplexer>(sp =>
+            {
+                var configuration = ConfigurationOptions.Parse(redisConnectionString, true);
+
+             
+                configuration.AbortOnConnectFail = false;
+
+                return ConnectionMultiplexer.Connect(configuration);
+            });
 
 
 

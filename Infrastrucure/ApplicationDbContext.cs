@@ -1,5 +1,4 @@
-﻿
-using Domain.UnitOfWork;
+﻿using Domain.UnitOfWork;
 using Domain.Models.Customers;
 using Domain.Models.Ordera;
 using Domain.Models.Products;
@@ -7,10 +6,13 @@ using Microsoft.EntityFrameworkCore;
 using Domain.BaseEntity;
 using MediatR;
 using Infrastrucure.Extenstion;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Domain.Models.User;
+using Domain.Models.Roles;
 
 namespace Infrastrucure
 {
-    public class ApplicationDbContext : DbContext,IUnitOfWork
+    public class ApplicationDbContext : IdentityDbContext<User,Role,int>,IUnitOfWork
     {
         private readonly IMediator _mediator;
         public ApplicationDbContext(DbContextOptions options, IMediator mediator) : base(options)
@@ -53,6 +55,7 @@ namespace Infrastrucure
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(typeof(ApplicationDbContext).Assembly);
         }
     }

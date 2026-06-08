@@ -14,7 +14,7 @@ namespace AppWebAPI.Filters
             _stopwatch = Stopwatch.StartNew();
 
             Console.WriteLine();
-            Console.WriteLine($"Action                             ( {context.ActionDescriptor.DisplayName})                                      is starting...");
+            Console.WriteLine($"Action( {context.ActionDescriptor.DisplayName})is starting...");
             Console.WriteLine();
         }
 

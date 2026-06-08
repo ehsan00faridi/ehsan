@@ -1,7 +1,4 @@
 ﻿
-
-
-
 using Application.Application_DTO;
 using Application.Interfaces;
 using Microsoft.Extensions.Options;
@@ -21,8 +18,8 @@ namespace Infrastrucure.Email
 
         public async Task SendAsync(EmailMessage message, CancellationToken cancellationToken = default)
         {
-            Console.WriteLine(message.To
-                + "   jj                                                jj                                               jj                                    jj" + _settings.Username);
+            //Console.WriteLine(message.To
+            //    + "   jj                                                jj                                               jj                                    jj" + _settings.Username);
             using var client = new SmtpClient(_settings.Host, _settings.Port)
             {
                 Credentials = new NetworkCredential(

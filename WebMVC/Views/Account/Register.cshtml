@@ -1,0 +1,81 @@
+﻿@using Application.Features.Account.Command
+@using Domain.Models.User
+@using Microsoft.AspNetCore.Identity
+@model RegisterUserCommand
+@{
+    ViewData["Title"] = "ثبت‌نام کاربر جدید";
+}
+@inject SignInManager<User> _signInManager
+@if (!_signInManager.IsSignedIn(User))
+{
+
+
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-md-6">
+                <div class="card shadow-sm">
+                    <div class="card-header bg-primary text-white">
+                        <h4 class="mb-0">ایجاد حساب کاربری</h4>
+                    </div>
+                    <div class="card-body">
+                        <form asp-action="Register" method="post">
+                            <div asp-validation-summary="ModelOnly" class="text-danger mb-3"></div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="FirstName" class="form-label">FirstName</label>
+                                <input asp-for="FirstName" class="form-control" placeholder="name" />
+                                <span asp-validation-for="FirstName" class="text-danger small"></span>
+                            </div>
+                            <div class="form-group mb-3">
+                                <label asp-for="LastName" class="form-label">LastName</label>
+                                <input asp-for="LastName" class="form-control" placeholder="LastName" />
+                                <span asp-validation-for="LastName" class="text-danger small"></span>
+                            </div>
+
+
+                            <div class="form-group mb-3">
+                                <label asp-for="Email" class="form-label">پست الکترونیک</label>
+                                <input asp-for="Email" class="form-control" placeholder="example@domain.com" />
+                                <span asp-validation-for="Email" class="text-danger small"></span>
+                            </div>
+
+                            <div class="form-group mb-3">
+                                <label asp-for="Password" class="form-label">کلمه عبور</label>
+                                <input asp-for="Password" type="password" class="form-control" />
+                                <span asp-validation-for="Password" class="text-danger small"></span>
+                            </div>
+
+
+                            <div class="form-group mb-4">
+                                <label asp-for="ConfirmPassword" class="form-label">تکرار کلمه عبور</label>
+                                <input asp-for="ConfirmPassword" type="password" class="form-control" />
+                                <span asp-validation-for="ConfirmPassword" class="text-danger small"></span>
+                            </div>
+                            <div class="form-group mb-4">
+                                <label asp-for="PhoneNumber" class="form-label">PhoneNumber</label>
+                                <input asp-for="PhoneNumber" type="text"  class="form-control" />
+                                <span asp-validation-for="PhoneNumber" class="text-danger small"></span>
+                            </div>
+
+
+
+                            <div class="d-grid">
+                                <button type="submit" class="btn btn-primary btn-block">ثبت‌نام</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+else
+{
+    <h1>شما وارد شده اید</h1>
+}
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

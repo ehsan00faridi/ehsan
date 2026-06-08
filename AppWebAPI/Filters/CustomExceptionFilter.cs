@@ -1,4 +1,4 @@
-﻿using Application.Command.Exception;
+﻿using Application.Command.Exceptions;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 
@@ -19,30 +19,29 @@ namespace AppWebAPI.Filters
         {
             var exception = context.Exception;
 
-            //  Log Error
-            //_logger.LogError
-              Console.WriteLine  ($"{exception}, Unhandled exception occurred");
-            if (context.Exception is CustomException custom)
+            _logger.LogError(exception, "Unhandled exception occurred");
+
+            if (exception is CustomException custom)
             {
-                context.Result = new ObjectResult(
-                new
+                context.Result = new BadRequestObjectResult(new
                 {
-                    Error = "",
-                    Details=custom.Message,
+                    message = custom.Message,  
+                    errors = custom.Errors    
+                });
 
-
-                }
-                )
-                { StatusCode=500}
-                    ;  
-
+                context.ExceptionHandled = true;
+                return;
             }
 
+         
+            context.Result = new ObjectResult(new
+            {
+                message = "Server error",
+                detail = _env.IsDevelopment() ? exception.ToString() : null
+            })
+            { StatusCode = StatusCodes.Status500InternalServerError };
+
             context.ExceptionHandled = true;
-
-
-        
         }
     }
-
 }
