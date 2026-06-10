@@ -54,18 +54,18 @@ namespace Application.Features.Products.Orders
 
 
 
-            //order.AddDomainEvent(new UserRegisteredEvent
-            //{
-            //    PhoneNumber = "989022797372",
-            //    UserName = "Ehsan"
-            //});
+            order.AddDomainEvent(new UserRegisteredEvent
+            {
+                PhoneNumber = "989022797372",
+                UserName = "Ehsan"
+            });
             //await _mediator.Publish(new UserRegisteredEvent
             //{
             //    PhoneNumber = "989022797372",
             //    UserName = "Ehsan"
             //});
 
-           await  _orderRepository.AddAsync(order);
+            await _orderRepository.AddAsync(order);
            await  _orderRepository.UnitOfWork.SaveEntitiesAsync();
            return true;
         }

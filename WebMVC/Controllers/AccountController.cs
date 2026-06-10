@@ -78,7 +78,7 @@ namespace WebMVC.Controllers
                 return View(model);
 
             try
-            {
+            {//command
                 //_mediator.Send(new VerifyOtpCommand(model.UserId, model.Code));
                 var user = await _userManager.FindByIdAsync(model.UserId.ToString());
 
@@ -88,6 +88,8 @@ namespace WebMVC.Controllers
 
 
                     var result = await _otpService.VerifyOtpAsync(user.PhoneNumber, model.Code);
+
+                    // sms Welcome    command end
                     if (!result)
                     {
                         ModelState.AddModelError(nameof(model.Code),
@@ -95,6 +97,8 @@ namespace WebMVC.Controllers
                         return View(model);
                     }
                 }
+
+
                 user.PhoneNumberConfirmed = true;
                 await _signInManager.SignInAsync(user, isPersistent: false);
 
