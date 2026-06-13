@@ -2,12 +2,13 @@
 using Application.Features.Account.Command;
 using Application.Interfaces;
 using Domain.Models.User;
+using Domain.Models.User;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebMVC.Models;
-
+using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 namespace WebMVC.Controllers
 {
     //[AllowAnonymous]
@@ -67,40 +68,26 @@ namespace WebMVC.Controllers
         public IActionResult VerifyOtp(int UserId)
         {
             var userId = UserId.ToString();
-            return View(new VerifyOtpViewModel { UserId = userId ,Code=""});
+            return View(new VerifyOtpCommand { UserId = userId ,Code=""});
         }
 
 
         [HttpPost]
-        public async Task<IActionResult> VerifyOtp(VerifyOtpViewModel model)
+        public async Task<IActionResult> VerifyOtp(VerifyOtpCommand model)
         {
             if (!ModelState.IsValid)
                 return View(model);
 
             try
-            {//command
-                //_mediator.Send(new VerifyOtpCommand(model.UserId, model.Code));
-                var user = await _userManager.FindByIdAsync(model.UserId.ToString());
+            {
+                var result = await _mediator.Send(model);
 
-
-                if (user != null)
+                if (!result)
                 {
-
-
-                    var result = await _otpService.VerifyOtpAsync(user.PhoneNumber, model.Code);
-
-                    // sms Welcome    command end
-                    if (!result)
-                    {
-                        ModelState.AddModelError(nameof(model.Code),
-                 "  زمان کد به پایان رسیده یا کد نامعتبر است");
-                        return View(model);
-                    }
+                    ModelState.AddModelError(nameof(model.Code),
+             "  زمان کد به پایان رسیده یا کد نامعتبر است");
+                    return View(model);
                 }
-
-
-                user.PhoneNumberConfirmed = true;
-                await _signInManager.SignInAsync(user, isPersistent: false);
 
                 return RedirectToAction("Index", "Home");
             }
@@ -120,21 +107,7 @@ namespace WebMVC.Controllers
         }
 
 
-        //[HttpPost]
-        //public async Task<IActionResult> Login(LoginDto loginDto)
-        //{
-
-        //    var res = await _signInManager.PasswordSignInAsync(loginDto.Email, loginDto.Password, loginDto.RememberMe, false);
-
-
-        //    if (res.Succeeded)
-        //    {
-        //        return RedirectToAction("Index", "Home");
-        //    }
-
-
-        //    return View(loginDto);
-        //}
+      
 
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto loginDto)
@@ -186,17 +159,19 @@ namespace WebMVC.Controllers
 
 
         [HttpPost]
-        public async Task<IActionResult> SignInPhoneNumber(string phoneNumber)
+        public async Task<IActionResult> SignInPhoneNumber(PhoneNumberViewModel model)
         {
             var user = await _userManager.Users
-                .FirstOrDefaultAsync(u => u.PhoneNumber == phoneNumber);
+                .FirstOrDefaultAsync(u => u.PhoneNumber == model.PhoneNumber);
 
             if (user == null)
             {
-                ModelState.AddModelError("", "کاربری با این شماره یافت نشد.");
-                return View();
+                ModelState.AddModelError(nameof(model.PhoneNumber), ("کاربری با این شماره یافت نشد."));
+
+           //    ModelState.AddModelError("", "کاربری با این شماره یافت نشد.");
+                return View(model);
             }
-            await _otpService.SendOtpAsync(phoneNumber);
+            await _otpService.SendOtpAsync(model.PhoneNumber);
 
             return RedirectToAction(nameof(VerifyOtp), new { userId = user.Id.ToString()});
         }

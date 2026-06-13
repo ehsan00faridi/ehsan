@@ -1,9 +1,12 @@
-﻿@*
+﻿
+@using Application.Features.Account.Command
+
+@*
     For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
 *@
 @{
 }
-@model VerifyOtpViewModel;
+@model VerifyOtpCommand;
 <form asp-action="VerifyOtp" method="post">
 
     <input asp-for="UserId" type="hidden" class="form-control" placeholder="name" />

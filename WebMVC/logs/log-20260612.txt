@@ -1,0 +1,685 @@
+2026-06-12 21:28:41.604 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-12 21:28:42.598 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-12 21:28:43.201 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-12 21:28:43.203 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-12 21:28:43.205 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-12 21:28:43.256 +03:30 [DBG] Execution loop BackgroundServerProcess:165380d3 has started in 6.5783 ms
+2026-06-12 21:28:43.522 +03:30 [INF] Server desktop-vjsq4i2:8396:0c7fadb8 successfully announced in 259.1245 ms
+2026-06-12 21:28:43.527 +03:30 [DBG] Execution loop ServerHeartbeatProcess:f374d03a has started in 1.7842 ms
+2026-06-12 21:28:43.528 +03:30 [INF] Server desktop-vjsq4i2:8396:0c7fadb8 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-12 21:28:43.531 +03:30 [DBG] Execution loop ServerWatchdog:b7c2e759 has started in 0.5649 ms
+2026-06-12 21:28:43.532 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:a678ac98 has started in 0.4222 ms
+2026-06-12 21:28:43.533 +03:30 [DBG] Execution loop ExpirationManager:14adcc30 has started in 0.5609 ms
+2026-06-12 21:28:43.537 +03:30 [DBG] Execution loop Worker:f99f8097 has started in 3.1682 ms
+2026-06-12 21:28:43.533 +03:30 [DBG] Execution loop CountersAggregator:3c7f87d5 has started in 0.2721 ms
+2026-06-12 21:28:43.534 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:c220498c has started in 0.4041 ms
+2026-06-12 21:28:43.534 +03:30 [DBG] Execution loop Worker:d7a946f0 has started in 0.8049 ms
+2026-06-12 21:28:43.535 +03:30 [DBG] Execution loop Worker:5172888e has started in 1.0863 ms
+2026-06-12 21:28:43.535 +03:30 [DBG] Execution loop Worker:394bf280 has started in 1.398 ms
+2026-06-12 21:28:43.535 +03:30 [DBG] Execution loop Worker:3c9e7dc1 has started in 1.792 ms
+2026-06-12 21:28:43.536 +03:30 [DBG] Execution loop Worker:da79ca4b has started in 2.1028 ms
+2026-06-12 21:28:43.536 +03:30 [DBG] Execution loop Worker:d2e77b67 has started in 2.3754 ms
+2026-06-12 21:28:43.536 +03:30 [DBG] Execution loop Worker:0038894b has started in 2.6183 ms
+2026-06-12 21:28:43.537 +03:30 [DBG] Execution loop Worker:fa2e85db has started in 2.8849 ms
+2026-06-12 21:28:43.537 +03:30 [DBG] Execution loop Worker:4b6bc3fa has started in 3.4232 ms
+2026-06-12 21:28:43.537 +03:30 [DBG] Execution loop Worker:47f26c17 has started in 3.7209 ms
+2026-06-12 21:28:43.538 +03:30 [DBG] Execution loop Worker:331d5af5 has started in 4.1989 ms
+2026-06-12 21:28:43.538 +03:30 [DBG] Execution loop Worker:5ba0d251 has started in 4.661 ms
+2026-06-12 21:28:43.539 +03:30 [DBG] Execution loop Worker:1757f999 has started in 4.9097 ms
+2026-06-12 21:28:43.539 +03:30 [DBG] Execution loop Worker:93a970b3 has started in 5.2731 ms
+2026-06-12 21:28:43.542 +03:30 [DBG] Execution loop Worker:c33b2dc5 has started in 7.9401 ms
+2026-06-12 21:28:43.542 +03:30 [INF] 1 servers were removed due to timeout
+2026-06-12 21:28:43.542 +03:30 [DBG] Execution loop Worker:fed6bf05 has started in 8.3265 ms
+2026-06-12 21:28:43.542 +03:30 [DBG] Execution loop Worker:8ac2989c has started in 8.7333 ms
+2026-06-12 21:28:43.543 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-12 21:28:43.543 +03:30 [DBG] Execution loop Worker:bcb43ace has started in 8.9659 ms
+2026-06-12 21:28:43.543 +03:30 [DBG] Execution loop Worker:e0275127 has started in 9.2962 ms
+2026-06-12 21:28:43.543 +03:30 [DBG] Execution loop DelayedJobScheduler:d66b2670 has started in 0.3579 ms
+2026-06-12 21:28:43.544 +03:30 [INF] Server desktop-vjsq4i2:8396:0c7fadb8 all the dispatchers started
+2026-06-12 21:28:43.544 +03:30 [DBG] Execution loop RecurringJobScheduler:f2a52f35 has started in 0.3293 ms
+2026-06-12 21:28:43.544 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 21:28:43.630 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-12 21:28:43.642 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-12 21:28:43.648 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-12 21:28:43.653 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-12 21:28:45.432 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-12 21:28:45.732 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 21:29:13.548 +03:30 [DBG] Server desktop-vjsq4i2:8396:0c7fadb8 heartbeat successfully sent
+2026-06-12 21:29:43.563 +03:30 [DBG] Server desktop-vjsq4i2:8396:0c7fadb8 heartbeat successfully sent
+2026-06-12 21:30:13.581 +03:30 [DBG] Server desktop-vjsq4i2:8396:0c7fadb8 heartbeat successfully sent
+2026-06-12 21:30:43.598 +03:30 [DBG] Server desktop-vjsq4i2:8396:0c7fadb8 heartbeat successfully sent
+2026-06-12 21:31:13.616 +03:30 [DBG] Server desktop-vjsq4i2:8396:0c7fadb8 heartbeat successfully sent
+2026-06-12 21:31:43.633 +03:30 [DBG] Server desktop-vjsq4i2:8396:0c7fadb8 heartbeat successfully sent
+2026-06-12 21:32:13.649 +03:30 [DBG] Server desktop-vjsq4i2:8396:0c7fadb8 heartbeat successfully sent
+2026-06-12 21:32:43.660 +03:30 [DBG] Server desktop-vjsq4i2:8396:0c7fadb8 heartbeat successfully sent
+2026-06-12 21:33:11.428 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-12 21:33:11.860 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-12 21:33:12.156 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-12 21:33:12.158 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-12 21:33:12.159 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-12 21:33:12.198 +03:30 [DBG] Execution loop BackgroundServerProcess:098d6571 has started in 4.5925 ms
+2026-06-12 21:33:12.399 +03:30 [INF] Server desktop-vjsq4i2:15612:e46809da successfully announced in 194.0927 ms
+2026-06-12 21:33:12.404 +03:30 [DBG] Execution loop ServerHeartbeatProcess:4919024d has started in 2.1551 ms
+2026-06-12 21:33:12.405 +03:30 [INF] Server desktop-vjsq4i2:15612:e46809da is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-12 21:33:12.408 +03:30 [DBG] Execution loop ServerWatchdog:333ae989 has started in 0.4556 ms
+2026-06-12 21:33:12.409 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:91a5b3f9 has started in 0.337 ms
+2026-06-12 21:33:12.412 +03:30 [DBG] Execution loop Worker:18b6ab13 has started in 1.4404 ms
+2026-06-12 21:33:12.410 +03:30 [DBG] Execution loop CountersAggregator:be264bef has started in 0.4618 ms
+2026-06-12 21:33:12.410 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:6a8077f6 has started in 0.3296 ms
+2026-06-12 21:33:12.411 +03:30 [DBG] Execution loop Worker:1aa64574 has started in 0.6469 ms
+2026-06-12 21:33:12.411 +03:30 [DBG] Execution loop Worker:9db6b747 has started in 0.8733 ms
+2026-06-12 21:33:12.411 +03:30 [DBG] Execution loop Worker:17b3fab7 has started in 1.1473 ms
+2026-06-12 21:33:12.409 +03:30 [DBG] Execution loop ExpirationManager:1381a468 has started in 0.4254 ms
+2026-06-12 21:33:12.412 +03:30 [DBG] Execution loop Worker:ce481eae has started in 2.1543 ms
+2026-06-12 21:33:12.413 +03:30 [DBG] Execution loop Worker:3f7642ec has started in 2.557 ms
+2026-06-12 21:33:12.413 +03:30 [DBG] Execution loop Worker:a7013e55 has started in 2.8699 ms
+2026-06-12 21:33:12.413 +03:30 [DBG] Execution loop Worker:e81859cb has started in 3.1941 ms
+2026-06-12 21:33:12.414 +03:30 [DBG] Execution loop Worker:a704a596 has started in 3.5751 ms
+2026-06-12 21:33:12.414 +03:30 [DBG] Execution loop Worker:b9c9af49 has started in 3.8406 ms
+2026-06-12 21:33:12.414 +03:30 [DBG] Execution loop Worker:3f4775a3 has started in 4.0825 ms
+2026-06-12 21:33:12.415 +03:30 [DBG] Execution loop Worker:a844da11 has started in 4.3141 ms
+2026-06-12 21:33:12.415 +03:30 [DBG] Execution loop Worker:af74b77f has started in 4.6051 ms
+2026-06-12 21:33:12.415 +03:30 [DBG] Execution loop Worker:e114e5f9 has started in 4.8724 ms
+2026-06-12 21:33:12.415 +03:30 [DBG] Execution loop Worker:b20eb341 has started in 5.1423 ms
+2026-06-12 21:33:12.416 +03:30 [DBG] Execution loop Worker:7621756a has started in 5.4232 ms
+2026-06-12 21:33:12.416 +03:30 [DBG] Execution loop Worker:d7737101 has started in 5.646 ms
+2026-06-12 21:33:12.416 +03:30 [DBG] Execution loop Worker:0be9bcea has started in 5.934 ms
+2026-06-12 21:33:12.417 +03:30 [DBG] Execution loop Worker:c6678e19 has started in 6.2185 ms
+2026-06-12 21:33:12.417 +03:30 [DBG] Execution loop Worker:32e51dae has started in 6.6198 ms
+2026-06-12 21:33:12.418 +03:30 [DBG] Execution loop DelayedJobScheduler:44585204 has started in 0.434 ms
+2026-06-12 21:33:12.418 +03:30 [DBG] Execution loop RecurringJobScheduler:8f214531 has started in 0.3527 ms
+2026-06-12 21:33:12.418 +03:30 [INF] Server desktop-vjsq4i2:15612:e46809da all the dispatchers started
+2026-06-12 21:33:12.420 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 21:33:12.425 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-12 21:33:12.490 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-12 21:33:12.493 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-12 21:33:12.495 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-12 21:33:12.498 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-12 21:33:12.584 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-12 21:33:12.850 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 21:33:42.420 +03:30 [DBG] Server desktop-vjsq4i2:15612:e46809da heartbeat successfully sent
+2026-06-12 21:33:43.548 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 21:33:43.552 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 21:33:44.626 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Domain.Models.User.VerifyOtpViewModel', but this ViewDataDictionary instance requires a model item of type 'Application.Features.Account.Command.VerifyOtpCommand'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method189(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-12 21:34:12.431 +03:30 [DBG] Server desktop-vjsq4i2:15612:e46809da heartbeat successfully sent
+2026-06-12 21:34:37.184 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-12 21:34:38.073 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-12 21:34:38.676 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-12 21:34:38.678 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-12 21:34:38.679 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-12 21:34:38.709 +03:30 [DBG] Execution loop BackgroundServerProcess:4bf2e620 has started in 11.6094 ms
+2026-06-12 21:34:39.004 +03:30 [INF] Server desktop-vjsq4i2:14760:9c3ea56b successfully announced in 230.6032 ms
+2026-06-12 21:34:39.015 +03:30 [DBG] Execution loop ServerHeartbeatProcess:d7cacbbc has started in 6.9672 ms
+2026-06-12 21:34:39.016 +03:30 [INF] Server desktop-vjsq4i2:14760:9c3ea56b is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-12 21:34:39.025 +03:30 [DBG] Execution loop ServerWatchdog:61e42993 has started in 6.6882 ms
+2026-06-12 21:34:39.030 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:5f0ea637 has started in 10.8321 ms
+2026-06-12 21:34:39.036 +03:30 [DBG] Execution loop ExpirationManager:6c40ee5c has started in 5.6143 ms
+2026-06-12 21:34:39.041 +03:30 [DBG] Execution loop CountersAggregator:289ec76c has started in 9.5473 ms
+2026-06-12 21:34:39.046 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:6076d35d has started in 10.4057 ms
+2026-06-12 21:34:39.185 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-12 21:34:39.225 +03:30 [INF] Server desktop-vjsq4i2:14760:9c3ea56b all the dispatchers started
+2026-06-12 21:34:39.185 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 21:34:39.053 +03:30 [DBG] Execution loop Worker:581208a6 has started in 12.4125 ms
+2026-06-12 21:34:39.059 +03:30 [DBG] Execution loop Worker:13a4ea99 has started in 18.6354 ms
+2026-06-12 21:34:39.066 +03:30 [DBG] Execution loop Worker:3c3d3520 has started in 25.4421 ms
+2026-06-12 21:34:39.071 +03:30 [DBG] Execution loop Worker:c8bf46b8 has started in 30.546 ms
+2026-06-12 21:34:39.109 +03:30 [DBG] Execution loop Worker:63623151 has started in 68.2682 ms
+2026-06-12 21:34:39.109 +03:30 [DBG] Execution loop Worker:52f7b741 has started in 68.2444 ms
+2026-06-12 21:34:39.115 +03:30 [DBG] Execution loop Worker:f7c7aa58 has started in 73.8119 ms
+2026-06-12 21:34:39.156 +03:30 [DBG] Execution loop Worker:a881eb1c has started in 114.8381 ms
+2026-06-12 21:34:39.156 +03:30 [DBG] Execution loop Worker:ecda6952 has started in 114.8085 ms
+2026-06-12 21:34:39.162 +03:30 [DBG] Execution loop Worker:de0ab3ea has started in 120.6979 ms
+2026-06-12 21:34:39.167 +03:30 [DBG] Execution loop Worker:ce9a1ee3 has started in 125.8281 ms
+2026-06-12 21:34:39.173 +03:30 [DBG] Execution loop Worker:45269ddd has started in 132.2851 ms
+2026-06-12 21:34:39.179 +03:30 [DBG] Execution loop Worker:998ffbb2 has started in 138.5364 ms
+2026-06-12 21:34:39.185 +03:30 [DBG] Execution loop Worker:2c7fa4ff has started in 144.0619 ms
+2026-06-12 21:34:39.190 +03:30 [DBG] Execution loop Worker:de8bb5ac has started in 149.4764 ms
+2026-06-12 21:34:39.196 +03:30 [DBG] Execution loop Worker:c9621784 has started in 155.59 ms
+2026-06-12 21:34:39.207 +03:30 [DBG] Execution loop Worker:9f3b550e has started in 165.8791 ms
+2026-06-12 21:34:39.207 +03:30 [DBG] Execution loop Worker:853ac224 has started in 165.9465 ms
+2026-06-12 21:34:39.212 +03:30 [DBG] Execution loop Worker:a5b73281 has started in 170.9128 ms
+2026-06-12 21:34:39.218 +03:30 [DBG] Execution loop Worker:8fb6e9ef has started in 177.4194 ms
+2026-06-12 21:34:39.225 +03:30 [DBG] Execution loop DelayedJobScheduler:b74c54dd has started in 12.9095 ms
+2026-06-12 21:34:39.230 +03:30 [DBG] Execution loop RecurringJobScheduler:c5a38e9a has started in 11.5112 ms
+2026-06-12 21:34:39.261 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-12 21:34:39.313 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-12 21:34:39.325 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-12 21:34:39.328 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-12 21:35:09.108 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:35:24.262 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-12 21:35:24.780 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 21:35:39.364 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:36:09.404 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:36:39.428 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:37:09.516 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:37:16.771 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 21:37:16.775 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 21:37:35.577 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Domain.Models.User.VerifyOtpViewModel', but this ViewDataDictionary instance requires a model item of type 'Application.Features.Account.Command.VerifyOtpCommand'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method189(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-12 21:37:39.552 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:38:09.566 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:38:39.578 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:39:09.598 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:39:39.236 +03:30 [INF] 2 servers were removed due to timeout
+2026-06-12 21:39:39.297 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 21:39:39.612 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:40:09.630 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:40:39.653 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:41:09.681 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:41:39.687 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:42:09.707 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:42:39.724 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:43:09.745 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:43:39.762 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:44:09.785 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:44:39.372 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 21:44:39.808 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:45:09.833 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:45:39.852 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:46:09.877 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:46:39.896 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 21:47:09.910 +03:30 [DBG] Server desktop-vjsq4i2:14760:9c3ea56b heartbeat successfully sent
+2026-06-12 22:03:02.921 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-12 22:03:03.348 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-12 22:03:03.805 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-12 22:03:03.807 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-12 22:03:03.809 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-12 22:03:03.849 +03:30 [DBG] Execution loop BackgroundServerProcess:2ea548ad has started in 5.8592 ms
+2026-06-12 22:03:04.161 +03:30 [INF] Server desktop-vjsq4i2:16608:ca53b619 successfully announced in 303.7801 ms
+2026-06-12 22:03:04.173 +03:30 [DBG] Execution loop ServerHeartbeatProcess:46243761 has started in 1.8281 ms
+2026-06-12 22:03:04.174 +03:30 [INF] Server desktop-vjsq4i2:16608:ca53b619 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-12 22:03:04.177 +03:30 [DBG] Execution loop ServerWatchdog:a25622b7 has started in 0.5824 ms
+2026-06-12 22:03:04.177 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:76f34340 has started in 0.4263 ms
+2026-06-12 22:03:04.178 +03:30 [DBG] Execution loop ExpirationManager:25bd1734 has started in 0.6357 ms
+2026-06-12 22:03:04.179 +03:30 [DBG] Execution loop CountersAggregator:116971fc has started in 0.2676 ms
+2026-06-12 22:03:04.179 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:473eaec1 has started in 0.2994 ms
+2026-06-12 22:03:04.179 +03:30 [DBG] Execution loop Worker:9ce8efae has started in 0.4508 ms
+2026-06-12 22:03:04.180 +03:30 [DBG] Execution loop Worker:d76bed53 has started in 0.7024 ms
+2026-06-12 22:03:04.180 +03:30 [DBG] Execution loop Worker:65b39f80 has started in 1.0495 ms
+2026-06-12 22:03:04.180 +03:30 [DBG] Execution loop Worker:ed8a6200 has started in 1.3181 ms
+2026-06-12 22:03:04.181 +03:30 [DBG] Execution loop Worker:22e37c63 has started in 1.6457 ms
+2026-06-12 22:03:04.181 +03:30 [DBG] Execution loop Worker:b588375f has started in 1.9099 ms
+2026-06-12 22:03:04.181 +03:30 [DBG] Execution loop Worker:cacfe014 has started in 2.2111 ms
+2026-06-12 22:03:04.182 +03:30 [DBG] Execution loop Worker:bc27990d has started in 2.5192 ms
+2026-06-12 22:03:04.182 +03:30 [DBG] Execution loop Worker:9b1f154d has started in 2.8215 ms
+2026-06-12 22:03:04.182 +03:30 [DBG] Execution loop Worker:dede9e5d has started in 3.1787 ms
+2026-06-12 22:03:04.183 +03:30 [DBG] Execution loop Worker:2eb254c5 has started in 3.5129 ms
+2026-06-12 22:03:04.183 +03:30 [DBG] Execution loop Worker:29a95468 has started in 3.8282 ms
+2026-06-12 22:03:04.183 +03:30 [DBG] Execution loop Worker:f7c64e6b has started in 4.0646 ms
+2026-06-12 22:03:04.183 +03:30 [DBG] Execution loop Worker:41556db6 has started in 4.3607 ms
+2026-06-12 22:03:04.184 +03:30 [DBG] Execution loop Worker:2e1c6398 has started in 4.6435 ms
+2026-06-12 22:03:04.184 +03:30 [DBG] Execution loop Worker:8a2c5c93 has started in 4.9978 ms
+2026-06-12 22:03:04.184 +03:30 [INF] 1 servers were removed due to timeout
+2026-06-12 22:03:04.184 +03:30 [DBG] Execution loop Worker:bb09f9f3 has started in 5.3093 ms
+2026-06-12 22:03:04.185 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-12 22:03:04.185 +03:30 [DBG] Execution loop Worker:1d28a2ed has started in 5.6058 ms
+2026-06-12 22:03:04.185 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:03:04.185 +03:30 [DBG] Execution loop Worker:ad6f6a68 has started in 5.9087 ms
+2026-06-12 22:03:04.185 +03:30 [DBG] Execution loop Worker:31dbecca has started in 6.1193 ms
+2026-06-12 22:03:04.185 +03:30 [DBG] Execution loop DelayedJobScheduler:8ae3ee42 has started in 0.2313 ms
+2026-06-12 22:03:04.186 +03:30 [INF] Server desktop-vjsq4i2:16608:ca53b619 all the dispatchers started
+2026-06-12 22:03:04.186 +03:30 [DBG] Execution loop RecurringJobScheduler:76c47ff4 has started in 0.2134 ms
+2026-06-12 22:03:04.191 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-12 22:03:04.256 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-12 22:03:04.259 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-12 22:03:04.262 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-12 22:03:04.264 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-12 22:03:04.464 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 22:03:22.610 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:03:22.615 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:03:23.668 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Domain.Models.User.VerifyOtpViewModel', but this ViewDataDictionary instance requires a model item of type 'Application.Features.Account.Command.VerifyOtpCommand'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method189(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-12 22:03:34.198 +03:30 [DBG] Server desktop-vjsq4i2:16608:ca53b619 heartbeat successfully sent
+2026-06-12 22:04:04.216 +03:30 [DBG] Server desktop-vjsq4i2:16608:ca53b619 heartbeat successfully sent
+2026-06-12 22:04:34.227 +03:30 [DBG] Server desktop-vjsq4i2:16608:ca53b619 heartbeat successfully sent
+2026-06-12 22:05:04.235 +03:30 [DBG] Server desktop-vjsq4i2:16608:ca53b619 heartbeat successfully sent
+2026-06-12 22:05:34.250 +03:30 [DBG] Server desktop-vjsq4i2:16608:ca53b619 heartbeat successfully sent
+2026-06-12 22:06:04.269 +03:30 [DBG] Server desktop-vjsq4i2:16608:ca53b619 heartbeat successfully sent
+2026-06-12 22:06:31.187 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-12 22:06:31.861 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-12 22:06:32.221 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-12 22:06:32.224 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-12 22:06:32.226 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-12 22:06:32.259 +03:30 [DBG] Execution loop BackgroundServerProcess:eb35f5fc has started in 4.3534 ms
+2026-06-12 22:06:32.467 +03:30 [INF] Server desktop-vjsq4i2:14856:6ab023e2 successfully announced in 201.103 ms
+2026-06-12 22:06:32.472 +03:30 [DBG] Execution loop ServerHeartbeatProcess:609a4d77 has started in 1.808 ms
+2026-06-12 22:06:32.473 +03:30 [INF] Server desktop-vjsq4i2:14856:6ab023e2 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-12 22:06:32.476 +03:30 [DBG] Execution loop ServerWatchdog:be9a109e has started in 0.3919 ms
+2026-06-12 22:06:32.478 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:10bfbedd has started in 0.2598 ms
+2026-06-12 22:06:32.480 +03:30 [DBG] Execution loop Worker:008a2262 has started in 1.6936 ms
+2026-06-12 22:06:32.477 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:0d03e2b2 has started in 0.2776 ms
+2026-06-12 22:06:32.477 +03:30 [DBG] Execution loop ExpirationManager:7b521b6b has started in 0.4294 ms
+2026-06-12 22:06:32.478 +03:30 [DBG] Execution loop CountersAggregator:76856849 has started in 0.3051 ms
+2026-06-12 22:06:32.479 +03:30 [DBG] Execution loop Worker:989706af has started in 0.6407 ms
+2026-06-12 22:06:32.479 +03:30 [DBG] Execution loop Worker:50094645 has started in 0.8575 ms
+2026-06-12 22:06:32.479 +03:30 [DBG] Execution loop Worker:ba719a84 has started in 1.108 ms
+2026-06-12 22:06:32.479 +03:30 [DBG] Execution loop Worker:327e7a29 has started in 1.3693 ms
+2026-06-12 22:06:32.480 +03:30 [DBG] Execution loop Worker:bcc0a094 has started in 2.0254 ms
+2026-06-12 22:06:32.480 +03:30 [DBG] Execution loop Worker:dba70dd7 has started in 2.27 ms
+2026-06-12 22:06:32.481 +03:30 [DBG] Execution loop Worker:885f6d8c has started in 2.7345 ms
+2026-06-12 22:06:32.481 +03:30 [DBG] Execution loop Worker:e1cdff42 has started in 3 ms
+2026-06-12 22:06:32.481 +03:30 [DBG] Execution loop Worker:04b0ecdc has started in 3.2233 ms
+2026-06-12 22:06:32.482 +03:30 [DBG] Execution loop Worker:fa7498df has started in 3.4659 ms
+2026-06-12 22:06:32.482 +03:30 [DBG] Execution loop Worker:4c127c7f has started in 3.7061 ms
+2026-06-12 22:06:32.482 +03:30 [DBG] Execution loop Worker:23bd7c40 has started in 3.9919 ms
+2026-06-12 22:06:32.482 +03:30 [DBG] Execution loop Worker:5692624c has started in 4.2775 ms
+2026-06-12 22:06:32.483 +03:30 [DBG] Execution loop Worker:b9e61cae has started in 4.5401 ms
+2026-06-12 22:06:32.483 +03:30 [DBG] Execution loop Worker:2554c929 has started in 4.794 ms
+2026-06-12 22:06:32.483 +03:30 [DBG] Execution loop Worker:1c3094c1 has started in 5.0311 ms
+2026-06-12 22:06:32.483 +03:30 [DBG] Execution loop Worker:3e09efd3 has started in 5.3849 ms
+2026-06-12 22:06:32.484 +03:30 [DBG] Execution loop Worker:bddf4386 has started in 5.7005 ms
+2026-06-12 22:06:32.484 +03:30 [DBG] Execution loop Worker:e35541b5 has started in 5.9544 ms
+2026-06-12 22:06:32.484 +03:30 [DBG] Execution loop DelayedJobScheduler:ffa6ca53 has started in 0.3204 ms
+2026-06-12 22:06:32.485 +03:30 [INF] Server desktop-vjsq4i2:14856:6ab023e2 all the dispatchers started
+2026-06-12 22:06:32.485 +03:30 [DBG] Execution loop RecurringJobScheduler:5aa05cbf has started in 0.4668 ms
+2026-06-12 22:06:32.487 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-12 22:06:32.487 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:06:32.558 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-12 22:06:32.566 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-12 22:06:32.571 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-12 22:06:32.576 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-12 22:06:32.969 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-12 22:06:33.204 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 22:06:48.788 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:06:48.792 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:06:49.939 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Domain.Models.User.VerifyOtpViewModel', but this ViewDataDictionary instance requires a model item of type 'Application.Features.Account.Command.VerifyOtpCommand'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at lambda_method189(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeFilterPipelineAsync()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Awaited|17_0(ResourceInvoker invoker, Task task, IDisposable scope)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-12 22:07:00.925 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-12 22:07:01.877 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-12 22:07:02.381 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-12 22:07:02.383 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-12 22:07:02.385 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-12 22:07:02.418 +03:30 [DBG] Execution loop BackgroundServerProcess:78d84aa6 has started in 11.1213 ms
+2026-06-12 22:07:02.794 +03:30 [INF] Server desktop-vjsq4i2:14116:7756f49e successfully announced in 369.0032 ms
+2026-06-12 22:07:02.805 +03:30 [DBG] Execution loop ServerHeartbeatProcess:0a5239ba has started in 7.1333 ms
+2026-06-12 22:07:02.806 +03:30 [INF] Server desktop-vjsq4i2:14116:7756f49e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-12 22:07:02.848 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:ee317bc3 has started in 39.6429 ms
+2026-06-12 22:07:02.860 +03:30 [DBG] Execution loop ExpirationManager:9e83262e has started in 11.5735 ms
+2026-06-12 22:07:02.914 +03:30 [DBG] Execution loop Worker:8adae81d has started in 44.0771 ms
+2026-06-12 22:07:02.848 +03:30 [DBG] Execution loop ServerWatchdog:ffdbfe3a has started in 40.382 ms
+2026-06-12 22:07:03.003 +03:30 [DBG] Execution loop Worker:3164f5e6 has started in 132.5169 ms
+2026-06-12 22:07:02.961 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-12 22:07:02.867 +03:30 [DBG] Execution loop CountersAggregator:14c53640 has started in 16.7869 ms
+2026-06-12 22:07:03.062 +03:30 [DBG] Execution loop Worker:4651bf44 has started in 191.903 ms
+2026-06-12 22:07:03.068 +03:30 [INF] Server desktop-vjsq4i2:14116:7756f49e all the dispatchers started
+2026-06-12 22:07:03.068 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:07:02.902 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:76de996c has started in 41.1923 ms
+2026-06-12 22:07:02.901 +03:30 [DBG] Execution loop Worker:76a0c00e has started in 30.7185 ms
+2026-06-12 22:07:02.959 +03:30 [DBG] Execution loop Worker:c592739f has started in 88.3544 ms
+2026-06-12 22:07:02.959 +03:30 [DBG] Execution loop Worker:2b0565ac has started in 88.3766 ms
+2026-06-12 22:07:02.975 +03:30 [DBG] Execution loop Worker:a88a676c has started in 100.954 ms
+2026-06-12 22:07:02.975 +03:30 [DBG] Execution loop Worker:9b94e9e6 has started in 104.3824 ms
+2026-06-12 22:07:02.980 +03:30 [DBG] Execution loop Worker:24977099 has started in 109.5717 ms
+2026-06-12 22:07:02.986 +03:30 [DBG] Execution loop Worker:b476184a has started in 115.168 ms
+2026-06-12 22:07:02.991 +03:30 [DBG] Execution loop Worker:207b8eb8 has started in 120.7054 ms
+2026-06-12 22:07:02.996 +03:30 [DBG] Execution loop Worker:9e8118cb has started in 126.009 ms
+2026-06-12 22:07:03.017 +03:30 [DBG] Execution loop Worker:63468015 has started in 141.5301 ms
+2026-06-12 22:07:03.017 +03:30 [DBG] Execution loop Worker:471e9b42 has started in 146.7702 ms
+2026-06-12 22:07:03.025 +03:30 [DBG] Execution loop Worker:0ebb6462 has started in 155.0119 ms
+2026-06-12 22:07:03.032 +03:30 [DBG] Execution loop Worker:6043488c has started in 161.2203 ms
+2026-06-12 22:07:03.040 +03:30 [DBG] Execution loop Worker:d7cee20d has started in 169.2556 ms
+2026-06-12 22:07:03.045 +03:30 [DBG] Execution loop Worker:9e40d60e has started in 174.1357 ms
+2026-06-12 22:07:03.050 +03:30 [DBG] Execution loop Worker:2464d89b has started in 179.7056 ms
+2026-06-12 22:07:03.056 +03:30 [DBG] Execution loop Worker:981273d7 has started in 185.6711 ms
+2026-06-12 22:07:03.067 +03:30 [DBG] Execution loop DelayedJobScheduler:92cdcee8 has started in 11.3245 ms
+2026-06-12 22:07:03.074 +03:30 [DBG] Execution loop RecurringJobScheduler:6d0e24b1 has started in 11.8636 ms
+2026-06-12 22:07:03.130 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-12 22:07:03.208 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-12 22:07:03.214 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-12 22:07:03.222 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-12 22:07:03.530 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-12 22:07:03.981 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 22:07:21.279 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:07:21.283 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:08:36.459 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-12 22:08:37.333 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-12 22:08:37.827 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-12 22:08:37.829 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-12 22:08:37.832 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-12 22:08:37.866 +03:30 [DBG] Execution loop BackgroundServerProcess:2e25e5a9 has started in 9.9014 ms
+2026-06-12 22:08:38.157 +03:30 [INF] Server desktop-vjsq4i2:15404:ff1e3527 successfully announced in 281.9526 ms
+2026-06-12 22:08:38.171 +03:30 [DBG] Execution loop ServerHeartbeatProcess:f7b6d5fe has started in 9.613 ms
+2026-06-12 22:08:38.172 +03:30 [INF] Server desktop-vjsq4i2:15404:ff1e3527 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-12 22:08:38.182 +03:30 [DBG] Execution loop ServerWatchdog:d619b94d has started in 6.229 ms
+2026-06-12 22:08:38.187 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:80cafe55 has started in 10.6008 ms
+2026-06-12 22:08:38.228 +03:30 [DBG] Execution loop ExpirationManager:5ec38105 has started in 40.238 ms
+2026-06-12 22:08:38.228 +03:30 [DBG] Execution loop CountersAggregator:e9650d81 has started in 39.3565 ms
+2026-06-12 22:08:38.234 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:dbfacc75 has started in 6.7987 ms
+2026-06-12 22:08:38.370 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-12 22:08:38.370 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:08:38.242 +03:30 [DBG] Execution loop Worker:bb8c8e17 has started in 13.9639 ms
+2026-06-12 22:08:38.249 +03:30 [DBG] Execution loop Worker:2236feeb has started in 20.3787 ms
+2026-06-12 22:08:38.290 +03:30 [DBG] Execution loop Worker:9576529a has started in 61.7402 ms
+2026-06-12 22:08:38.290 +03:30 [DBG] Execution loop Worker:9b2012c9 has started in 61.7402 ms
+2026-06-12 22:08:38.296 +03:30 [DBG] Execution loop Worker:a114b144 has started in 68.184 ms
+2026-06-12 22:08:38.434 +03:30 [INF] Server desktop-vjsq4i2:15404:ff1e3527 all the dispatchers started
+2026-06-12 22:08:38.487 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-12 22:08:38.338 +03:30 [DBG] Execution loop Worker:19d7079e has started in 110.2115 ms
+2026-06-12 22:08:38.338 +03:30 [DBG] Execution loop Worker:d095d884 has started in 110.2387 ms
+2026-06-12 22:08:38.344 +03:30 [DBG] Execution loop Worker:5f4dd8a7 has started in 115.6781 ms
+2026-06-12 22:08:38.350 +03:30 [DBG] Execution loop Worker:1d63f72d has started in 121.6918 ms
+2026-06-12 22:08:38.355 +03:30 [DBG] Execution loop Worker:79389c13 has started in 126.3429 ms
+2026-06-12 22:08:38.362 +03:30 [DBG] Execution loop Worker:193256a3 has started in 133.6849 ms
+2026-06-12 22:08:38.370 +03:30 [DBG] Execution loop Worker:aaaedba6 has started in 141.2827 ms
+2026-06-12 22:08:38.376 +03:30 [DBG] Execution loop Worker:884ee6e7 has started in 148.1925 ms
+2026-06-12 22:08:38.381 +03:30 [DBG] Execution loop Worker:241e64e2 has started in 152.7449 ms
+2026-06-12 22:08:38.387 +03:30 [DBG] Execution loop Worker:3cd0b088 has started in 158.4695 ms
+2026-06-12 22:08:38.394 +03:30 [DBG] Execution loop Worker:df31dfda has started in 165.4736 ms
+2026-06-12 22:08:38.399 +03:30 [DBG] Execution loop Worker:d18348cb has started in 170.8381 ms
+2026-06-12 22:08:38.405 +03:30 [DBG] Execution loop Worker:9f9ba611 has started in 176.7298 ms
+2026-06-12 22:08:38.412 +03:30 [DBG] Execution loop Worker:43d139f7 has started in 183.4229 ms
+2026-06-12 22:08:38.419 +03:30 [DBG] Execution loop Worker:bb8a1aa8 has started in 190.4664 ms
+2026-06-12 22:08:38.426 +03:30 [DBG] Execution loop DelayedJobScheduler:e9d02705 has started in 7.8726 ms
+2026-06-12 22:08:38.434 +03:30 [DBG] Execution loop RecurringJobScheduler:00546cdd has started in 14.4208 ms
+2026-06-12 22:08:38.638 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-12 22:08:38.687 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-12 22:08:38.693 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-12 22:08:39.016 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-12 22:08:39.465 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 22:09:06.160 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:09:06.165 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:09:14.036 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:09:46.745 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:10:20.570 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:10:52.710 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:11:22.731 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:11:52.755 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:12:22.767 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:12:52.776 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:13:22.784 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:13:38.421 +03:30 [INF] 3 servers were removed due to timeout
+2026-06-12 22:13:38.604 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:13:52.805 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:14:22.844 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:14:52.869 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:15:22.886 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:15:52.899 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:16:22.932 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:16:52.956 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:17:22.975 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:17:52.996 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:18:23.012 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:18:38.735 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:18:53.024 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:19:23.036 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:19:53.045 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:20:23.068 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:20:53.086 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:21:23.102 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:21:53.122 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:22:23.145 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:22:53.161 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:23:23.172 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:23:38.813 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:23:53.182 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:24:23.202 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:24:53.216 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:25:23.241 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:25:53.256 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:26:23.271 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:26:53.279 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:27:23.302 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:27:53.323 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:28:23.342 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:28:38.892 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:28:53.359 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:29:23.384 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:29:53.402 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:30:23.421 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:30:53.450 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:31:23.456 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:43:47.745 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:44:17.770 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:44:47.838 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:45:08.468 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+System.InvalidOperationException: The model item passed into the ViewDataDictionary is of type 'Application.Features.Account.Command.VerifyOtpCommand', but this ViewDataDictionary instance requires a model item of type 'Domain.Models.User.VerifyOtpViewModel'.
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary.EnsureCompatible(Object value)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewDataDictionary..ctor(ViewDataDictionary source, Object model, Type declaredModelType)
+   at lambda_method189(Closure, ViewDataDictionary)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorPagePropertyActivator.Activate(Object page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageCoreAsync(IRazorPage page, ViewContext context)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderPageAsync(IRazorPage page, ViewContext context, Boolean invokeViewStarts)
+   at Microsoft.AspNetCore.Mvc.Razor.RazorView.RenderAsync(ViewContext context)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ViewContext viewContext, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewExecutor.ExecuteAsync(ActionContext actionContext, IView view, ViewDataDictionary viewData, ITempDataDictionary tempData, String contentType, Nullable`1 statusCode)
+   at Microsoft.AspNetCore.Mvc.ViewFeatures.ViewResultExecutor.ExecuteAsync(ActionContext context, ViewResult result)
+   at Microsoft.AspNetCore.Mvc.ViewResult.ExecuteResultAsync(ActionContext context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeResultAsync>g__Logged|22_0(ResourceInvoker invoker, IActionResult result)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResultFilterAsync>g__Awaited|30_0[TFilter,TFilterAsync](ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResultExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.ResultNext[TFilter,TFilterAsync](State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.InvokeResultFilters()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeNextResourceFilter>g__Awaited|25_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Rethrow(ResourceExecutedContextSealed context)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.Next(State& next, Scope& scope, Object& state, Boolean& isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeFilterPipelineAsync>g__Awaited|20_0(ResourceInvoker invoker, Task lastTask, State next, Scope scope, Object state, Boolean isCompleted)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Mvc.Infrastructure.ResourceInvoker.<InvokeAsync>g__Logged|17_1(ResourceInvoker invoker)
+   at Microsoft.AspNetCore.Authorization.AuthorizationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Authentication.AuthenticationMiddleware.Invoke(HttpContext context)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-06-12 22:45:17.857 +03:30 [DBG] Server desktop-vjsq4i2:15404:ff1e3527 heartbeat successfully sent
+2026-06-12 22:45:33.121 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:45:58.329 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-12 22:45:58.980 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-12 22:45:59.328 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-12 22:45:59.331 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-12 22:45:59.332 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-12 22:45:59.378 +03:30 [DBG] Execution loop BackgroundServerProcess:43c7510d has started in 4.7378 ms
+2026-06-12 22:45:59.640 +03:30 [INF] Server desktop-vjsq4i2:15464:f757d8e1 successfully announced in 255.8796 ms
+2026-06-12 22:45:59.645 +03:30 [DBG] Execution loop ServerHeartbeatProcess:325e8ec0 has started in 1.9031 ms
+2026-06-12 22:45:59.646 +03:30 [INF] Server desktop-vjsq4i2:15464:f757d8e1 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-12 22:45:59.648 +03:30 [DBG] Execution loop ServerWatchdog:92fa8bd6 has started in 0.4249 ms
+2026-06-12 22:45:59.649 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:dc4c5202 has started in 0.3568 ms
+2026-06-12 22:45:59.650 +03:30 [DBG] Execution loop ExpirationManager:447fe1ab has started in 0.5469 ms
+2026-06-12 22:45:59.650 +03:30 [DBG] Execution loop CountersAggregator:9ed32fc9 has started in 0.3022 ms
+2026-06-12 22:45:59.650 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:5bf84563 has started in 0.3138 ms
+2026-06-12 22:45:59.651 +03:30 [DBG] Execution loop Worker:f1fbe261 has started in 0.6285 ms
+2026-06-12 22:45:59.651 +03:30 [DBG] Execution loop Worker:36fa2ed6 has started in 0.8055 ms
+2026-06-12 22:45:59.651 +03:30 [DBG] Execution loop Worker:cd9bfa82 has started in 1.1686 ms
+2026-06-12 22:45:59.652 +03:30 [DBG] Execution loop Worker:defdd47b has started in 1.3997 ms
+2026-06-12 22:45:59.652 +03:30 [DBG] Execution loop Worker:addb9394 has started in 1.6616 ms
+2026-06-12 22:45:59.652 +03:30 [DBG] Execution loop Worker:3e17a85a has started in 1.9518 ms
+2026-06-12 22:45:59.653 +03:30 [DBG] Execution loop Worker:4826c975 has started in 2.2445 ms
+2026-06-12 22:45:59.653 +03:30 [DBG] Execution loop Worker:604db726 has started in 2.5565 ms
+2026-06-12 22:45:59.653 +03:30 [DBG] Execution loop Worker:0890d948 has started in 2.7973 ms
+2026-06-12 22:45:59.655 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-12 22:45:59.656 +03:30 [DBG] Execution loop Worker:d7245ef5 has started in 5.2644 ms
+2026-06-12 22:45:59.656 +03:30 [DBG] Execution loop Worker:48fdf31e has started in 5.5341 ms
+2026-06-12 22:45:59.656 +03:30 [DBG] Execution loop Worker:3a805ca5 has started in 5.7637 ms
+2026-06-12 22:45:59.656 +03:30 [DBG] Execution loop Worker:f29d8e47 has started in 5.97 ms
+2026-06-12 22:45:59.657 +03:30 [DBG] Execution loop Worker:46b4c1b8 has started in 6.243 ms
+2026-06-12 22:45:59.657 +03:30 [DBG] Execution loop Worker:4abe5804 has started in 6.4792 ms
+2026-06-12 22:45:59.657 +03:30 [DBG] Execution loop Worker:c9cc10e1 has started in 6.6825 ms
+2026-06-12 22:45:59.657 +03:30 [DBG] Execution loop Worker:dfa66a03 has started in 6.9648 ms
+2026-06-12 22:45:59.658 +03:30 [DBG] Execution loop Worker:ea046be3 has started in 7.2218 ms
+2026-06-12 22:45:59.658 +03:30 [DBG] Execution loop Worker:5f69104d has started in 7.4507 ms
+2026-06-12 22:45:59.658 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:45:59.658 +03:30 [DBG] Execution loop Worker:58a2691f has started in 7.7417 ms
+2026-06-12 22:45:59.658 +03:30 [DBG] Execution loop DelayedJobScheduler:cbf1edb2 has started in 0.3314 ms
+2026-06-12 22:45:59.659 +03:30 [INF] Server desktop-vjsq4i2:15464:f757d8e1 all the dispatchers started
+2026-06-12 22:45:59.659 +03:30 [DBG] Execution loop RecurringJobScheduler:8f560f42 has started in 0.3629 ms
+2026-06-12 22:45:59.651 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-12 22:45:59.768 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-12 22:45:59.785 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-12 22:45:59.792 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-12 22:45:59.799 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-12 22:45:59.990 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 22:45:59.990 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-12 22:46:14.261 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:46:14.266 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-12 22:46:29.666 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:47:03.286 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:47:33.298 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:48:03.305 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:48:33.310 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:49:03.331 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:49:33.349 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:50:03.361 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:50:33.377 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:50:59.663 +03:30 [INF] 1 servers were removed due to timeout
+2026-06-12 22:50:59.754 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:51:03.395 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:51:33.411 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:52:03.419 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:52:33.431 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:53:03.446 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:53:33.455 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:54:03.459 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:54:33.468 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:55:03.484 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:55:33.492 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:55:59.778 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 22:56:03.501 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:56:33.508 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:57:03.521 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:57:33.524 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:58:03.535 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:58:33.550 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:59:03.563 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 22:59:33.569 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 23:00:03.590 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 23:00:33.605 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 23:00:59.800 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-12 23:01:03.612 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent
+2026-06-12 23:01:33.627 +03:30 [DBG] Server desktop-vjsq4i2:15464:f757d8e1 heartbeat successfully sent

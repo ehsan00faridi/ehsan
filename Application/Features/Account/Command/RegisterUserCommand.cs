@@ -17,7 +17,11 @@ namespace Application.Features.Account.Command
   ) : IRequest<RegisterResult>;
 
     public record RegisterResult(int UserId, string PhoneNumber,string Code);
-    public record VerifyOtpCommand(string UserId, string Code) : IRequest<bool>;
+    public class VerifyOtpCommand() : IRequest<bool> {
+        public string UserId { get; set; } =string.Empty;
+
+        public string Code { get; set; } = "";
+    }
 
 
 }
