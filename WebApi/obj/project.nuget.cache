@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "o8SQ8i5Ree4=",
+  "success": false,
+  "projectFilePath": "C:\\Users\\ehsan\\source\\repos\\Solution1\\WebApi\\WebApi.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "Failed to retrieve information about 'Microsoft.AspNetCore.OpenApi' from remote source 'https://www.nuget.org/api/v2/FindPackagesById()?id='Microsoft.AspNetCore.OpenApi'&semVerLevel=2.0.0'.\r\n  An error occurred while sending the request.\r\n  The remote name could not be resolved: 'www.nuget.org'",
+      "projectPath": "C:\\Users\\ehsan\\source\\repos\\Solution1\\WebApi\\WebApi.csproj",
+      "filePath": "C:\\Users\\ehsan\\source\\repos\\Solution1\\WebApi\\WebApi.csproj",
+      "libraryId": "Microsoft.AspNetCore.OpenApi",
+      "targetGraphs": []
+    }
+  ]
+}

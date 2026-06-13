@@ -1,0 +1,86 @@
+2026-05-26 11:16:47.604 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-05-26 11:16:52.068 +03:30 [INF] Hangfire SQL objects installed.
+2026-05-26 11:16:52.757 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-05-26 11:16:52.759 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-05-26 11:16:52.761 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-05-26 11:16:52.797 +03:30 [DBG] Execution loop BackgroundServerProcess:eb455903 has started in 4.9055 ms
+2026-05-26 11:16:52.989 +03:30 [INF] Server desktop-vjsq4i2:14768:adccfbe5 successfully announced in 186.0275 ms
+2026-05-26 11:16:52.995 +03:30 [DBG] Execution loop ServerHeartbeatProcess:5e211480 has started in 1.7222 ms
+2026-05-26 11:16:52.995 +03:30 [INF] Server desktop-vjsq4i2:14768:adccfbe5 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-05-26 11:16:52.998 +03:30 [DBG] Execution loop ServerWatchdog:f130db96 has started in 0.3477 ms
+2026-05-26 11:16:52.999 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:d0b90069 has started in 0.2594 ms
+2026-05-26 11:16:53.002 +03:30 [DBG] Execution loop Worker:ebe9b5bd has started in 1.4564 ms
+2026-05-26 11:16:53.000 +03:30 [DBG] Execution loop CountersAggregator:d5753195 has started in 0.3355 ms
+2026-05-26 11:16:53.000 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:97269351 has started in 0.2895 ms
+2026-05-26 11:16:53.001 +03:30 [DBG] Execution loop Worker:d61cfc04 has started in 0.5477 ms
+2026-05-26 11:16:53.001 +03:30 [DBG] Execution loop Worker:12f731db has started in 0.8703 ms
+2026-05-26 11:16:53.001 +03:30 [DBG] Execution loop Worker:a800868c has started in 1.1399 ms
+2026-05-26 11:16:52.999 +03:30 [DBG] Execution loop ExpirationManager:9230893c has started in 0.3953 ms
+2026-05-26 11:16:53.002 +03:30 [DBG] Execution loop Worker:9db97571 has started in 1.9082 ms
+2026-05-26 11:16:53.002 +03:30 [DBG] Execution loop Worker:889445c2 has started in 2.3307 ms
+2026-05-26 11:16:53.003 +03:30 [DBG] Execution loop Worker:58474946 has started in 2.595 ms
+2026-05-26 11:16:53.003 +03:30 [DBG] Execution loop Worker:9959ce7d has started in 2.8566 ms
+2026-05-26 11:16:53.003 +03:30 [DBG] Execution loop Worker:a7443b1f has started in 3.1271 ms
+2026-05-26 11:16:53.004 +03:30 [DBG] Execution loop Worker:a7482baf has started in 3.4449 ms
+2026-05-26 11:16:53.004 +03:30 [DBG] Execution loop Worker:84ac4357 has started in 3.8017 ms
+2026-05-26 11:16:53.004 +03:30 [DBG] Execution loop Worker:f72cf533 has started in 4.134 ms
+2026-05-26 11:16:53.005 +03:30 [DBG] Execution loop Worker:bc04559a has started in 4.5667 ms
+2026-05-26 11:16:53.005 +03:30 [DBG] Execution loop Worker:51e82b65 has started in 4.876 ms
+2026-05-26 11:16:53.005 +03:30 [DBG] Execution loop Worker:4397e327 has started in 5.2478 ms
+2026-05-26 11:16:53.006 +03:30 [DBG] Execution loop Worker:83dd0ef8 has started in 5.5992 ms
+2026-05-26 11:16:53.006 +03:30 [DBG] Execution loop Worker:c7b94166 has started in 5.8781 ms
+2026-05-26 11:16:53.006 +03:30 [DBG] Execution loop Worker:19287cb2 has started in 6.1382 ms
+2026-05-26 11:16:53.006 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-05-26 11:16:53.007 +03:30 [DBG] Execution loop Worker:5057e05a has started in 6.4411 ms
+2026-05-26 11:16:53.007 +03:30 [DBG] Execution loop Worker:0fa63a4b has started in 6.7146 ms
+2026-05-26 11:16:53.007 +03:30 [DBG] Execution loop DelayedJobScheduler:e7cd6d91 has started in 0.3452 ms
+2026-05-26 11:16:53.008 +03:30 [DBG] Execution loop RecurringJobScheduler:10050fb1 has started in 0.3816 ms
+2026-05-26 11:16:53.008 +03:30 [INF] Server desktop-vjsq4i2:14768:adccfbe5 all the dispatchers started
+2026-05-26 11:16:53.011 +03:30 [INF] 1 servers were removed due to timeout
+2026-05-26 11:16:53.016 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-05-26 11:16:53.111 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-05-26 11:16:53.123 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-05-26 11:16:53.127 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-05-26 11:16:53.132 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-05-26 11:17:23.016 +03:30 [DBG] Server desktop-vjsq4i2:14768:adccfbe5 heartbeat successfully sent
+2026-05-26 11:17:53.022 +03:30 [DBG] Server desktop-vjsq4i2:14768:adccfbe5 heartbeat successfully sent
+2026-05-26 11:17:55.278 +03:30 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2026-05-26 11:17:55.280 +03:30 [INF] Server desktop-vjsq4i2:14768:adccfbe5 caught stopping signal...
+2026-05-26 11:17:55.282 +03:30 [DBG] Execution loop ExpirationManager:9230893c stopped in 0 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:4397e327 stopped in 0.1562 ms
+2026-05-26 11:17:55.282 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:97269351 stopped in 0 ms
+2026-05-26 11:17:55.282 +03:30 [DBG] Execution loop CountersAggregator:d5753195 stopped in 0 ms
+2026-05-26 11:17:55.282 +03:30 [DBG] Execution loop RecurringJobScheduler:10050fb1 stopped in 0 ms
+2026-05-26 11:17:55.282 +03:30 [DBG] Execution loop DelayedJobScheduler:e7cd6d91 stopped in 0 ms
+2026-05-26 11:17:55.282 +03:30 [DBG] Execution loop ServerWatchdog:f130db96 stopped in 0 ms
+2026-05-26 11:17:55.282 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:d0b90069 stopped in 0 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:9959ce7d stopped in 0 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:d61cfc04 stopped in 0 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:83dd0ef8 stopped in 0 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:ebe9b5bd stopped in 0 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:a800868c stopped in 0 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:0fa63a4b stopped in 0 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:c7b94166 stopped in 0.0306 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:bc04559a stopped in 0.1385 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:f72cf533 stopped in 0.1485 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:84ac4357 stopped in 0.1485 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:5057e05a stopped in 0.1494 ms
+2026-05-26 11:17:55.283 +03:30 [DBG] Execution loop Worker:58474946 stopped in 0.1951 ms
+2026-05-26 11:17:55.284 +03:30 [DBG] Execution loop Worker:889445c2 stopped in 0.2883 ms
+2026-05-26 11:17:55.284 +03:30 [INF] Server desktop-vjsq4i2:14768:adccfbe5 caught stopped signal...
+2026-05-26 11:17:55.284 +03:30 [DBG] Execution loop Worker:a7443b1f stopped in 0.3166 ms
+2026-05-26 11:17:55.284 +03:30 [DBG] Execution loop Worker:51e82b65 stopped in 0.3238 ms
+2026-05-26 11:17:55.284 +03:30 [DBG] Execution loop Worker:a7482baf stopped in 0.309 ms
+2026-05-26 11:17:55.284 +03:30 [DBG] Execution loop Worker:19287cb2 stopped in 0.3314 ms
+2026-05-26 11:17:55.284 +03:30 [DBG] Execution loop Worker:9db97571 stopped in 0.4174 ms
+2026-05-26 11:17:55.284 +03:30 [DBG] Execution loop Worker:12f731db stopped in 0.4264 ms
+2026-05-26 11:17:55.317 +03:30 [WRN] Server desktop-vjsq4i2:14768:adccfbe5 caught shutdown signal...
+2026-05-26 11:17:55.327 +03:30 [INF] Server desktop-vjsq4i2:14768:adccfbe5 All dispatchers stopped
+2026-05-26 11:17:55.328 +03:30 [DBG] Execution loop ServerHeartbeatProcess:5e211480 stopped in 0.0865 ms
+2026-05-26 11:17:55.342 +03:30 [INF] Server desktop-vjsq4i2:14768:adccfbe5 successfully reported itself as stopped in 10.2336 ms
+2026-05-26 11:17:55.344 +03:30 [INF] Server desktop-vjsq4i2:14768:adccfbe5 has been stopped in total 60.1996 ms
+2026-05-26 11:17:55.345 +03:30 [DBG] Execution loop BackgroundServerProcess:eb455903 stopped in 61.5467 ms

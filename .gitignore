@@ -1,13 +1,49 @@
-# Visual Studio
-.vs/
+## --- [ OS & Environment ] ---
+.DS_Store
+Thumbs.db
+desktop.ini
+
+## --- [ User-specific files (Visual Studio / Rider / VS Code) ] ---
 *.user
+*.userres
+*.userprefs
 *.suo
+.vs/
+.idea/
+.vscode/
+*.sln.docstates
 
-# Build results
-bin/
-obj/
+## --- [ Build Outputs (Essential) ] ---
+[Bb]in/
+[Obj]/
+[Log]/
+[Tt]est[Rr]esult*/
 
-# Secrets
+## --- [ Packages & Dependencies ] ---
+*.nupkg
+**/packages/*
+!**/packages/build/
+project.lock.json
+project.fragment.lock.json
+artifacts/
+
+## --- [ Database & Migrations Secrets ] ---
+*.db
+*.db-shm
+*.db-wal
 appsettings.Development.json
-AppWebAPI/logs/
-Solution1.rar
+appsettings.Local.json
+
+## --- [ Compressed Files (Archives) ] ---
+*.7z
+*.rar
+*.zip
+*.gz
+*.iso
+*.tar
+
+## --- [ Published Output ] ---
+*.SourceControl
+*.Publish.xml
+*.pubxml
+*.pubxml.user

@@ -1,0 +1,11 @@
+C:\Users\ehsan\source\repos\Solution1\Domain\bin\Release\net9.0\Domain.deps.json
+C:\Users\ehsan\source\repos\Solution1\Domain\bin\Release\net9.0\Domain.dll
+C:\Users\ehsan\source\repos\Solution1\Domain\bin\Release\net9.0\Domain.pdb
+C:\Users\ehsan\source\repos\Solution1\Domain\obj\Release\net9.0\Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ehsan\source\repos\Solution1\Domain\obj\Release\net9.0\Domain.AssemblyInfoInputs.cache
+C:\Users\ehsan\source\repos\Solution1\Domain\obj\Release\net9.0\Domain.AssemblyInfo.cs
+C:\Users\ehsan\source\repos\Solution1\Domain\obj\Release\net9.0\Domain.csproj.CoreCompileInputs.cache
+C:\Users\ehsan\source\repos\Solution1\Domain\obj\Release\net9.0\Domain.dll
+C:\Users\ehsan\source\repos\Solution1\Domain\obj\Release\net9.0\refint\Domain.dll
+C:\Users\ehsan\source\repos\Solution1\Domain\obj\Release\net9.0\Domain.pdb
+C:\Users\ehsan\source\repos\Solution1\Domain\obj\Release\net9.0\ref\Domain.dll
