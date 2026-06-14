@@ -482,6 +482,7 @@
 2026-06-13 18:56:25.755 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
 2026-06-13 18:56:25.770 +03:30 [DBG] Aggregating records in 'Counter' table...
 2026-06-13 18:56:55.761 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+<<<<<<< HEAD
 2026-06-13 18:57:25.774 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
 2026-06-13 18:57:55.779 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
 2026-06-13 18:58:25.792 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
@@ -709,3 +710,5 @@
 2026-06-13 20:19:37.974 +03:30 [INF] Server desktop-vjsq4i2:9444:ab1e8e36 successfully reported itself as stopped in 11.1239 ms
 2026-06-13 20:19:37.976 +03:30 [INF] Server desktop-vjsq4i2:9444:ab1e8e36 has been stopped in total 66.3102 ms
 2026-06-13 20:19:37.977 +03:30 [DBG] Execution loop BackgroundServerProcess:4799e0cb stopped in 67.6179 ms
+=======
+>>>>>>> feature-branch
