@@ -617,3 +617,95 @@
 2026-06-13 19:52:57.143 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
 2026-06-13 19:53:27.160 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
 2026-06-13 19:53:57.181 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:54:27.195 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:54:57.203 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:55:27.219 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:55:57.230 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:56:26.039 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-13 19:56:27.240 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:56:57.253 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:57:27.267 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:57:57.276 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:58:27.292 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:58:57.307 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:59:27.326 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 19:59:57.337 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:00:27.346 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:00:57.354 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:01:26.064 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-13 20:01:27.365 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:01:57.379 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:02:27.390 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:02:57.400 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:03:27.418 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:03:57.433 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:04:27.444 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:04:57.453 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:05:27.472 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:05:57.482 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:06:26.087 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-13 20:06:27.491 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:06:57.504 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:07:27.518 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:07:57.536 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:08:27.545 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:08:57.564 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:09:27.575 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:09:57.595 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:10:27.607 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:10:57.620 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:11:26.119 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-13 20:11:27.634 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:11:57.643 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:12:27.661 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:12:57.673 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:13:27.691 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:13:57.708 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:14:27.726 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:14:57.746 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:15:27.764 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:15:57.777 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:16:26.152 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-13 20:16:27.790 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:16:57.804 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:17:27.818 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:17:57.838 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:18:27.847 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:18:57.857 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:19:27.866 +03:30 [DBG] Server desktop-vjsq4i2:9444:ab1e8e36 heartbeat successfully sent
+2026-06-13 20:19:37.906 +03:30 [WRN] Stopping the server due to DomainUnload or ProcessExit event...
+2026-06-13 20:19:37.908 +03:30 [INF] Server desktop-vjsq4i2:9444:ab1e8e36 caught stopping signal...
+2026-06-13 20:19:37.910 +03:30 [INF] Server desktop-vjsq4i2:9444:ab1e8e36 caught stopped signal...
+2026-06-13 20:19:37.910 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:a6d37f66 stopped in 0.255 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:be69445c stopped in 3.0574 ms
+2026-06-13 20:19:37.910 +03:30 [DBG] Execution loop ExpirationManager:fbed6c81 stopped in 0.2428 ms
+2026-06-13 20:19:37.910 +03:30 [DBG] Execution loop CountersAggregator:d9200f73 stopped in 0.2577 ms
+2026-06-13 20:19:37.911 +03:30 [DBG] Execution loop RecurringJobScheduler:b5909815 stopped in 1.4012 ms
+2026-06-13 20:19:37.911 +03:30 [DBG] Execution loop DelayedJobScheduler:4ee24884 stopped in 1.4052 ms
+2026-06-13 20:19:37.911 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:9d70e3a3 stopped in 1.4153 ms
+2026-06-13 20:19:37.911 +03:30 [DBG] Execution loop ServerWatchdog:387ad77a stopped in 1.4138 ms
+2026-06-13 20:19:37.912 +03:30 [WRN] Server desktop-vjsq4i2:9444:ab1e8e36 caught shutdown signal...
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:077fec49 stopped in 2.8736 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:51e7ae79 stopped in 2.9544 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:902debc4 stopped in 3.0453 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:96161783 stopped in 3.0824 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:c7abb365 stopped in 3.083 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:2f74c83a stopped in 3.083 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:8ec157fe stopped in 3.0791 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:f61a6e23 stopped in 3.0929 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:f70cd235 stopped in 3.1838 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:dda0d595 stopped in 3.2008 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:054adcc2 stopped in 3.2135 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:2e60fe52 stopped in 3.2161 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:2fd9adb9 stopped in 3.258 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:ce48b835 stopped in 3.2917 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:ab959264 stopped in 3.3305 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:eee35dd3 stopped in 3.3349 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:772fa298 stopped in 3.3582 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:3a30cbf5 stopped in 3.4089 ms
+2026-06-13 20:19:37.913 +03:30 [DBG] Execution loop Worker:27006213 stopped in 3.3007 ms
+2026-06-13 20:19:37.926 +03:30 [DBG] Execution loop ServerHeartbeatProcess:475842e3 stopped in 0.0725 ms
+2026-06-13 20:19:37.927 +03:30 [WRN] Server desktop-vjsq4i2:9444:ab1e8e36 stopped non-gracefully due to Worker. Outstanding work on those dispatchers could be aborted, and there can be delays in background processing. This server instance will be incorrectly shown as active for a while. To avoid non-graceful shutdowns, investigate what prevents from stopping gracefully and add CancellationToken support for those methods.
+2026-06-13 20:19:37.974 +03:30 [INF] Server desktop-vjsq4i2:9444:ab1e8e36 successfully reported itself as stopped in 11.1239 ms
+2026-06-13 20:19:37.976 +03:30 [INF] Server desktop-vjsq4i2:9444:ab1e8e36 has been stopped in total 66.3102 ms
+2026-06-13 20:19:37.977 +03:30 [DBG] Execution loop BackgroundServerProcess:4799e0cb stopped in 67.6179 ms

@@ -11,7 +11,8 @@
     <div>
         <label asp-for="PhoneNumber"></label>
         <input asp-for="PhoneNumber" />
-        <span asp-validation-for="PhoneNumber"></span>
+        <span asp-validation-for="PhoneNumber" class="text-danger small"></span>
+       @*  <span asp-validation-for="Code" class="text-danger small"></span> *@
     </div>
 
     <button type="submit">ارسال کد</button>
