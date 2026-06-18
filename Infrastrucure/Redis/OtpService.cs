@@ -4,7 +4,7 @@ using StackExchange.Redis;
 using System.Security.Cryptography;
 namespace Infrastructure.Redis
 {
-  
+
 
     public class OtpService : IOtpService
     {
@@ -33,12 +33,10 @@ namespace Infrastructure.Redis
                 TimeSpan.FromSeconds(ExpireSeconds)
             );
 
-           // await _sms.SendAsync(phoneNumber, $"کد تایید شما: {otp}");
-
-
-            Console.WriteLine("\n\n");
-            Console.WriteLine($" Code OTP : {otp} ");
-            Console.WriteLine("\n\n");
+            await _sms.SendAsync(phoneNumber, $"کد تایید شما: {otp}");
+            //Console.WriteLine("\n\n");
+            //Console.WriteLine($" Code OTP : {otp} ");
+            //Console.WriteLine("\n\n");
         }
 
         public async Task<bool> VerifyOtpAsync(string phoneNumber, string code)

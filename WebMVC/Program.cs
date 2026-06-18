@@ -1,11 +1,9 @@
 using Application;
-using Domain.Models.Roles;
 using Domain.Models.User;
 using Infrastrucure;
 using Microsoft.AspNetCore.Identity;
 using Serilog;
 
-//using StackExchange.Redis;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -33,9 +31,9 @@ builder.Services.AddIdentity<User, Domain.Models.Roles.Role>()
     option.Password.RequiredLength = 8;
     option.User.RequireUniqueEmail = true;
 
-        option.SignIn.RequireConfirmedPhoneNumber = true;
-        option.SignIn.RequireConfirmedEmail = false;
-        option.SignIn.RequireConfirmedAccount = true;
+        //option.SignIn.RequireConfirmedPhoneNumber = true;
+        //option.SignIn.RequireConfirmedEmail = false;
+        //option.SignIn.RequireConfirmedAccount = true;
     });
 
 //dotnet remove package Serilog

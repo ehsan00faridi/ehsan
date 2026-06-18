@@ -42,10 +42,6 @@ namespace Infrastrucure
             services.Configure<EmailSettings>(configuration.GetSection("Email"));
             services.AddScoped<IEmailService, SmtpEmailService>();
             services.AddScoped<IOtpService, OtpService>();
-
-
-
-
             string redisConnectionString = configuration.GetConnectionString("RedisConnection");
 
             services.AddSingleton<IConnectionMultiplexer>(sp =>

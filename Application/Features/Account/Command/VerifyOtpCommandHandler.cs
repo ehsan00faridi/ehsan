@@ -50,7 +50,7 @@ namespace Application.Features.Account.Command
             user.PhoneNumberConfirmed = true;
             await _signInManager.SignInAsync(user, isPersistent: false);
 
-            await _signInManager.SignInAsync(user, isPersistent: false);
+         
             return true;
 
 

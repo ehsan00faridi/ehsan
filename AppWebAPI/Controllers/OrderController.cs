@@ -34,11 +34,12 @@ namespace AppWebAPI.Controllers
         [HttpPost("Test")]
         public async Task<IActionResult> Test()
         {
-            _backgroundjobClient.Schedule(() => Console.WriteLine("Fire____and_____forget     job executed"),TimeSpan.FromSeconds(5));
-           
+            _backgroundjobClient.Schedule(() => Console.WriteLine("Fire____and_____forget     job executed"), TimeSpan.FromSeconds(5));
+
             return Ok(true);
 
         }
+
 
     }
 }
