@@ -52,3 +52,62 @@
 2026-06-19 10:06:41.234 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
 2026-06-19 10:06:41.238 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
 2026-06-19 10:06:57.218 +03:30 [DBG] Server desktop-vjsq4i2:8080:137dd32b heartbeat successfully sent
+2026-06-19 10:07:07.964 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-19 10:07:08.413 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-19 10:07:08.743 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-19 10:07:08.745 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-19 10:07:08.747 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-19 10:07:08.784 +03:30 [DBG] Execution loop BackgroundServerProcess:623aaf6b has started in 4.3581 ms
+2026-06-19 10:07:09.023 +03:30 [INF] Server desktop-vjsq4i2:14904:4e457b5a successfully announced in 232.5247 ms
+2026-06-19 10:07:09.036 +03:30 [DBG] Execution loop ServerHeartbeatProcess:be7cdf85 has started in 2.7016 ms
+2026-06-19 10:07:09.037 +03:30 [INF] Server desktop-vjsq4i2:14904:4e457b5a is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-19 10:07:09.040 +03:30 [DBG] Execution loop ServerWatchdog:77ceb80f has started in 0.6011 ms
+2026-06-19 10:07:09.041 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:b2b165fd has started in 0.4615 ms
+2026-06-19 10:07:09.043 +03:30 [DBG] Execution loop ExpirationManager:83d68fc5 has started in 0.8994 ms
+2026-06-19 10:07:09.043 +03:30 [DBG] Execution loop CountersAggregator:75a905e9 has started in 0.4729 ms
+2026-06-19 10:07:09.044 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:8e3a6a2f has started in 0.4129 ms
+2026-06-19 10:07:09.052 +03:30 [DBG] Execution loop Worker:874af299 has started in 7.9736 ms
+2026-06-19 10:07:09.052 +03:30 [DBG] Execution loop Worker:815872e6 has started in 8.6932 ms
+2026-06-19 10:07:09.058 +03:30 [DBG] Execution loop Worker:64b9e7fc has started in 13.9316 ms
+2026-06-19 10:07:09.059 +03:30 [DBG] Execution loop Worker:fb9c390b has started in 14.8042 ms
+2026-06-19 10:07:09.061 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-19 10:07:09.061 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-19 10:07:09.075 +03:30 [DBG] Execution loop Worker:844a1b7b has started in 31.2312 ms
+2026-06-19 10:07:09.062 +03:30 [DBG] Execution loop Worker:9cb294bd has started in 18.4677 ms
+2026-06-19 10:07:09.073 +03:30 [DBG] Execution loop Worker:af80e407 has started in 29.5766 ms
+2026-06-19 10:07:09.062 +03:30 [DBG] Execution loop Worker:d53afc8b has started in 17.9216 ms
+2026-06-19 10:07:09.076 +03:30 [DBG] Execution loop Worker:1d23a66b has started in 32.5737 ms
+2026-06-19 10:07:09.077 +03:30 [DBG] Execution loop Worker:7d367b97 has started in 33.0157 ms
+2026-06-19 10:07:09.077 +03:30 [DBG] Execution loop Worker:a96f64b7 has started in 33.4989 ms
+2026-06-19 10:07:09.078 +03:30 [DBG] Execution loop Worker:ef5f11e3 has started in 34.1215 ms
+2026-06-19 10:07:09.078 +03:30 [DBG] Execution loop Worker:a482a98e has started in 34.688 ms
+2026-06-19 10:07:09.081 +03:30 [DBG] Execution loop Worker:1f63fb0e has started in 37.4023 ms
+2026-06-19 10:07:09.082 +03:30 [DBG] Execution loop Worker:acf8d3cd has started in 37.8204 ms
+2026-06-19 10:07:09.082 +03:30 [DBG] Execution loop Worker:e99c6e36 has started in 38.1621 ms
+2026-06-19 10:07:09.083 +03:30 [DBG] Execution loop Worker:32934eaa has started in 39.0272 ms
+2026-06-19 10:07:09.083 +03:30 [DBG] Execution loop Worker:cae5bd6c has started in 39.693 ms
+2026-06-19 10:07:09.084 +03:30 [DBG] Execution loop Worker:0c8b9ab0 has started in 40.1543 ms
+2026-06-19 10:07:09.085 +03:30 [DBG] Execution loop Worker:e57716a3 has started in 41.1045 ms
+2026-06-19 10:07:09.086 +03:30 [DBG] Execution loop DelayedJobScheduler:df00131d has started in 1.6027 ms
+2026-06-19 10:07:09.087 +03:30 [DBG] Execution loop RecurringJobScheduler:381d92c3 has started in 0.4024 ms
+2026-06-19 10:07:09.087 +03:30 [INF] Server desktop-vjsq4i2:14904:4e457b5a all the dispatchers started
+2026-06-19 10:07:09.143 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-19 10:07:09.154 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-19 10:07:09.160 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-19 10:07:09.165 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-19 10:07:09.353 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-19 10:07:09.501 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-19 10:07:24.964 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-19 10:07:24.970 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-06-19 10:07:39.059 +03:30 [DBG] Server desktop-vjsq4i2:14904:4e457b5a heartbeat successfully sent
+2026-06-19 10:08:09.077 +03:30 [DBG] Server desktop-vjsq4i2:14904:4e457b5a heartbeat successfully sent
+2026-06-19 10:08:39.084 +03:30 [DBG] Server desktop-vjsq4i2:14904:4e457b5a heartbeat successfully sent
+2026-06-19 10:09:09.100 +03:30 [DBG] Server desktop-vjsq4i2:14904:4e457b5a heartbeat successfully sent
+2026-06-19 10:09:39.110 +03:30 [DBG] Server desktop-vjsq4i2:14904:4e457b5a heartbeat successfully sent
+2026-06-19 10:10:09.120 +03:30 [DBG] Server desktop-vjsq4i2:14904:4e457b5a heartbeat successfully sent
+2026-06-19 10:10:39.140 +03:30 [DBG] Server desktop-vjsq4i2:14904:4e457b5a heartbeat successfully sent
+2026-06-19 10:11:09.147 +03:30 [DBG] Server desktop-vjsq4i2:14904:4e457b5a heartbeat successfully sent
