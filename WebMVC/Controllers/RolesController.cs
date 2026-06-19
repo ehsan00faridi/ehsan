@@ -6,24 +6,9 @@ using Microsoft.EntityFrameworkCore;
 using System.Threading.Tasks;
 
 namespace WebMVC.Controllers
-//{
-//    public class RolesController : Controller
-//    {
-//        private readonly RoleManager<Role> _roleManager;
 
-//        public RolesController(RoleManager<Role> roleManager)
-//        {
-//            _roleManager = roleManager;
-//        }
-//        public async Task<IActionResult> Index()
-//        {
-//            var role = _roleManager.Roles;
-//            return View(await role.ToListAsync());
-//        }
-//    }
-//}
 {
-   // [Authorize(Roles = "admin")]
+    [Authorize(Roles = "Admin")]
     public class RolesController : Controller
     {
 
@@ -47,7 +32,7 @@ namespace WebMVC.Controllers
             return View();
         }
 
-        // ایجاد نقش جدید
+       
         [HttpPost]
         public async Task<IActionResult> Create(string roleName)
         {
@@ -67,7 +52,7 @@ namespace WebMVC.Controllers
             return View();
         }
 
-        // حذف نقش
+     
         [HttpPost]
         public async Task<IActionResult> Delete(string roleId)
         {
