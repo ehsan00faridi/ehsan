@@ -3,8 +3,10 @@ using Application.Features.Products.Orders.Event;
 using Domain.Event;
 using Domain.Models.Customers;
 using Domain.Models.Ordera;
+using Domain.Models.User;
 using MediatR;
-
+using System.Security.Claims;
+using Microsoft.AspNetCore.Mvc;
 namespace Application.Features.Products.Orders
 {
     internal class AddOrderCommandHandler : IRequestHandler<AddOrderCommand,bool >
@@ -26,7 +28,7 @@ namespace Application.Features.Products.Orders
             var customer = new Customer(request.Email,request.Name);
             var address = new Address(request.Street,request.City,request.ZipCode);
             customer.setaddress( address);
-
+            //var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             await _customerRepository.AddAsync(customer);
             await _customerRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);

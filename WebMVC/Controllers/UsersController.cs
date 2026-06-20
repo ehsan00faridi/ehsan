@@ -25,6 +25,7 @@ namespace WebMVC.Controllers
 
         public async Task<IActionResult> Index()
         {
+ 
             var users = _userManager.Users;
             return View(await users.ToListAsync());
         }
