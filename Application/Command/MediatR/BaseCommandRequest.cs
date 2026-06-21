@@ -12,7 +12,7 @@ namespace Application.Command.MediatR
     public class BaseCommandRequest : IPresetModei
     {
         [BindNever]
-        public int? UserId { get ; set; } /*= User.FindFirstValue(ClaimTypes.NameIdentifier);*/
+        public int? UserId { get ; set; } 
         [BindNever]
         public bool IsAdmin {  get; set; }
     }
