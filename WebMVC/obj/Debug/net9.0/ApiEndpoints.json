@@ -1,1 +1,18 @@
-[]
+[
+  {
+    "ContainingType": "WebMVC.Controllers.FilerootController",
+    "Method": "DownloadFile",
+    "RelativePath": "api/Fileroot/GetFile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filename",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  }
+]

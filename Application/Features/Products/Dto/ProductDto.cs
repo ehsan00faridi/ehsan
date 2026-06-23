@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Microsoft.AspNetCore.Http;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -16,6 +17,9 @@ namespace Application.Features.Products.Dto
         public int Qty { get; set; }
         public string Weight { get; set; }
         public string material { get; set; }
+        public string? imgname { get; set; }
+
+        public IFormFile? Img { get; set; }
 
     }
 }

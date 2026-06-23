@@ -4,6 +4,28 @@
     "title": "WebMVC",
     "version": "1.0"
   },
-  "paths": { },
+  "paths": {
+    "/api/Fileroot/GetFile": {
+      "get": {
+        "tags": [
+          "Fileroot"
+        ],
+        "parameters": [
+          {
+            "name": "filename",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    }
+  },
   "components": { }
 }

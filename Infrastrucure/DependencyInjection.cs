@@ -4,6 +4,7 @@ using Application.Services.Sms;
 using Domain.Models.Customers;
 using Domain.Models.Ordera;
 using Domain.Models.Products;
+using Infrastructure.FileUploadservice;
 using Infrastructure.Queries;
 using Infrastructure.Redis;
 using Infrastrucure.Email;
@@ -54,7 +55,7 @@ namespace Infrastrucure
                 return ConnectionMultiplexer.Connect(configuration);
             });
 
-
+            services.AddScoped<IFileUploadservice,FileUploadservice>();
 
             return services;
 

@@ -3,10 +3,10 @@ using Domain.Models.Products;
 
 namespace Application.Features.Products.Command
 {
-    internal sealed class ProductCommandHandler : IRequestHandler<AddProductCommand, bool>
+    internal sealed class AddProductCommandHandler : IRequestHandler<AddProductCommand, bool>
     {
         private readonly IProductRepository _ProductRepository;
-        public ProductCommandHandler(IProductRepository productRepository)
+        public AddProductCommandHandler(IProductRepository productRepository)
         {
             _ProductRepository = productRepository;
         }
