@@ -272,3 +272,103 @@
 2026-06-23 10:50:10.156 +03:30 [DBG] Removing outdated records from the 'Hash' table...
 2026-06-23 10:50:10.181 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
 2026-06-23 10:50:10.382 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-23 10:58:38.250 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-06-23 10:58:38.697 +03:30 [INF] Hangfire SQL objects installed.
+2026-06-23 10:58:39.161 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-06-23 10:58:39.163 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-06-23 10:58:39.167 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-06-23 10:58:39.213 +03:30 [DBG] Execution loop BackgroundServerProcess:92d1009d has started in 4.5929 ms
+2026-06-23 10:58:39.547 +03:30 [INF] Server desktop-vjsq4i2:16240:ae647531 successfully announced in 327.4349 ms
+2026-06-23 10:58:39.552 +03:30 [DBG] Execution loop ServerHeartbeatProcess:2dc6ee24 has started in 2.0082 ms
+2026-06-23 10:58:39.553 +03:30 [INF] Server desktop-vjsq4i2:16240:ae647531 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-06-23 10:58:39.555 +03:30 [DBG] Execution loop ServerWatchdog:16154080 has started in 0.5217 ms
+2026-06-23 10:58:39.556 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:83498a2d has started in 0.3193 ms
+2026-06-23 10:58:39.556 +03:30 [DBG] Execution loop ExpirationManager:9b33386f has started in 0.5142 ms
+2026-06-23 10:58:39.557 +03:30 [DBG] Execution loop CountersAggregator:c98c438e has started in 0.3416 ms
+2026-06-23 10:58:39.562 +03:30 [DBG] Execution loop Worker:b4befb24 has started in 4.4279 ms
+2026-06-23 10:58:39.557 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:03eebd74 has started in 0.3692 ms
+2026-06-23 10:58:39.558 +03:30 [DBG] Execution loop Worker:6145658d has started in 0.752 ms
+2026-06-23 10:58:39.558 +03:30 [DBG] Execution loop Worker:23ebabe3 has started in 1.0178 ms
+2026-06-23 10:58:39.559 +03:30 [DBG] Execution loop Worker:a376b966 has started in 1.3173 ms
+2026-06-23 10:58:39.559 +03:30 [DBG] Execution loop Worker:8ecf783f has started in 1.5589 ms
+2026-06-23 10:58:39.559 +03:30 [DBG] Execution loop Worker:2978f7a4 has started in 1.8189 ms
+2026-06-23 10:58:39.559 +03:30 [DBG] Execution loop Worker:db455a50 has started in 2.0885 ms
+2026-06-23 10:58:39.560 +03:30 [DBG] Execution loop Worker:f046e2b5 has started in 2.5081 ms
+2026-06-23 10:58:39.560 +03:30 [DBG] Execution loop Worker:fbf4db22 has started in 2.9374 ms
+2026-06-23 10:58:39.560 +03:30 [DBG] Execution loop Worker:824ca759 has started in 3.1616 ms
+2026-06-23 10:58:39.561 +03:30 [DBG] Execution loop Worker:8b3bcd74 has started in 3.6417 ms
+2026-06-23 10:58:39.561 +03:30 [DBG] Execution loop Worker:8f3c5381 has started in 4.0665 ms
+2026-06-23 10:58:39.562 +03:30 [DBG] Execution loop Worker:91ddadd2 has started in 4.9363 ms
+2026-06-23 10:58:39.563 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-23 10:58:39.563 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-06-23 10:58:39.563 +03:30 [DBG] Execution loop Worker:6e7c2331 has started in 5.4039 ms
+2026-06-23 10:58:39.564 +03:30 [DBG] Execution loop Worker:367b8be4 has started in 6.8836 ms
+2026-06-23 10:58:39.564 +03:30 [INF] 2 servers were removed due to timeout
+2026-06-23 10:58:39.565 +03:30 [DBG] Execution loop Worker:f8aa7d8d has started in 7.5098 ms
+2026-06-23 10:58:39.565 +03:30 [DBG] Execution loop Worker:a0f2873d has started in 7.9504 ms
+2026-06-23 10:58:39.566 +03:30 [DBG] Execution loop Worker:91cded5e has started in 8.2568 ms
+2026-06-23 10:58:39.566 +03:30 [DBG] Execution loop Worker:af147f5e has started in 8.5455 ms
+2026-06-23 10:58:39.566 +03:30 [DBG] Execution loop Worker:b92ea55b has started in 8.8505 ms
+2026-06-23 10:58:39.567 +03:30 [DBG] Execution loop DelayedJobScheduler:a3ac2554 has started in 0.3566 ms
+2026-06-23 10:58:39.567 +03:30 [DBG] Execution loop RecurringJobScheduler:df80b8ca has started in 0.3111 ms
+2026-06-23 10:58:39.567 +03:30 [INF] Server desktop-vjsq4i2:16240:ae647531 all the dispatchers started
+2026-06-23 10:58:39.619 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-06-23 10:58:39.648 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-06-23 10:58:39.651 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-06-23 10:58:39.654 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-06-23 10:58:39.658 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-06-23 10:58:39.864 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-06-23 10:59:09.564 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 10:59:39.572 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:00:09.590 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:00:39.604 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:01:09.613 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:01:39.624 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:02:09.633 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:02:39.644 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:03:09.653 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:03:39.652 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-23 11:03:39.668 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:04:09.673 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:04:39.683 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:05:09.696 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:05:39.711 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:06:09.722 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:06:39.736 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:07:09.748 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:07:39.752 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:08:09.768 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:08:39.656 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-23 11:08:39.781 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:09:09.791 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:09:39.803 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:10:09.819 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:10:39.829 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:11:09.839 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:11:39.849 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:12:09.866 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:12:39.878 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:13:09.887 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:13:39.663 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-23 11:13:39.897 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:14:09.904 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:14:39.917 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:15:09.927 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:15:39.940 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:16:09.947 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:16:39.961 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:17:09.970 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:17:39.986 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:18:09.994 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:18:39.673 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-06-23 11:18:39.998 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:19:10.006 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:19:40.014 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:20:10.029 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:20:40.039 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:21:10.056 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
+2026-06-23 11:21:40.071 +03:30 [DBG] Server desktop-vjsq4i2:16240:ae647531 heartbeat successfully sent
