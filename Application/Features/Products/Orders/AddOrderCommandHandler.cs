@@ -27,7 +27,7 @@ namespace Application.Features.Products.Orders
         {
             var customer = new Customer(request.Email,request.Name);
             var address = new Address(request.Street,request.City,request.ZipCode);
-            customer.setaddress( address);
+            customer.SetAddress( address);
             //var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
 
             await _customerRepository.AddAsync(customer);

@@ -15,13 +15,37 @@ namespace Infrastrucure.Configuration
         {
             builder.HasKey(x => x.Id);
 
+            builder.Property(x => x.UserId)
+                .HasMaxLength(450)
+                .IsRequired(false);
+
+            builder.HasIndex(x => x.UserId)
+                .IsUnique()
+                .HasFilter("[UserId] IS NOT NULL");
+
+            builder.Property(x => x.Name)
+                .HasMaxLength(150)
+                .IsRequired();
+
+            builder.Property(x => x.Email)
+                .HasMaxLength(256)
+                .IsRequired();
+
             builder.OwnsOne(s => s.Address, addressBuilder =>
             {
- 
-                addressBuilder.Property(x => x.City).HasMaxLength(100).HasColumnName("City");
-                addressBuilder.Property(x => x.Street).HasMaxLength(100).HasColumnName("Street");
-                addressBuilder.Property(x => x.Zipcode).HasMaxLength(100).HasColumnName("Zipcode");
+                addressBuilder.Property(x => x.City)
+                    .HasMaxLength(100)
+                    .HasColumnName("City");
+
+                addressBuilder.Property(x => x.Street)
+                    .HasMaxLength(100)
+                    .HasColumnName("Street");
+
+                addressBuilder.Property(x => x.Zipcode)
+                    .HasMaxLength(100)
+                    .HasColumnName("Zipcode");
             });
         }
     }
+
 }
