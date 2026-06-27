@@ -6,6 +6,7 @@ using Domain.Models.Ordera;
 using Domain.Models.Products;
 using Infrastructure.FileUploadservice;
 using Infrastructure.Queries;
+using Infrastructure.Queries.Products;
 using Infrastructure.Redis;
 using Infrastrucure.Email;
 using Infrastrucure.Repository;
@@ -38,7 +39,7 @@ namespace Infrastrucure
 
             services.AddScoped<IProductQueries, ProductQueries>();
 
-
+            services.AddScoped<IProductById,ProductById>();
 
             services.Configure<EmailSettings>(configuration.GetSection("Email"));
             services.AddScoped<IEmailService, SmtpEmailService>();

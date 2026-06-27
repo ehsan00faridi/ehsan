@@ -6,7 +6,7 @@ using System.Data;
 
 namespace Infrastructure.Queries
 {
-  
+    // PaginatedList
 
     public class ProductQueries : IProductQueries
     {
@@ -38,7 +38,7 @@ namespace Infrastructure.Queries
 
             var totalCount = await _connection.ExecuteScalarAsync<int>(
                 countSql,
-                new { Search = $"%{search}%" }
+                new { Search= $"%{search}%" }
             );
 
             var sql = $@"

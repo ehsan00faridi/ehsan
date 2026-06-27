@@ -1,16 +1,15 @@
 ﻿using Application.Features.Products.Dto;
 using Domain.Models.Products;
-using MediatR;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Products.Query
+namespace Application.Interfaces
 {
-    public  class GetProductByIdQuery:IRequest<ProductDto>
+    public interface IProductById
     {
-        public int Id { get; set; }
+        Task<ProductDto> FindAsync(int id);
     }
 }

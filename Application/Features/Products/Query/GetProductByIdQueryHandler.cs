@@ -1,20 +1,22 @@
-﻿using Domain.Models.Products;
+﻿using Application.Features.Products.Dto;
+using Application.Interfaces;
+using Domain.Models.Products;
 using MediatR;
 
 namespace Application.Features.Products.Query
 {
-    public  class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, Product>
+    public  class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, ProductDto>
     {
-        private readonly IProductRepository _productRpository;
+        private readonly IProductById _GetproductById;
 
-        public GetProductByIdQueryHandler(IProductRepository productRpository)
+        public GetProductByIdQueryHandler(IProductById productById)
         {
-            _productRpository = productRpository;
+            _GetproductById = productById;
         }
 
-        public async Task<Product> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
+        public async Task<ProductDto> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
         {
-            var product = await _productRpository.FindAsync(request.Id);
+            var product = await _GetproductById.FindAsync(request.Id);
             return product;
         }
     }

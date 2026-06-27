@@ -5,6 +5,27 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Fileroot/GetFile": {
+      "get": {
+        "tags": [
+          "Fileroot"
+        ],
+        "parameters": [
+          {
+            "name": "filename",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
     "/api/Order/AddOrder": {
       "post": {
         "tags": [
@@ -308,6 +329,15 @@
           "qty": {
             "type": "integer",
             "format": "int32"
+          },
+          "imgname": {
+            "type": "string",
+            "nullable": true
+          },
+          "img": {
+            "type": "string",
+            "format": "binary",
+            "nullable": true
           },
           "weight": {
             "type": "string",
