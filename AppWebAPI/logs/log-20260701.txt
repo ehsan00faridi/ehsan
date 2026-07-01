@@ -1,0 +1,296 @@
+2026-07-01 11:52:55.172 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-01 11:52:56.074 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-01 11:52:57.113 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-01 11:52:57.129 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-01 11:52:57.130 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-01 11:52:57.203 +03:30 [DBG] Execution loop BackgroundServerProcess:a136d7df has started in 8.4813 ms
+2026-07-01 11:52:57.455 +03:30 [INF] Server desktop-vjsq4i2:12496:ad77acfa successfully announced in 243.0722 ms
+2026-07-01 11:52:57.460 +03:30 [DBG] Execution loop ServerHeartbeatProcess:66f3d5ba has started in 2.0819 ms
+2026-07-01 11:52:57.462 +03:30 [INF] Server desktop-vjsq4i2:12496:ad77acfa is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-01 11:52:57.465 +03:30 [DBG] Execution loop ServerWatchdog:7d9b9140 has started in 0.6294 ms
+2026-07-01 11:52:57.465 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:161f099e has started in 0.4184 ms
+2026-07-01 11:52:57.469 +03:30 [DBG] Execution loop Worker:6bd9f01b has started in 1.5185 ms
+2026-07-01 11:52:57.466 +03:30 [DBG] Execution loop ExpirationManager:eb324a92 has started in 0.5091 ms
+2026-07-01 11:52:57.467 +03:30 [DBG] Execution loop CountersAggregator:560a0104 has started in 0.3732 ms
+2026-07-01 11:52:57.467 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:3cb40491 has started in 0.3804 ms
+2026-07-01 11:52:57.468 +03:30 [DBG] Execution loop Worker:22ead7e1 has started in 0.8527 ms
+2026-07-01 11:52:57.468 +03:30 [DBG] Execution loop Worker:d0ea9c0a has started in 1.1931 ms
+2026-07-01 11:52:57.469 +03:30 [DBG] Execution loop Worker:b55386e5 has started in 1.885 ms
+2026-07-01 11:52:57.469 +03:30 [DBG] Execution loop Worker:9187f76f has started in 2.2005 ms
+2026-07-01 11:52:57.470 +03:30 [DBG] Execution loop Worker:c0ad7f72 has started in 2.5795 ms
+2026-07-01 11:52:57.470 +03:30 [DBG] Execution loop Worker:a9e8d5e4 has started in 2.8716 ms
+2026-07-01 11:52:57.470 +03:30 [DBG] Execution loop Worker:6346acff has started in 3.1716 ms
+2026-07-01 11:52:57.471 +03:30 [DBG] Execution loop Worker:d0e8b4c7 has started in 3.7298 ms
+2026-07-01 11:52:57.471 +03:30 [DBG] Execution loop Worker:67fcdf44 has started in 4.1115 ms
+2026-07-01 11:52:57.471 +03:30 [DBG] Execution loop Worker:9bf6bd26 has started in 4.4271 ms
+2026-07-01 11:52:57.472 +03:30 [DBG] Execution loop Worker:9263b19f has started in 4.758 ms
+2026-07-01 11:52:57.473 +03:30 [DBG] Execution loop Worker:0faa8ac4 has started in 5.4285 ms
+2026-07-01 11:52:57.473 +03:30 [DBG] Execution loop Worker:dfe69ef0 has started in 5.8207 ms
+2026-07-01 11:52:57.473 +03:30 [DBG] Execution loop Worker:9453ebf9 has started in 6.1955 ms
+2026-07-01 11:52:57.474 +03:30 [DBG] Execution loop Worker:a872ae9b has started in 7.3747 ms
+2026-07-01 11:52:57.474 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-01 11:52:57.475 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-01 11:52:57.476 +03:30 [DBG] Execution loop Worker:4cededc7 has started in 8.5259 ms
+2026-07-01 11:52:57.476 +03:30 [DBG] Execution loop Worker:0349878d has started in 8.9092 ms
+2026-07-01 11:52:57.476 +03:30 [DBG] Execution loop Worker:8e8ff9e7 has started in 9.3384 ms
+2026-07-01 11:52:57.477 +03:30 [DBG] Execution loop Worker:b99df158 has started in 9.7669 ms
+2026-07-01 11:52:57.477 +03:30 [INF] 1 servers were removed due to timeout
+2026-07-01 11:52:57.477 +03:30 [DBG] Execution loop DelayedJobScheduler:fd6c991c has started in 0.4484 ms
+2026-07-01 11:52:57.478 +03:30 [INF] Server desktop-vjsq4i2:12496:ad77acfa all the dispatchers started
+2026-07-01 11:52:57.478 +03:30 [DBG] Execution loop RecurringJobScheduler:673c6333 has started in 0.3701 ms
+2026-07-01 11:52:57.590 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-01 11:52:57.615 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-01 11:52:57.625 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-01 11:52:57.631 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-01 11:53:20.664 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-01 11:53:22.412 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-01 11:53:22.416 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-01 11:53:27.472 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:53:57.476 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:54:27.489 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:54:57.503 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:55:27.508 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:55:57.523 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:56:27.537 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:56:57.551 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:57:27.561 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:57:57.577 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:57:57.607 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-01 11:58:27.588 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:58:57.603 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:59:27.615 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 11:59:57.631 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:00:27.635 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:00:57.650 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:01:27.659 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:01:57.674 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:02:27.685 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:02:57.617 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-01 12:02:57.696 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:03:27.705 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:03:57.711 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:04:27.728 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:04:57.744 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:05:27.755 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:05:57.770 +03:30 [DBG] Server desktop-vjsq4i2:12496:ad77acfa heartbeat successfully sent
+2026-07-01 12:06:19.855 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-01 12:06:20.298 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-01 12:06:21.000 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-01 12:06:21.002 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-01 12:06:21.004 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-01 12:06:21.042 +03:30 [DBG] Execution loop BackgroundServerProcess:35e99c19 has started in 4.5262 ms
+2026-07-01 12:06:21.213 +03:30 [INF] Server desktop-vjsq4i2:4152:edb37b95 successfully announced in 159.3994 ms
+2026-07-01 12:06:21.219 +03:30 [DBG] Execution loop ServerHeartbeatProcess:6446d821 has started in 2.0148 ms
+2026-07-01 12:06:21.220 +03:30 [INF] Server desktop-vjsq4i2:4152:edb37b95 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-01 12:06:21.223 +03:30 [DBG] Execution loop ServerWatchdog:762dc577 has started in 0.469 ms
+2026-07-01 12:06:21.224 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:ff030bd4 has started in 0.2616 ms
+2026-07-01 12:06:21.225 +03:30 [DBG] Execution loop ExpirationManager:a7218251 has started in 0.557 ms
+2026-07-01 12:06:21.226 +03:30 [DBG] Execution loop CountersAggregator:fc495932 has started in 0.7868 ms
+2026-07-01 12:06:21.233 +03:30 [DBG] Execution loop Worker:60c8a8f8 has started in 6.8918 ms
+2026-07-01 12:06:21.226 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:fc3e2a8c has started in 0.4438 ms
+2026-07-01 12:06:21.227 +03:30 [DBG] Execution loop Worker:81783ea8 has started in 0.9681 ms
+2026-07-01 12:06:21.229 +03:30 [DBG] Execution loop Worker:bbf1be48 has started in 2.7428 ms
+2026-07-01 12:06:21.230 +03:30 [DBG] Execution loop Worker:8e5db12d has started in 3.5979 ms
+2026-07-01 12:06:21.230 +03:30 [DBG] Execution loop Worker:15159c2c has started in 4.0879 ms
+2026-07-01 12:06:21.231 +03:30 [DBG] Execution loop Worker:2e6bf1d1 has started in 4.462 ms
+2026-07-01 12:06:21.231 +03:30 [DBG] Execution loop Worker:6d90aed1 has started in 4.7619 ms
+2026-07-01 12:06:21.231 +03:30 [DBG] Execution loop Worker:9e705809 has started in 5.0124 ms
+2026-07-01 12:06:21.232 +03:30 [DBG] Execution loop Worker:400ccf76 has started in 5.3117 ms
+2026-07-01 12:06:21.232 +03:30 [DBG] Execution loop Worker:929a860a has started in 5.6286 ms
+2026-07-01 12:06:21.232 +03:30 [DBG] Execution loop Worker:5ed1d14a has started in 5.9545 ms
+2026-07-01 12:06:21.233 +03:30 [DBG] Execution loop Worker:8c6e0e8d has started in 6.2714 ms
+2026-07-01 12:06:21.233 +03:30 [DBG] Execution loop Worker:ab9359b0 has started in 6.521 ms
+2026-07-01 12:06:21.234 +03:30 [DBG] Execution loop Worker:fcc07b56 has started in 7.2537 ms
+2026-07-01 12:06:21.234 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-01 12:06:21.234 +03:30 [DBG] Execution loop Worker:55ab01cf has started in 7.5122 ms
+2026-07-01 12:06:21.234 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-01 12:06:21.234 +03:30 [DBG] Execution loop Worker:d6d69222 has started in 7.7541 ms
+2026-07-01 12:06:21.234 +03:30 [DBG] Execution loop Worker:12bd132c has started in 8.043 ms
+2026-07-01 12:06:21.235 +03:30 [DBG] Execution loop Worker:874f4781 has started in 8.3078 ms
+2026-07-01 12:06:21.235 +03:30 [DBG] Execution loop Worker:594a2f73 has started in 8.5953 ms
+2026-07-01 12:06:21.235 +03:30 [DBG] Execution loop Worker:cdb9b208 has started in 8.8761 ms
+2026-07-01 12:06:21.236 +03:30 [DBG] Execution loop DelayedJobScheduler:7e177a8e has started in 0.3871 ms
+2026-07-01 12:06:21.236 +03:30 [INF] Server desktop-vjsq4i2:4152:edb37b95 all the dispatchers started
+2026-07-01 12:06:21.236 +03:30 [DBG] Execution loop RecurringJobScheduler:c7d587ec has started in 0.3427 ms
+2026-07-01 12:06:21.321 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-01 12:06:21.324 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-01 12:06:21.327 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-01 12:06:21.330 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-01 12:06:36.392 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-01 12:06:37.856 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-01 12:06:37.860 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-01 12:06:51.242 +03:30 [DBG] Server desktop-vjsq4i2:4152:edb37b95 heartbeat successfully sent
+2026-07-01 12:07:21.248 +03:30 [DBG] Server desktop-vjsq4i2:4152:edb37b95 heartbeat successfully sent
+2026-07-01 12:07:51.251 +03:30 [DBG] Server desktop-vjsq4i2:4152:edb37b95 heartbeat successfully sent
+2026-07-01 12:08:21.261 +03:30 [DBG] Server desktop-vjsq4i2:4152:edb37b95 heartbeat successfully sent
+2026-07-01 12:08:51.276 +03:30 [DBG] Server desktop-vjsq4i2:4152:edb37b95 heartbeat successfully sent
+2026-07-01 12:09:21.289 +03:30 [DBG] Server desktop-vjsq4i2:4152:edb37b95 heartbeat successfully sent
+2026-07-01 12:09:51.302 +03:30 [DBG] Server desktop-vjsq4i2:4152:edb37b95 heartbeat successfully sent
+2026-07-01 13:01:16.017 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-01 13:01:19.034 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-01 13:01:19.535 +03:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://localhost:7264.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-07-01 13:01:56.444 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-01 13:01:56.876 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-01 13:01:57.285 +03:30 [ERR] Hosting failed to start
+System.IO.IOException: Failed to bind to address https://localhost:7264.
+ ---> System.AggregateException: One or more errors occurred. (An attempt was made to access a socket in a way forbidden by its access permissions.) (An attempt was made to access a socket in a way forbidden by its access permissions.)
+ ---> System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   --- End of inner exception stack trace ---
+ ---> (Inner Exception #1) System.Net.Sockets.SocketException (10013): An attempt was made to access a socket in a way forbidden by its access permissions.
+   at System.Net.Sockets.Socket.UpdateStatusAfterSocketErrorAndThrowException(SocketError error, Boolean disconnectOnFailure, String callerName)
+   at System.Net.Sockets.Socket.DoBind(EndPoint endPointSnapshot, SocketAddress socketAddress)
+   at System.Net.Sockets.Socket.Bind(EndPoint localEP)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportOptions.CreateDefaultBoundListenSocket(EndPoint endpoint)
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketConnectionListener.Bind()
+   at Microsoft.AspNetCore.Server.Kestrel.Transport.Sockets.SocketTransportFactory.BindAsync(EndPoint endpoint, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.Infrastructure.TransportManager.BindAsync(EndPoint endPoint, ConnectionDelegate connectionDelegate, EndpointConfig endpointConfig, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.<>c__DisplayClass28_0`1.<<StartAsync>g__OnBind|0>d.MoveNext()
+--- End of stack trace from previous location ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.BindEndpointAsync(ListenOptions endpoint, AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)<---
+
+   --- End of inner exception stack trace ---
+   at Microsoft.AspNetCore.Server.Kestrel.Core.LocalhostListenOptions.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.Internal.AddressBinder.AddressesStrategy.BindAsync(AddressBindContext context, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.BindAsync(CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Server.Kestrel.Core.KestrelServerImpl.StartAsync[TContext](IHttpApplication`1 application, CancellationToken cancellationToken)
+   at Microsoft.AspNetCore.Hosting.GenericWebHostService.StartAsync(CancellationToken cancellationToken)
+   at Microsoft.Extensions.Hosting.Internal.Host.<StartAsync>b__14_1(IHostedService service, CancellationToken token)
+   at Microsoft.Extensions.Hosting.Internal.Host.ForeachService[T](IEnumerable`1 services, CancellationToken token, Boolean concurrent, Boolean abortOnFirstException, List`1 exceptions, Func`3 operation)
+2026-07-01 13:02:35.309 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-01 13:02:35.741 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-01 13:02:36.312 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-01 13:02:36.312 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-01 13:02:36.312 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-01 13:02:36.352 +03:30 [DBG] Execution loop BackgroundServerProcess:07911f67 has started in 4.9492 ms
+2026-07-01 13:02:36.555 +03:30 [INF] Server desktop-vjsq4i2:8616:1dfa1fbd successfully announced in 198.574 ms
+2026-07-01 13:02:36.559 +03:30 [DBG] Execution loop ServerHeartbeatProcess:a8ada43b has started in 2.2764 ms
+2026-07-01 13:02:36.560 +03:30 [INF] Server desktop-vjsq4i2:8616:1dfa1fbd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-01 13:02:36.561 +03:30 [DBG] Execution loop ServerWatchdog:0d5fa6e7 has started in 0.6535 ms
+2026-07-01 13:02:36.562 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:5a0abfd9 has started in 0.4011 ms
+2026-07-01 13:02:36.563 +03:30 [DBG] Execution loop ExpirationManager:654df78d has started in 0.5429 ms
+2026-07-01 13:02:36.564 +03:30 [DBG] Execution loop CountersAggregator:47d293aa has started in 0.5591 ms
+2026-07-01 13:02:36.564 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:02f4a103 has started in 0.4067 ms
+2026-07-01 13:02:36.565 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-01 13:02:36.565 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-01 13:02:36.567 +03:30 [DBG] Execution loop Worker:2d58d1ed has started in 2.6292 ms
+2026-07-01 13:02:36.567 +03:30 [DBG] Execution loop Worker:24e77f5c has started in 3.2142 ms
+2026-07-01 13:02:36.568 +03:30 [DBG] Execution loop Worker:6e315bf4 has started in 3.8221 ms
+2026-07-01 13:02:36.568 +03:30 [DBG] Execution loop Worker:2eb48001 has started in 4.1298 ms
+2026-07-01 13:02:36.569 +03:30 [DBG] Execution loop Worker:4d6a7716 has started in 4.7059 ms
+2026-07-01 13:02:36.569 +03:30 [DBG] Execution loop Worker:f6610423 has started in 5.3598 ms
+2026-07-01 13:02:36.570 +03:30 [DBG] Execution loop Worker:f901d6c2 has started in 5.7804 ms
+2026-07-01 13:02:36.570 +03:30 [DBG] Execution loop Worker:16acff93 has started in 6.3551 ms
+2026-07-01 13:02:36.571 +03:30 [DBG] Execution loop Worker:accc705d has started in 6.9797 ms
+2026-07-01 13:02:36.572 +03:30 [DBG] Execution loop Worker:495533af has started in 7.5014 ms
+2026-07-01 13:02:36.572 +03:30 [DBG] Execution loop Worker:bb5da6b0 has started in 8.1152 ms
+2026-07-01 13:02:36.573 +03:30 [DBG] Execution loop Worker:c35d7d64 has started in 9.2789 ms
+2026-07-01 13:02:36.574 +03:30 [DBG] Execution loop Worker:2454ca80 has started in 9.9907 ms
+2026-07-01 13:02:36.575 +03:30 [DBG] Execution loop Worker:922527c7 has started in 11.2846 ms
+2026-07-01 13:02:36.576 +03:30 [DBG] Execution loop Worker:39d0cf57 has started in 11.6534 ms
+2026-07-01 13:02:36.577 +03:30 [DBG] Execution loop Worker:8efbb7c5 has started in 12.4046 ms
+2026-07-01 13:02:36.577 +03:30 [DBG] Execution loop Worker:c6a4b8ae has started in 12.9103 ms
+2026-07-01 13:02:36.578 +03:30 [DBG] Execution loop Worker:e290bb12 has started in 14.0808 ms
+2026-07-01 13:02:36.579 +03:30 [DBG] Execution loop Worker:af300c6a has started in 15.1099 ms
+2026-07-01 13:02:36.580 +03:30 [DBG] Execution loop Worker:cb9c865e has started in 15.6408 ms
+2026-07-01 13:02:36.580 +03:30 [DBG] Execution loop DelayedJobScheduler:9c738c54 has started in 0.4309 ms
+2026-07-01 13:02:36.581 +03:30 [DBG] Execution loop RecurringJobScheduler:5df6a938 has started in 0.4173 ms
+2026-07-01 13:02:36.581 +03:30 [INF] Server desktop-vjsq4i2:8616:1dfa1fbd all the dispatchers started
+2026-07-01 13:02:36.582 +03:30 [INF] 2 servers were removed due to timeout
+2026-07-01 13:02:36.618 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-01 13:02:36.660 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-01 13:02:36.666 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-01 13:02:36.669 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-01 13:02:47.055 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-01 13:02:48.517 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-01 13:02:48.517 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-01 13:03:06.572 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:03:36.586 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:04:06.595 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:04:36.603 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:05:06.609 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:05:36.611 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:06:06.621 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:06:36.628 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:07:06.633 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:07:36.615 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-01 13:07:36.647 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:08:06.663 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:08:36.667 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:09:06.678 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:09:36.693 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:10:06.707 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:10:36.713 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:11:06.719 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:11:36.723 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:12:06.729 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:12:36.629 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-01 13:12:36.739 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:13:06.749 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:13:36.760 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:14:06.772 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:14:36.775 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:15:06.789 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:15:36.802 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:16:06.818 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:16:36.828 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 13:17:06.831 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent

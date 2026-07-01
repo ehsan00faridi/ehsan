@@ -10,6 +10,6 @@ namespace Application.Interfaces
 {
     public interface IProductById
     {
-        Task<ProductDto> FindAsync(int id);
+        Task<Domain.Models.Products.ProductDto> FindAsync(int id);
     }
 }

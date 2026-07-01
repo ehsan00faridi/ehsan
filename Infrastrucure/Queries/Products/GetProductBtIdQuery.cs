@@ -15,12 +15,12 @@ namespace Infrastructure.Queries.Products
             _connection = connection;
         }
 
-        public async Task<ProductDto> FindAsync(int id)
+        public async Task<Domain.Models.Products.ProductDto> FindAsync(int id)
         {
             string sql = @"SELECT *
                    FROM Products WHERE Id = @Id";
             return
-            await _connection.QueryFirstOrDefaultAsync<ProductDto>(sql, new { Id = id });
+            await _connection.QueryFirstOrDefaultAsync<Domain.Models.Products.ProductDto>(sql, new { Id = id });
         }
     }
 

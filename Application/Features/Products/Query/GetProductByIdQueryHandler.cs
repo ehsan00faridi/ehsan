@@ -5,18 +5,18 @@ using MediatR;
 
 namespace Application.Features.Products.Query
 {
-    public  class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, ProductDto>
+    public  class GetProductByIdQueryHandler : IRequestHandler<GetProductByIdQuery, Domain.Models.Products.ProductDto>
     {
-        private readonly IProductById _GetproductById;
+        private readonly IProductRepository _GetproductById;
 
-        public GetProductByIdQueryHandler(IProductById productById)
+        public GetProductByIdQueryHandler(IProductRepository productById)
         {
             _GetproductById = productById;
         }
 
-        public async Task<ProductDto> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
+        public async Task<Domain.Models.Products.ProductDto> Handle(GetProductByIdQuery request, CancellationToken cancellationToken)
         {
-            var product = await _GetproductById.FindAsync(request.Id);
+            var product = await _GetproductById.GetProductById(request.Id);
             return product;
         }
     }

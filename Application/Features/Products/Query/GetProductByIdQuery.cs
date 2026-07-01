@@ -9,7 +9,7 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Products.Query
 {
-    public  class GetProductByIdQuery:IRequest<ProductDto>
+    public  class GetProductByIdQuery:IRequest<Domain.Models.Products.ProductDto>
     {
         public int Id { get; set; }
     }

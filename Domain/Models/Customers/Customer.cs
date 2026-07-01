@@ -6,7 +6,7 @@ namespace Domain.Models.Customers
 {
     public class Customer : BaseEntity<int>
     {
-        public string? UserId { get; private set; }
+        public int? UserId { get; private set; }
 
         public string Name { get; set; }
         public string Email { get; set; }
@@ -20,7 +20,7 @@ namespace Domain.Models.Customers
             
         //}
 
-        public Customer(string name, string email, string? userId = null)
+        public Customer(string name, string email, int? userId = null)
         {
             Name = name;
             Email = email;
@@ -32,9 +32,9 @@ namespace Domain.Models.Customers
             Address = address;
         }
 
-        public void LinkToUser(string userId)
+        public void LinkToUser(int userId)
         {
-            if (string.IsNullOrWhiteSpace(userId))
+            if (string.IsNullOrWhiteSpace(userId.ToString()))
                 throw new ArgumentException("UserId cannot be empty.", nameof(userId));
 
             if (UserId is not null)

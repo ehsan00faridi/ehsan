@@ -25,7 +25,7 @@ namespace Application.Features.Products.Orders
 
         public async Task<bool> Handle(AddOrderCommand request, CancellationToken cancellationToken)
         {
-            var customer = new Customer(request.Email,request.Name);
+            var customer = new Customer(request.Email,request.Name,request.UserId);
             var address = new Address(request.Street,request.City,request.ZipCode);
             customer.SetAddress( address);
             //var userid = User.FindFirstValue(ClaimTypes.NameIdentifier);
@@ -56,11 +56,11 @@ namespace Application.Features.Products.Orders
 
 
 
-            order.AddDomainEvent(new UserRegisteredEvent
-            {
-                PhoneNumber = "989022797372",
-                UserName = "Ehsan"
-            });
+            //order.AddDomainEvent(new UserRegisteredEvent
+            //{
+            //    PhoneNumber = "989022797372",
+            //    UserName = "Ehsan"
+            //});
             //await _mediator.Publish(new UserRegisteredEvent
             //{
             //    PhoneNumber = "989022797372",

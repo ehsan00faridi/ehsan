@@ -10,7 +10,7 @@ namespace Application.Mapper
         public MapperProfile() {
 
 
-            CreateMap<Product, ProductDto>()
+            CreateMap<Product, Domain.Models.Products.ProductDto>()
                 .ForMember(dest => dest.Weight, opt => opt.MapFrom(src => src.Property.Weight))
                 .ForMember(m=>m.material,opt=>opt.MapFrom(src=>src.Property.material)).ReverseMap()
             ;
