@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Application.Command.MediatR
 {
-    public interface IPresetModei
+    public interface IPresetModel
     {
         int? UserId { get; set; }
         bool IsAdmin {  get; set; }

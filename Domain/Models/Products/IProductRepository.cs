@@ -10,6 +10,8 @@ namespace Domain.Models.Products
 {
     public interface IProductRepository:IBaseRepository<Product,int>
     {
-         Task<ProductDto> GetProductById(int id);
+        Task<IEnumerable<ProductDto>> GetAllProducts();
+       
+        Task<ProductDto> GetProductById(int id);
     }
 }

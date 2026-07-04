@@ -1,15 +1,8 @@
-﻿using Application.Features.Products.Dto;
-using Dapper;
-using Domain.Models.Customers;
+﻿using Dapper;
 using Domain.Models.Products;
 using Infrastrucure.BaseRepository;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastrucure.Repository
 {
@@ -21,13 +14,13 @@ namespace Infrastrucure.Repository
             _connection = context.Database.GetDbConnection();
         }
 
-
-
-
-        public Task<Product> GetProductById(int? id)
+        public async Task<IEnumerable<Domain.Models.Products.ProductDto>> GetAllProducts()
         {
-            return GetProductById(id);
+            var sql = "SELECT * FROM products";
+            return await _connection.QueryAsync<Domain.Models.Products.ProductDto>(sql);
         }
+
+        
 
         public async Task<Domain.Models.Products.ProductDto> GetProductById(int id)
         {
@@ -36,12 +29,5 @@ namespace Infrastrucure.Repository
             return await _connection.QueryFirstOrDefaultAsync<Domain.Models.Products.ProductDto>(sql, new { Id = id });
         }
 
-        //public async Task<ProductDto> FindAsync(int id)
-        //{
-        //    string sql = @"SELECT *
-        //           FROM Products WHERE Id = @Id";
-        //    return
-        //    await _connection.QueryFirstOrDefaultAsync<ProductDto>(sql, new { Id = id });
-        //}
     }
 }

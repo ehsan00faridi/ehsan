@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "WebMVC.Controllers.OrderController",
+    "Method": "AddToBasket",
+    "RelativePath": "AddOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebMVC.Models.AddBasketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebMVC.Controllers.FilerootController",
     "Method": "DownloadFile",
     "RelativePath": "api/Fileroot/GetFile",

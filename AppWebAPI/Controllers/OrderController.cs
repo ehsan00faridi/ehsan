@@ -4,6 +4,7 @@ using Hangfire;
 using MediatR;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace AppWebAPI.Controllers
 {
@@ -23,8 +24,10 @@ namespace AppWebAPI.Controllers
         }
 
 
+        
+
         [HttpPost("AddOrder")]
-        public async Task<IActionResult> AddOredr([FromBody] AddOrderCommand command)
+        public async Task<IActionResult> AddOrder([FromBody] AddOrderCommand command)
         {
             var data = await _mediator.Send(command);
             return Ok(data);

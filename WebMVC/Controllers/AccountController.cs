@@ -107,49 +107,74 @@ namespace WebMVC.Controllers
         }
 
 
-      
-
         [HttpPost]
         public async Task<IActionResult> Login(LoginDto loginDto)
         {
-            var user = await _userManager.FindByEmailAsync(loginDto.Email);
-
-            if (user == null)
-            {
-                ModelState.AddModelError("", "کاربر یافت نشد");
+            if (!ModelState.IsValid)
                 return View(loginDto);
-            }
-            user.EmailConfirmed= true;
-            user.PhoneNumberConfirmed= true;
-            var res = await _signInManager.PasswordSignInAsync(
-                user,
-                loginDto.Password,
-                loginDto.RememberMe,
-                false);
 
-            if (res.Succeeded)
+            var command = new LoginCommand(
+                loginDto.Email,
+                loginDto.Password,
+                loginDto.RememberMe);
+
+            var result = await _mediator.Send(command);
+
+            if (result.Succeeded)
             {
                 return RedirectToAction("Index", "Home");
             }
 
-            if (res.IsNotAllowed)
+            foreach (var error in result.Errors)
             {
-                if (!user.EmailConfirmed)
-                {
-                    ModelState.AddModelError("", "ایمیل شما تایید نشده است.");
-                }
-
-                if (!user.PhoneNumberConfirmed)
-                {
-                    ModelState.AddModelError("", "شماره موبایل شما تایید نشده است.");
-                }
-
-                return View(loginDto);
+                ModelState.AddModelError(string.Empty, error);
             }
 
-            ModelState.AddModelError("", "اطلاعات ورود اشتباه است");
             return View(loginDto);
         }
+
+
+        //[HttpPost]
+        //public async Task<IActionResult> Login(LoginDto loginDto)
+        //{
+        //    var user = await _userManager.FindByEmailAsync(loginDto.Email);
+
+        //    if (user == null)
+        //    {
+        //        ModelState.AddModelError("", "کاربر یافت نشد");
+        //        return View(loginDto);
+        //    }
+        //    user.EmailConfirmed= true;
+        //    user.PhoneNumberConfirmed= true;
+        //    var res = await _signInManager.PasswordSignInAsync(
+        //        user,
+        //        loginDto.Password,
+        //        loginDto.RememberMe,
+        //        false);
+
+        //    if (res.Succeeded)
+        //    {
+        //        return RedirectToAction("Index", "Home");
+        //    }
+
+        //    if (res.IsNotAllowed)
+        //    {
+        //        if (!user.EmailConfirmed)
+        //        {
+        //            ModelState.AddModelError("", "ایمیل شما تایید نشده است.");
+        //        }
+
+        //        if (!user.PhoneNumberConfirmed)
+        //        {
+        //            ModelState.AddModelError("", "شماره موبایل شما تایید نشده است.");
+        //        }
+
+        //        return View(loginDto);
+        //    }
+
+        //    ModelState.AddModelError("", "اطلاعات ورود اشتباه است");
+        //    return View(loginDto);
+        //}
 
 
         public IActionResult SignInPhoneNumber()

@@ -294,3 +294,52 @@ System.IO.IOException: Failed to bind to address https://localhost:7264.
 2026-07-01 13:16:06.818 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
 2026-07-01 13:16:36.828 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
 2026-07-01 13:17:06.831 +03:30 [DBG] Server desktop-vjsq4i2:8616:1dfa1fbd heartbeat successfully sent
+2026-07-01 19:39:56.266 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-01 19:40:03.132 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-01 19:40:04.097 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-01 19:40:04.099 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-01 19:40:04.101 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-01 19:40:04.150 +03:30 [DBG] Execution loop BackgroundServerProcess:56b31b0a has started in 5.5173 ms
+2026-07-01 19:40:04.400 +03:30 [INF] Server desktop-vjsq4i2:2576:006c982c successfully announced in 244.0672 ms
+2026-07-01 19:40:04.405 +03:30 [DBG] Execution loop ServerHeartbeatProcess:5415da50 has started in 1.8749 ms
+2026-07-01 19:40:04.407 +03:30 [INF] Server desktop-vjsq4i2:2576:006c982c is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-01 19:40:04.410 +03:30 [DBG] Execution loop ServerWatchdog:90e5479d has started in 0.7723 ms
+2026-07-01 19:40:04.411 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:77cd10fe has started in 0.7696 ms
+2026-07-01 19:40:04.416 +03:30 [DBG] Execution loop ExpirationManager:881b0ffd has started in 3.6594 ms
+2026-07-01 19:40:04.417 +03:30 [DBG] Execution loop CountersAggregator:57aae680 has started in 0.6113 ms
+2026-07-01 19:40:04.417 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:aded862a has started in 0.6517 ms
+2026-07-01 19:40:04.419 +03:30 [DBG] Execution loop Worker:0771c3e7 has started in 2.0653 ms
+2026-07-01 19:40:04.421 +03:30 [DBG] Execution loop Worker:137e433e has started in 3.3885 ms
+2026-07-01 19:40:04.424 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-01 19:40:04.424 +03:30 [DBG] Execution loop Worker:ca10148a has started in 6.9472 ms
+2026-07-01 19:40:04.426 +03:30 [DBG] Execution loop Worker:52792eec has started in 8.6631 ms
+2026-07-01 19:40:04.427 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-01 19:40:04.431 +03:30 [DBG] Execution loop Worker:43c326f1 has started in 13.434 ms
+2026-07-01 19:40:04.440 +03:30 [DBG] Execution loop Worker:ae83ce07 has started in 23.209 ms
+2026-07-01 19:40:04.441 +03:30 [INF] 1 servers were removed due to timeout
+2026-07-01 19:40:04.442 +03:30 [DBG] Execution loop Worker:d64cc27a has started in 24.2874 ms
+2026-07-01 19:40:04.442 +03:30 [DBG] Execution loop Worker:f9e1d61b has started in 25.1978 ms
+2026-07-01 19:40:04.446 +03:30 [DBG] Execution loop Worker:4ecfb323 has started in 28.8552 ms
+2026-07-01 19:40:04.449 +03:30 [DBG] Execution loop Worker:6f2fb593 has started in 31.4468 ms
+2026-07-01 19:40:04.450 +03:30 [DBG] Execution loop Worker:e72721d1 has started in 32.4431 ms
+2026-07-01 19:40:04.451 +03:30 [DBG] Execution loop Worker:49ce24dc has started in 33.4365 ms
+2026-07-01 19:40:04.453 +03:30 [DBG] Execution loop Worker:b50a1c2c has started in 35.6819 ms
+2026-07-01 19:40:04.453 +03:30 [DBG] Execution loop Worker:4ff225b4 has started in 36.0203 ms
+2026-07-01 19:40:04.454 +03:30 [DBG] Execution loop Worker:2218c010 has started in 36.3259 ms
+2026-07-01 19:40:04.454 +03:30 [DBG] Execution loop Worker:0079b816 has started in 36.7227 ms
+2026-07-01 19:40:04.455 +03:30 [DBG] Execution loop Worker:8d5f7ae5 has started in 37.3774 ms
+2026-07-01 19:40:04.455 +03:30 [DBG] Execution loop Worker:4d597ee2 has started in 38.0127 ms
+2026-07-01 19:40:04.457 +03:30 [DBG] Execution loop Worker:9c360b90 has started in 39.8346 ms
+2026-07-01 19:40:04.458 +03:30 [DBG] Execution loop Worker:3b56bc8f has started in 40.5436 ms
+2026-07-01 19:40:04.462 +03:30 [DBG] Execution loop DelayedJobScheduler:124d4010 has started in 3.8184 ms
+2026-07-01 19:40:04.463 +03:30 [INF] Server desktop-vjsq4i2:2576:006c982c all the dispatchers started
+2026-07-01 19:40:04.463 +03:30 [DBG] Execution loop RecurringJobScheduler:fc7c09cb has started in 1.4834 ms
+2026-07-01 19:40:04.522 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-01 19:40:04.559 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-01 19:40:04.565 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-01 19:40:04.571 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-01 19:40:34.412 +03:30 [DBG] Server desktop-vjsq4i2:2576:006c982c heartbeat successfully sent

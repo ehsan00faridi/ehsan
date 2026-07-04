@@ -1,23 +1,25 @@
 ﻿using Domain.BaseEntity;
 using Domain.Event;
 using Domain.Models.Ordera;
+using System.ComponentModel.DataAnnotations.Schema;
 
 namespace Domain.Models.Customers
 {
     public class Customer : BaseEntity<int>
     {
-        public int? UserId { get; private set; }
-
+      
         public string Name { get; set; }
         public string Email { get; set; }
 
         public Address Address { get; private set; }
 
         public ICollection<Order> Orders { get; private set; } = new List<Order>();
+     
+        public int? UserId { get; private set; }
 
         //private Customer()
         //{
-            
+
         //}
 
         public Customer(string name, string email, int? userId = null)
