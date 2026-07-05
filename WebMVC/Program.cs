@@ -36,6 +36,12 @@ builder.Services.AddIdentity<User, Domain.Models.Roles.Role>()
         //option.SignIn.RequireConfirmedAccount = true;
     });
 
+builder.Services.AddAuthorization(options =>
+{
+    options.AddPolicy("CanEditPolicy", policy =>
+        policy.RequireClaim("Permission", "CanEdit"));
+});
+
 //dotnet remove package Serilog
 
 

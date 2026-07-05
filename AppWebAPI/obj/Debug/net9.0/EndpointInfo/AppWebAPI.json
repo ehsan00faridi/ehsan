@@ -292,25 +292,21 @@
           "isAdmin": {
             "type": "boolean"
           },
+          "userName": {
+            "type": "string",
+            "nullable": true
+          },
           "email": {
             "type": "string",
             "nullable": true
           },
-          "name": {
-            "type": "string",
-            "nullable": true
+          "productId": {
+            "type": "integer",
+            "format": "int32"
           },
-          "street": {
-            "type": "string",
-            "nullable": true
-          },
-          "city": {
-            "type": "string",
-            "nullable": true
-          },
-          "zipCode": {
-            "type": "string",
-            "nullable": true
+          "qty": {
+            "type": "integer",
+            "format": "int32"
           }
         },
         "additionalProperties": false

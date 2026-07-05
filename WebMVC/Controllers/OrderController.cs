@@ -3,36 +3,51 @@ using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
 using WebMVC.Models;
-
 namespace WebMVC.Controllers
 {
     public class OrderController : Controller
     {
         private readonly IMediator _mediator;
-        public OrderController(IMediator mediator) {
-        _mediator = mediator;
+
+        public OrderController(IMediator mediator)
+        {
+            _mediator = mediator;
         }
+
         public IActionResult Index()
         {
             return View();
         }
-
-        [HttpPost("AddOrder")]
-        public async Task<IActionResult> AddToBasket([FromBody] AddBasketDto model)
+        [HttpPost]
+        [Route("Order/AddOrder")]
+        public async Task<IActionResult> AddOrder([FromBody] AddBasketDto model)
         {
-            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
-            if (userId == null)
+            if (model == null)
             {
-                return Ok(new { res = false, msg = "شما لاگین نکرده اید" });
+                return BadRequest(new { res = false, msg = "اطلاعات ارسالی معتبر نیست." });
             }
 
+            try
+            {
+                // ۱. ساخت کامند با استفاده از مقادیر DTO
+                var command = new AddOrderCommand()
+                {
+                    ProductId = model.ProductId,
+                    Qty = model.qty
+                };
 
-            AddOrderCommand command = new AddOrderCommand() {ProductId=model.ProductId,Qty=model.qty};
-            command.UserId =Convert.ToInt32( userId);
-            _mediator.Send(model);
-            //var result = await _orderService.AddToBasket(model.qty, model.bookId,
-            //    Convert.ToInt32(userId));
-            return Ok(new { res = true });
+                // ۲. ارسال کامند به مدیتور و await کردن آن
+                var result = await _mediator.Send(command);
+
+                // ۳. خروجی موفقیت‌آمیز کاملاً JSON
+                return Ok(new { res = true });
+            }
+            catch (Exception ex)
+            {
+                // در صورت بروز هرگونه خطای داخلی، ساختار JSON معتبر برگردانده شود تا فرانت کرش نکند
+                return StatusCode(500, new { res = false, msg = ex.Message });
+            }
         }
+
     }
 }

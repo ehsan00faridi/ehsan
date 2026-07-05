@@ -1,0 +1,127 @@
+﻿@using Domain.Models.Products
+@model ProductDto
+
+@{
+    ViewData["Title"] = "جزئیات محصول: " + Model.Name;
+}
+
+<div class="container mt-5">
+    <div class="row justify-content-center">
+        <div class="col-md-6 col-lg-4">
+            <div class="card shadow-lg border-0 rounded-4 overflow-hidden">
+                <div class="position-relative">
+                    <img src="@(string.IsNullOrEmpty(Model.Img) ? "/images/default-product.png" : Model.Img)"
+                         class="card-img-top"
+                         alt="@Model.Name"
+                         style="height: 300px; object-fit: cover;">
+                </div>
+
+                <input type="hidden" id="ProductId" value="@Model.Id" />
+
+                <div class="card-body p-4">
+                    <h3 class="card-title fw-bold text-primary mb-3">@Model.Name</h3>
+
+                    <ul class="list-unstyled mb-4">
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span class="text-muted">قیمت:</span>
+                            <span class="fw-bold">@Model.Price.ToString("N0") تومان</span>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span class="text-muted">موجودی:</span>
+                            <span class="badge @(Model.Qty > 0 ? "bg-success" : "bg-danger")">
+                                @(Model.Qty > 0 ? $"{Model.Qty} عدد" : "ناموجود")
+                            </span>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span class="text-muted">تعداد:</span>
+                            <input id="countInput" type="number" min="1" value="1" class="form-control w-25">
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span class="text-muted">قیمت کل:</span>
+                            <strong>@Model.Price.ToString("N0") تومان</strong>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2 border-bottom">
+                            <span class="text-muted">وزن:</span>
+                            <span>@Model.Weight</span>
+                        </li>
+
+                        <li class="d-flex justify-content-between py-2">
+                            <span class="text-muted">جنس:</span>
+                            <span>@Model.material</span>
+                        </li>
+                    </ul>
+
+                    <div class="d-grid gap-2">
+                        <button type="button" onclick="AddToBasket()" class="btn btn-primary btn-lg rounded-pill">
+                            افزودن به سبد خرید
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+@section Scripts {
+    <script>
+        function AddToBasket() {
+            var ProductId = document.getElementById("ProductId").value;
+            var qty = document.getElementById("countInput").value;
+
+            var data = {
+                ProductId: parseInt(ProductId),
+                qty: parseInt(qty)
+            };
+        var url = '@Url.Action("AddOrder", "Order")';
+   
+        console.log("تلاش برای اتصال به:", url); 
+
+        fetch(url, {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json'
+                },
+                body: JSON.stringify(data)
+            })
+            .then(response => {
+              
+                if (!response.ok) {
+                    throw new Error('خطای سمت سرور رخ داده است.');
+                }
+                return response.json();
+            })
+            .then(data => {
+                if (data.res === false) {
+                    Swal.fire({
+                        title: "خطا",
+                        text: data.msg || "مشکلی در افزودن به سبد خرید پیش آمد.",
+                        icon: "error"
+                    });
+                } else {
+                    Swal.fire({
+                        position: "top-end",
+                        icon: "success",
+                        title: "محصول با موفقیت به سبد اضافه شد",
+                        showConfirmButton: false,
+                        timer: 1500
+                    });
+                }
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                Swal.fire({
+                    icon: "error",
+                    title: "خطا در ارتباط",
+                    text: "امکان برقراری ارتباط با سرور وجود ندارد."
+                });
+            });
+        }
+    </script>
+}

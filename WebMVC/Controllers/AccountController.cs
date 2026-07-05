@@ -52,10 +52,10 @@ namespace WebMVC.Controllers
             }
             catch (CustomException ex)
             {
-                // Errors => ModelState
+          
                 foreach (var kv in ex.Errors)
                 {
-                    var key = kv.Key; // مثل "Email" یا "ConfirmPassword"
+                    var key = kv.Key; 
                     foreach (var msg in kv.Value)
                         ModelState.AddModelError(key, msg);
                 }
@@ -134,47 +134,7 @@ namespace WebMVC.Controllers
         }
 
 
-        //[HttpPost]
-        //public async Task<IActionResult> Login(LoginDto loginDto)
-        //{
-        //    var user = await _userManager.FindByEmailAsync(loginDto.Email);
-
-        //    if (user == null)
-        //    {
-        //        ModelState.AddModelError("", "کاربر یافت نشد");
-        //        return View(loginDto);
-        //    }
-        //    user.EmailConfirmed= true;
-        //    user.PhoneNumberConfirmed= true;
-        //    var res = await _signInManager.PasswordSignInAsync(
-        //        user,
-        //        loginDto.Password,
-        //        loginDto.RememberMe,
-        //        false);
-
-        //    if (res.Succeeded)
-        //    {
-        //        return RedirectToAction("Index", "Home");
-        //    }
-
-        //    if (res.IsNotAllowed)
-        //    {
-        //        if (!user.EmailConfirmed)
-        //        {
-        //            ModelState.AddModelError("", "ایمیل شما تایید نشده است.");
-        //        }
-
-        //        if (!user.PhoneNumberConfirmed)
-        //        {
-        //            ModelState.AddModelError("", "شماره موبایل شما تایید نشده است.");
-        //        }
-
-        //        return View(loginDto);
-        //    }
-
-        //    ModelState.AddModelError("", "اطلاعات ورود اشتباه است");
-        //    return View(loginDto);
-        //}
+        
 
 
         public IActionResult SignInPhoneNumber()
@@ -193,7 +153,6 @@ namespace WebMVC.Controllers
             {
                 ModelState.AddModelError(nameof(model.PhoneNumber), ("کاربری با این شماره یافت نشد."));
 
-           //    ModelState.AddModelError("", "کاربری با این شماره یافت نشد.");
                 return View(model);
             }
             await _otpService.SendOtpAsync(model.PhoneNumber);

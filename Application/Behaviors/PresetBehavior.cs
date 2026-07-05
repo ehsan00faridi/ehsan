@@ -1,22 +1,39 @@
 ﻿using Application.Command.MediatR;
+using Application.Services.CurrentUser.Application.Command.Interfaces;
 using MediatR;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Application.Behaviors
 {
-    public class PresetBehavior<TRequest, TResponse> : IPipelineBehavior<TRequest, TResponse> where TRequest : IRequest<TResponse>, IPresetModel
+    public class PresetBehavior<TRequest, TResponse>
+        : IPipelineBehavior<TRequest, TResponse>
+        where TRequest : IRequest<TResponse>, IPresetModel
     {
-        public async Task<TResponse> Handle(TRequest request, RequestHandlerDelegate<TResponse> next, CancellationToken cancellationToken)
-        {
+        private readonly ICurrentUserService _currentUserService;
 
-            request.UserId = 1;//is test
-            request.IsAdmin = true;
+        public PresetBehavior(ICurrentUserService currentUserService)
+        {
+            _currentUserService = currentUserService;
+        }
+
+        public async Task<TResponse> Handle(
+            TRequest request,
+            RequestHandlerDelegate<TResponse> next,
+            CancellationToken cancellationToken)
+        {
+            if (_currentUserService.IsAuthenticated)
+            {
+                request.UserId = _currentUserService.UserId;
+                request.IsAdmin = _currentUserService.IsInRole("Admin");
+                request.Email = _currentUserService.Email;
+            }
+            else
+            {
+                request.UserId = null;
+                request.IsAdmin = false;
+            }
 
             return await next();
         }
     }
 }
+

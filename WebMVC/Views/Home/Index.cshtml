@@ -1,13 +1,44 @@
-﻿@{
+﻿@using Application.Command.Pagination
+@using Application.Features.Products.Dto
+
+@{
     ViewData["Title"] = "Home Page";
+
+    int pageNumber = 1;
+    int pageSize = 6;
+
+    if (int.TryParse(Context.Request.Query["pageNumber"], out var p) && p > 0)
+    {
+        pageNumber = p;
+    }
+
+    if (int.TryParse(Context.Request.Query["pageSize"], out var s) && s > 0)
+    {
+        pageSize = s;
+    }
+
+    string search = Context.Request.Query["search"].ToString() ?? "";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="container">
+    <div class="row g-4">
+        @await Component.InvokeAsync("ProductList", new
+        {
+            pageNumber = pageNumber,
+                pageSize = pageSize,
+                search = search,
+                disablePaging = false
+                })
+    </div>
 </div>
+<form asp-controller="OrderController" asp-action="AddOrder" method="post">
+  
+    <div class="form-group">
+        <label >pr</label>
+        <input name="ProductId" class="form-control" />
+        <label>qty</label>
+        <input name="ProductId" class="form-control" />
+    </div>
 
-<img src="~/api/Fileroot/GetFile?filename=02ce9251-231b-40d8-b5c5-667e9ff8d0ad.jpg"
-         width="70"
-         height="50" />
-                                   /api/Fileroot/GetFile?filename=
+    <button type="submit" class="btn btn-primary">Send</button>
+</form>

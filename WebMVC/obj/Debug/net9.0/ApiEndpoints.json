@@ -1,15 +1,15 @@
 [
   {
-    "ContainingType": "WebMVC.Controllers.OrderController",
-    "Method": "AddToBasket",
-    "RelativePath": "AddOrder",
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "AddProduct",
+    "RelativePath": "AddProduct",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "model",
-        "Type": "WebMVC.Models.AddBasketDto",
+        "Name": "command",
+        "Type": "Application.Features.Products.Command.AddProductCommand",
         "IsRequired": true
       }
     ],
@@ -27,6 +27,101 @@
         "Name": "filename",
         "Type": "System.String",
         "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "DeleteProduct",
+    "RelativePath": "DeleteProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Products.Command.DeleteProductCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "GetProduct",
+    "RelativePath": "GetProduct/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "GetProducts",
+    "RelativePath": "GetProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Search",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageNumber",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "PageSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "DisablePaging",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.OrderController",
+    "Method": "AddOrder",
+    "RelativePath": "Order/AddOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebMVC.Models.AddBasketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "UpdateProduct",
+    "RelativePath": "UpdateProduct",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Application.Features.Products.Command.UpdateProductCommand",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

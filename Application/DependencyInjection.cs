@@ -1,7 +1,7 @@
 ﻿using Application.Behaviors;
 using Application.Features.Products.Command.Validation;
-using Application.Services.CurrentUser;
-using Application.Services.Sms;
+using Application.Services.CurrentUser.Application.Command.Interfaces;
+using CurrentUser.Services;
 using FluentValidation;
 using Hangfire;
 using Hangfire.SqlServer;
@@ -9,6 +9,7 @@ using MediatR;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using System.Reflection;
+
 
 namespace Application
 {
@@ -20,7 +21,7 @@ namespace Application
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(PresetBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(ValidationBehavior<,>));
-            services.AddScoped<ICurrentUserServices, CurrentUserServices>();
+            services.AddScoped<ICurrentUserService, CurrentUserService>();
             services.AddValidatorsFromAssemblyContaining(typeof(AddProductValidator));
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 

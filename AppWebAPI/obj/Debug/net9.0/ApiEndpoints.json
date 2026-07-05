@@ -17,7 +17,7 @@
   },
   {
     "ContainingType": "AppWebAPI.Controllers.OrderController",
-    "Method": "AddOredr",
+    "Method": "AddOrder",
     "RelativePath": "api/Order/AddOrder",
     "HttpMethod": "POST",
     "IsController": true,

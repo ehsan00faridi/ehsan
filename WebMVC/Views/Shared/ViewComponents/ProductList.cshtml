@@ -1,0 +1,40 @@
+﻿@using Application.Command.Pagination
+@using Application.Features.Products.Dto
+ 
+@model PaginatedList<ProductDto>
+
+@if (Model?.Items != null && Model.Items.Any())
+{
+    foreach (var item in Model.Items)
+    {
+        <div class="col-xl-3 col-lg-4 col-md-6">
+            <div class="card book-card h-100 border-0 shadow-sm">
+           
+                <img src="~/api/Fileroot/GetFile?filename=02ce9251-231b-40d8-b5c5-667e9ff8d0ad.jpg"
+                     width="70"
+                     height="50" />
+                <div class="card-body d-flex flex-column">
+                    <h6 class="fw-bold text-truncate">@item.Name</h6>
+                    <h6 class="fw-bold text-truncate">@item.Price</h6>
+
+                    <a asp-controller="Product"
+                       asp-action="GetProduct"
+                       asp-route-id="@item.Id"
+                       class="btn btn-outline-primary btn-sm w-100 mt-auto">
+                        مشاهده جزئیات
+                    </a>
+                </div>
+            </div>
+        </div>
+    }
+}
+else
+{
+    <div>محصولی یافت نشد</div>
+}
+
+
+
+
+
+
