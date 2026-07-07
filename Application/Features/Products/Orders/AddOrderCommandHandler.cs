@@ -44,35 +44,7 @@ namespace Application.Features.Products.Orders
                 Status = Status.Success,
                 Date = DateTime.Now
             };
-            //var createorder = new CreateOrderEvent()
-            //{
-            //    Data = order.Date
-            //};
-
-            //var sendEmail = new UserRegisteredDomainEvent(customer.Id, request.Email);
-            //customer.AddDomainEvent(sendEmail);
-
-            //await _mediator.Publish(new EmailMessage
-            //{
-
-            //    To = "ehsanfaridi1382@gmail.com",
-            //    Subject = "Welcome 🎉",
-            //    Body = "<h1>Welcome to our platform</h1>"
-            //});
-
-
-
-            //order.AddDomainEvent(new UserRegisteredEvent
-            //{
-            //    PhoneNumber = "989022797372",
-            //    UserName = "Ehsan"
-            //});
-            //await _mediator.Publish(new UserRegisteredEvent
-            //{
-            //    PhoneNumber = "989022797372",
-            //    UserName = "Ehsan"
-            //});
-
+       
             await _orderRepository.AddAsync(order);
             await _orderRepository.UnitOfWork.SaveEntitiesAsync();
             return true;

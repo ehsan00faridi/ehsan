@@ -4,7 +4,9 @@ using Infrastrucure;
 using Microsoft.AspNetCore.Identity;
 using Serilog;
 
-
+using System.Text;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.IdentityModel.Tokens;
 var builder = WebApplication.CreateBuilder(args);
 
 
@@ -19,6 +21,28 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 
 
+var jwtSection = builder.Configuration.GetSection("Jwt");
+var key = jwtSection["Key"] ?? throw new InvalidOperationException("JWT Key is missing");
+
+builder.Services.AddAuthentication(options =>
+{
+    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+})
+.AddJwtBearer(options =>
+{
+    options.TokenValidationParameters = new TokenValidationParameters
+    {
+        ValidateIssuer = true,
+        ValidateAudience = true,
+        ValidateLifetime = true,
+        ValidateIssuerSigningKey = true,
+        ValidIssuer = jwtSection["Issuer"],
+        ValidAudience = jwtSection["Audience"],
+        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)),
+        ClockSkew = TimeSpan.Zero
+    };
+});
 
 builder.Services.AddIdentity<User, Domain.Models.Roles.Role>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
