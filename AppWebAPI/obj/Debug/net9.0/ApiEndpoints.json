@@ -1,5 +1,21 @@
 [
   {
+    "ContainingType": "WebAPI.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/Auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "loginModel",
+        "Type": "WebAPI.Controllers.LoginModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "AppWebAPI.Controllers.FilerootController",
     "Method": "DownloadFile",
     "RelativePath": "api/Fileroot/GetFile",
@@ -98,24 +114,9 @@
     "Order": 0,
     "Parameters": [
       {
-        "Name": "Search",
-        "Type": "System.String",
-        "IsRequired": false
-      },
-      {
-        "Name": "PageNumber",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "PageSize",
-        "Type": "System.Int32",
-        "IsRequired": false
-      },
-      {
-        "Name": "DisablePaging",
-        "Type": "System.Boolean",
-        "IsRequired": false
+        "Name": "Query",
+        "Type": "Application.Features.Products.Query.GetProductsQuery",
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

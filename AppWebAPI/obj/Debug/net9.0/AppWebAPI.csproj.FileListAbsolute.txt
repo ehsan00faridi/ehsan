@@ -202,3 +202,4 @@ C:\Users\ehsan\source\repos\Solution1\AppWebAPI\bin\Debug\net9.0\Microsoft.Exten
 C:\Users\ehsan\source\repos\Solution1\AppWebAPI\bin\Debug\net9.0\Microsoft.Extensions.Identity.Stores.dll
 C:\Users\ehsan\source\repos\Solution1\AppWebAPI\bin\Debug\net9.0\Pipelines.Sockets.Unofficial.dll
 C:\Users\ehsan\source\repos\Solution1\AppWebAPI\bin\Debug\net9.0\StackExchange.Redis.dll
+C:\Users\ehsan\source\repos\Solution1\AppWebAPI\bin\Debug\net9.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll

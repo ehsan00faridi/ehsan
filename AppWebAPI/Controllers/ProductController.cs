@@ -1,6 +1,7 @@
 ﻿using Application.Features.Products.Command;
 using Application.Features.Products.Query;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -8,6 +9,7 @@ namespace AppWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    //[Authorize]
     public class ProductController : ControllerBase
     {
         private readonly IMediator _mediator;
@@ -26,7 +28,7 @@ namespace AppWebAPI.Controllers
         }
 
         [HttpGet("GetProducts")]
-        public async Task<IActionResult> GetProducts([FromQuery] GetProductsQuery Query)
+        public async Task<IActionResult> GetProducts([FromBody] GetProductsQuery Query)
         {
          
             var data = await _mediator.Send(Query);
