@@ -16,7 +16,7 @@ namespace WebAPI.Controllers
         [HttpPost("login")]
         public IActionResult Login([FromBody] LoginModel loginModel)
         {
-            // اینجا اعتبارسنجی کاربر را انجام دهید
+          
             if (loginModel.Username == "test" && loginModel.Password == "test")
             {
                 var token = GenerateJwtToken();
@@ -38,8 +38,8 @@ namespace WebAPI.Controllers
                 new Claim(ClaimTypes.Role, "Admin")
                 }),
                 Expires = DateTime.UtcNow.AddHours(1),
-                Issuer = "WebApi",
-                Audience = "WebApi",
+                Issuer = "WebAPI",
+                Audience = "WebAPI",
                 SigningCredentials = new SigningCredentials(new SymmetricSecurityKey(key), SecurityAlgorithms.HmacSha256Signature)
             };
 

@@ -1,0 +1,187 @@
+2026-07-17 23:14:20.257 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-17 23:14:20.736 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-17 23:14:21.267 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-17 23:14:21.269 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-17 23:14:21.271 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-17 23:14:21.320 +03:30 [DBG] Execution loop BackgroundServerProcess:300b7c25 has started in 7.227 ms
+2026-07-17 23:14:21.510 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-07-17 23:14:21.568 +03:30 [INF] Server desktop-vjsq4i2:10704:1bad2a21 successfully announced in 241.1322 ms
+2026-07-17 23:14:21.573 +03:30 [DBG] Execution loop ServerHeartbeatProcess:633db2f7 has started in 1.724 ms
+2026-07-17 23:14:21.574 +03:30 [INF] Server desktop-vjsq4i2:10704:1bad2a21 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-17 23:14:21.576 +03:30 [DBG] Execution loop ServerWatchdog:273902bc has started in 0.5125 ms
+2026-07-17 23:14:21.576 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:9329e47b has started in 0.3106 ms
+2026-07-17 23:14:21.578 +03:30 [DBG] Execution loop ExpirationManager:ce81b7b5 has started in 0.9789 ms
+2026-07-17 23:14:21.579 +03:30 [DBG] Execution loop CountersAggregator:044119dd has started in 0.3908 ms
+2026-07-17 23:14:21.579 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:55f20902 has started in 0.3192 ms
+2026-07-17 23:14:21.579 +03:30 [DBG] Execution loop Worker:8412425e has started in 0.5285 ms
+2026-07-17 23:14:21.585 +03:30 [DBG] Execution loop Worker:6f9b56ea has started in 6.4546 ms
+2026-07-17 23:14:21.580 +03:30 [DBG] Execution loop Worker:2f8be558 has started in 0.7862 ms
+2026-07-17 23:14:21.580 +03:30 [DBG] Execution loop Worker:020d71fc has started in 1.0685 ms
+2026-07-17 23:14:21.580 +03:30 [DBG] Execution loop Worker:ae737192 has started in 1.3824 ms
+2026-07-17 23:14:21.581 +03:30 [DBG] Execution loop Worker:a7ddcc6d has started in 1.7106 ms
+2026-07-17 23:14:21.581 +03:30 [DBG] Execution loop Worker:e15818c4 has started in 2.0542 ms
+2026-07-17 23:14:21.581 +03:30 [DBG] Execution loop Worker:751a6fe0 has started in 2.3508 ms
+2026-07-17 23:14:21.582 +03:30 [DBG] Execution loop Worker:446c7e54 has started in 2.7362 ms
+2026-07-17 23:14:21.582 +03:30 [DBG] Execution loop Worker:8cb0b0a2 has started in 3.4285 ms
+2026-07-17 23:14:21.583 +03:30 [DBG] Execution loop Worker:3c4d09ab has started in 3.9124 ms
+2026-07-17 23:14:21.583 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-17 23:14:21.583 +03:30 [DBG] Execution loop Worker:e23d7c41 has started in 4.3442 ms
+2026-07-17 23:14:21.583 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-17 23:14:21.583 +03:30 [DBG] Execution loop Worker:b1579cf4 has started in 4.6429 ms
+2026-07-17 23:14:21.584 +03:30 [DBG] Execution loop Worker:54fe8534 has started in 4.912 ms
+2026-07-17 23:14:21.584 +03:30 [DBG] Execution loop Worker:4af88aa3 has started in 5.1692 ms
+2026-07-17 23:14:21.584 +03:30 [DBG] Execution loop Worker:d859198b has started in 5.4249 ms
+2026-07-17 23:14:21.585 +03:30 [DBG] Execution loop Worker:bfd926d8 has started in 5.7337 ms
+2026-07-17 23:14:21.585 +03:30 [DBG] Execution loop Worker:448dfe6f has started in 5.9665 ms
+2026-07-17 23:14:21.585 +03:30 [DBG] Execution loop Worker:3bdb6b69 has started in 6.2218 ms
+2026-07-17 23:14:21.586 +03:30 [DBG] Execution loop Worker:bd4de985 has started in 6.7119 ms
+2026-07-17 23:14:21.586 +03:30 [DBG] Execution loop DelayedJobScheduler:d68eb95b has started in 0.328 ms
+2026-07-17 23:14:21.586 +03:30 [INF] Server desktop-vjsq4i2:10704:1bad2a21 all the dispatchers started
+2026-07-17 23:14:21.586 +03:30 [DBG] Execution loop RecurringJobScheduler:c94e615b has started in 0.3006 ms
+2026-07-17 23:14:21.669 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-17 23:14:21.673 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-17 23:14:21.676 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-17 23:14:21.680 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-17 23:14:21.720 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-17 23:14:23.253 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:14:23.257 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:14:51.588 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:15:21.600 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:15:51.609 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:16:21.611 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:16:51.623 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:17:21.631 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:17:51.641 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:18:21.643 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:18:51.653 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:19:21.597 +03:30 [INF] 3 servers were removed due to timeout
+2026-07-17 23:19:21.660 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:19:21.674 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-17 23:19:51.675 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:20:21.690 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:20:51.698 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:21:21.701 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:21:51.704 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:22:21.705 +03:30 [DBG] Server desktop-vjsq4i2:10704:1bad2a21 heartbeat successfully sent
+2026-07-17 23:25:11.076 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-17 23:25:12.445 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:25:12.448 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:25:42.612 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-17 23:25:44.052 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:25:44.055 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:26:14.619 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-17 23:26:15.087 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-17 23:26:15.420 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-17 23:26:15.422 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-17 23:26:15.423 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-17 23:26:15.457 +03:30 [DBG] Execution loop BackgroundServerProcess:4ee033db has started in 4.6047 ms
+2026-07-17 23:26:15.658 +03:30 [INF] Server desktop-vjsq4i2:10420:b624c4e3 successfully announced in 194.2419 ms
+2026-07-17 23:26:15.663 +03:30 [DBG] Execution loop ServerHeartbeatProcess:7ef04051 has started in 1.7957 ms
+2026-07-17 23:26:15.664 +03:30 [INF] Server desktop-vjsq4i2:10420:b624c4e3 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-17 23:26:15.666 +03:30 [DBG] Execution loop ServerWatchdog:9c58710d has started in 0.3461 ms
+2026-07-17 23:26:15.666 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:4bdd583e has started in 0.2369 ms
+2026-07-17 23:26:15.667 +03:30 [DBG] Execution loop ExpirationManager:6be20545 has started in 0.4168 ms
+2026-07-17 23:26:15.667 +03:30 [DBG] Execution loop CountersAggregator:0bbfe6e7 has started in 0.3006 ms
+2026-07-17 23:26:15.668 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:185ebe67 has started in 0.3618 ms
+2026-07-17 23:26:15.668 +03:30 [DBG] Execution loop Worker:21c9192c has started in 0.4731 ms
+2026-07-17 23:26:15.669 +03:30 [DBG] Execution loop Worker:667f3cad has started in 0.7546 ms
+2026-07-17 23:26:15.669 +03:30 [DBG] Execution loop Worker:7a3d62e8 has started in 1.2382 ms
+2026-07-17 23:26:15.669 +03:30 [DBG] Execution loop Worker:2767b686 has started in 1.4414 ms
+2026-07-17 23:26:15.670 +03:30 [DBG] Execution loop Worker:5ab332ce has started in 1.6748 ms
+2026-07-17 23:26:15.670 +03:30 [DBG] Execution loop Worker:5eb2f8e0 has started in 1.9371 ms
+2026-07-17 23:26:15.670 +03:30 [DBG] Execution loop Worker:26a426a6 has started in 2.2725 ms
+2026-07-17 23:26:15.670 +03:30 [DBG] Execution loop Worker:086c3c28 has started in 2.5927 ms
+2026-07-17 23:26:15.671 +03:30 [DBG] Execution loop Worker:13a4e42e has started in 2.8205 ms
+2026-07-17 23:26:15.671 +03:30 [DBG] Execution loop Worker:f4ac40d6 has started in 3.0837 ms
+2026-07-17 23:26:15.671 +03:30 [DBG] Execution loop Worker:9c10d543 has started in 3.3443 ms
+2026-07-17 23:26:15.671 +03:30 [DBG] Execution loop Worker:e8ddae78 has started in 3.5889 ms
+2026-07-17 23:26:15.672 +03:30 [DBG] Execution loop Worker:f3913a08 has started in 3.9537 ms
+2026-07-17 23:26:15.672 +03:30 [DBG] Execution loop Worker:f51fdbe2 has started in 4.2452 ms
+2026-07-17 23:26:15.672 +03:30 [DBG] Execution loop Worker:fea78bb1 has started in 4.5113 ms
+2026-07-17 23:26:15.673 +03:30 [DBG] Execution loop Worker:4cf3b952 has started in 4.8818 ms
+2026-07-17 23:26:15.673 +03:30 [DBG] Execution loop Worker:52659050 has started in 5.1339 ms
+2026-07-17 23:26:15.673 +03:30 [DBG] Execution loop Worker:35c79b16 has started in 5.4074 ms
+2026-07-17 23:26:15.674 +03:30 [DBG] Execution loop Worker:10d15aaf has started in 5.6825 ms
+2026-07-17 23:26:15.674 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-17 23:26:15.674 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-17 23:26:15.674 +03:30 [DBG] Execution loop Worker:740d9f67 has started in 5.9222 ms
+2026-07-17 23:26:15.674 +03:30 [DBG] Execution loop DelayedJobScheduler:d2aad4af has started in 0.3193 ms
+2026-07-17 23:26:15.674 +03:30 [INF] Server desktop-vjsq4i2:10420:b624c4e3 all the dispatchers started
+2026-07-17 23:26:15.674 +03:30 [DBG] Execution loop RecurringJobScheduler:c257b0b5 has started in 0.2534 ms
+2026-07-17 23:26:15.748 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-17 23:26:15.750 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-17 23:26:15.753 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-17 23:26:15.756 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-17 23:26:15.821 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-07-17 23:26:15.957 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-17 23:26:17.382 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:26:17.385 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:26:45.683 +03:30 [DBG] Server desktop-vjsq4i2:10420:b624c4e3 heartbeat successfully sent
+2026-07-17 23:27:08.593 +03:30 [ERR] An exception occurred in the database while saving changes for context type 'Infrastrucure.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Email', table 'AppWebAPI.dbo.Customers'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:67699743-70d5-4b44-9bea-674d7ea32227
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Email', table 'AppWebAPI.dbo.Customers'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:67699743-70d5-4b44-9bea-674d7ea32227
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-07-17 23:27:15.697 +03:30 [DBG] Server desktop-vjsq4i2:10420:b624c4e3 heartbeat successfully sent
+2026-07-17 23:27:45.710 +03:30 [DBG] Server desktop-vjsq4i2:10420:b624c4e3 heartbeat successfully sent
+2026-07-17 23:28:15.711 +03:30 [DBG] Server desktop-vjsq4i2:10420:b624c4e3 heartbeat successfully sent

@@ -1,52 +1,58 @@
-﻿using Application.Application_DTO;
-using Application.Features.Products.Orders.Event;
-using Domain.Event;
-using Domain.Models.Customers;
+﻿using Domain.Models.Customers;
 using Domain.Models.Ordera;
-using Domain.Models.User;
 using MediatR;
-using System.Security.Claims;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Identity;
+
 namespace Application.Features.Products.Orders
 {
     internal class AddOrderCommandHandler : IRequestHandler<AddOrderCommand, bool>
     {
-        private readonly IMediator _mediator;
         private readonly IOrdersRepository _orderRepository;
         private readonly ICustomerRepository _customerRepository;
 
-        private readonly UserManager<User> _userManager;
-        public AddOrderCommandHandler(ICustomerRepository customerRepository, IOrdersRepository orderRepository, IMediator mediator, UserManager<User> userManager)
+        public AddOrderCommandHandler(
+            ICustomerRepository customerRepository,
+            IOrdersRepository orderRepository)
         {
             _customerRepository = customerRepository;
             _orderRepository = orderRepository;
-            _mediator = mediator;
-            _userManager = userManager;
         }
 
         public async Task<bool> Handle(AddOrderCommand request, CancellationToken cancellationToken)
         {
+            Customer customer;
 
+            if (request.UserId.HasValue)
+            {
+                customer = await _customerRepository.FindAsync(request.UserId.Value);
 
-            var customer = new Customer(request.Email, request.Email, request.UserId);
-            var address = new Address("request.Street", "request.City", "request.ZipCode");
-            customer.SetAddress(address);
+                if (customer is null)
+                {
+                    var name = string.IsNullOrWhiteSpace(request.UserName) ? request.Email : request.UserName;
+                    customer = new Customer(name, request.Email, request.UserId.Value);
 
+                    await _customerRepository.AddAsync(customer);
+                    await _customerRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
+                }
+            }
+            else
+            {
+                var name = string.IsNullOrWhiteSpace(request.UserName) ? request.Email : request.UserName;
+                customer = new Customer(name, request.Email,request.UserId);
 
+                await _customerRepository.AddAsync(customer);
+                await _customerRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
+            }
 
-            await _customerRepository.AddAsync(customer);
-            await _customerRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
-
-            var order = new Order()
+            var order = new Order
             {
                 CustomerId = customer.Id,
-                Status = Status.Success,
-                Date = DateTime.Now
+                Status = Status.Cart,
+                Date = DateTime.UtcNow
             };
-       
+
             await _orderRepository.AddAsync(order);
-            await _orderRepository.UnitOfWork.SaveEntitiesAsync();
+            await _orderRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
+
             return true;
         }
     }
