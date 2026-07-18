@@ -1,5 +1,5 @@
 ﻿using Application.Command.Pagination;
-using Application.Features.Products.Dto;
+//using Application.Features.Products.Dto;
 
 using MediatR;
 namespace Application.Features.Products.Query
@@ -8,7 +8,7 @@ namespace Application.Features.Products.Query
 
 
     public class GetProductsQueryHandler
-      : IRequestHandler<GetProductsQuery, PaginatedList<ProductDto>>
+      : IRequestHandler<GetProductsQuery, PaginatedList<Domain.Models.Products.ProductDto>>
     {
         private readonly IProductQueries _productQueries;
 
@@ -17,7 +17,7 @@ namespace Application.Features.Products.Query
             _productQueries = productQueries;
         }
 
-        public async Task<PaginatedList<ProductDto>> Handle(
+        public async Task<PaginatedList<Domain.Models.Products.ProductDto>> Handle(
             GetProductsQuery request,
             CancellationToken cancellationToken)
         {

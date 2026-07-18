@@ -9,7 +9,7 @@ namespace AppWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    [Authorize]
+   // [Authorize]
     //[Claim]
     public class ProductController : ControllerBase
     {

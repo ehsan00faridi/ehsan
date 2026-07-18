@@ -2,7 +2,7 @@
 using Domain.Models.Ordera;
 using MediatR;
 
-namespace Application.Features.Products.Orders
+namespace Application.Features.Orders
 {
     internal class AddOrderCommandHandler : IRequestHandler<AddOrderCommand, bool>
     {

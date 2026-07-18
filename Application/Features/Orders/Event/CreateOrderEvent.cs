@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Application.Features.Products.Orders.Event
+namespace Application.Features.Orders.Event
 {
     public class CreateOrderEvent:INotification
     {

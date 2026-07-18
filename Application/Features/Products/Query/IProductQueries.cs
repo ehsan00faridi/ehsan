@@ -11,7 +11,7 @@ namespace Application.Features.Products.Query
     public interface IProductQueries
     {
 
-        Task<PaginatedList<ProductDto>> GetProductsAsync(
+        Task<PaginatedList<Domain.Models.Products.ProductDto>> GetProductsAsync(
             string? search,
             int pageNumber,
             int pageSize,

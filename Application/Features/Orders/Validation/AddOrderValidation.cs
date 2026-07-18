@@ -1,6 +1,7 @@
-﻿using FluentValidation;
+﻿using Application.Features.Orders;
+using FluentValidation;
 
-namespace Application.Features.Products.Orders.Validation
+namespace Application.Features.Orders.Validation
 {
     public class AddOrderValidation : AbstractValidator<AddOrderCommand>
     {

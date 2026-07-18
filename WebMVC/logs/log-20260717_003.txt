@@ -185,3 +185,125 @@ Error Number:515,State:2,Class:16
 2026-07-17 23:27:15.697 +03:30 [DBG] Server desktop-vjsq4i2:10420:b624c4e3 heartbeat successfully sent
 2026-07-17 23:27:45.710 +03:30 [DBG] Server desktop-vjsq4i2:10420:b624c4e3 heartbeat successfully sent
 2026-07-17 23:28:15.711 +03:30 [DBG] Server desktop-vjsq4i2:10420:b624c4e3 heartbeat successfully sent
+2026-07-17 23:28:31.201 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-17 23:28:32.428 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-17 23:28:33.267 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-17 23:28:33.271 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-17 23:28:33.272 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-17 23:28:33.361 +03:30 [DBG] Execution loop BackgroundServerProcess:2eec8456 has started in 30.0625 ms
+2026-07-17 23:28:33.724 +03:30 [INF] Server desktop-vjsq4i2:14160:c25cbe77 successfully announced in 353.4182 ms
+2026-07-17 23:28:33.761 +03:30 [DBG] Execution loop ServerHeartbeatProcess:e0a6209b has started in 32.2277 ms
+2026-07-17 23:28:33.762 +03:30 [INF] Server desktop-vjsq4i2:14160:c25cbe77 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-17 23:28:33.773 +03:30 [DBG] Execution loop ServerWatchdog:ab8b0a15 has started in 8.2839 ms
+2026-07-17 23:28:33.780 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:8d892d2e has started in 14.0953 ms
+2026-07-17 23:28:33.788 +03:30 [DBG] Execution loop ExpirationManager:78486b6f has started in 7.7159 ms
+2026-07-17 23:28:33.826 +03:30 [DBG] Execution loop CountersAggregator:fffbb1cb has started in 44.1649 ms
+2026-07-17 23:28:33.845 +03:30 [INF] 1 servers were removed due to timeout
+2026-07-17 23:28:33.864 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-17 23:28:33.890 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-17 23:28:33.838 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:48789cf9 has started in 12.4521 ms
+2026-07-17 23:28:33.854 +03:30 [DBG] Execution loop Worker:b2549f88 has started in 25.8068 ms
+2026-07-17 23:28:34.135 +03:30 [DBG] Execution loop DelayedJobScheduler:44d122b1 has started in 26.789 ms
+2026-07-17 23:28:33.864 +03:30 [DBG] Execution loop Worker:8101ebc4 has started in 35.3595 ms
+2026-07-17 23:28:33.873 +03:30 [DBG] Execution loop Worker:4d0ccde4 has started in 44.9224 ms
+2026-07-17 23:28:33.881 +03:30 [DBG] Execution loop Worker:28273e9c has started in 52.9472 ms
+2026-07-17 23:28:33.890 +03:30 [DBG] Execution loop Worker:0a47f56c has started in 61.8525 ms
+2026-07-17 23:28:33.900 +03:30 [DBG] Execution loop Worker:2c054594 has started in 71.3734 ms
+2026-07-17 23:28:33.910 +03:30 [DBG] Execution loop Worker:03db9910 has started in 81.6925 ms
+2026-07-17 23:28:33.921 +03:30 [DBG] Execution loop Worker:185f3725 has started in 92.2649 ms
+2026-07-17 23:28:33.931 +03:30 [DBG] Execution loop Worker:575b6176 has started in 102.3258 ms
+2026-07-17 23:28:33.939 +03:30 [DBG] Execution loop Worker:f6cbef8a has started in 110.5052 ms
+2026-07-17 23:28:33.956 +03:30 [DBG] Execution loop Worker:69990e2f has started in 127.4539 ms
+2026-07-17 23:28:33.991 +03:30 [DBG] Execution loop Worker:947378f3 has started in 162.9827 ms
+2026-07-17 23:28:34.003 +03:30 [DBG] Execution loop Worker:05c66bad has started in 174.5384 ms
+2026-07-17 23:28:34.014 +03:30 [DBG] Execution loop Worker:23ca9412 has started in 185.9289 ms
+2026-07-17 23:28:34.026 +03:30 [DBG] Execution loop Worker:bc6198d5 has started in 197.9981 ms
+2026-07-17 23:28:34.038 +03:30 [DBG] Execution loop Worker:020e71e1 has started in 209.4377 ms
+2026-07-17 23:28:34.060 +03:30 [DBG] Execution loop Worker:7b03f39a has started in 232.2363 ms
+2026-07-17 23:28:34.070 +03:30 [DBG] Execution loop Worker:465015ba has started in 241.2851 ms
+2026-07-17 23:28:34.089 +03:30 [DBG] Execution loop Worker:38a70b71 has started in 260.4445 ms
+2026-07-17 23:28:34.103 +03:30 [DBG] Execution loop Worker:6f4c1bab has started in 274.2807 ms
+2026-07-17 23:28:34.149 +03:30 [INF] Server desktop-vjsq4i2:14160:c25cbe77 all the dispatchers started
+2026-07-17 23:28:34.149 +03:30 [DBG] Execution loop RecurringJobScheduler:032c1949 has started in 13.4805 ms
+2026-07-17 23:28:34.164 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-17 23:28:34.306 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-17 23:28:34.533 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-17 23:28:34.580 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-17 23:28:35.397 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-07-17 23:28:36.179 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-17 23:28:40.225 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:28:40.230 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-17 23:29:10.548 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:29:41.080 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:30:12.230 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:30:45.409 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:31:24.133 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:31:59.857 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:32:03.902 +03:30 [ERR] An exception occurred in the database while saving changes for context type 'Infrastrucure.ApplicationDbContext'.
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Email', table 'AppWebAPI.dbo.Customers'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:c81788ad-7534-4d86-93cf-797517d7dff6
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+Microsoft.EntityFrameworkCore.DbUpdateException: An error occurred while saving the entity changes. See the inner exception for details.
+ ---> Microsoft.Data.SqlClient.SqlException (0x80131904): Cannot insert the value NULL into column 'Email', table 'AppWebAPI.dbo.Customers'; column does not allow nulls. INSERT fails.
+   at Microsoft.Data.SqlClient.SqlConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.SqlInternalConnection.OnError(SqlException exception, Boolean breakConnection, Action`1 wrapCloseInAction)
+   at Microsoft.Data.SqlClient.TdsParser.ThrowExceptionAndWarning(TdsParserStateObject stateObj, Boolean callerHasConnectionLock, Boolean asyncClose)
+   at Microsoft.Data.SqlClient.TdsParser.TryRun(RunBehavior runBehavior, SqlCommand cmdHandler, SqlDataReader dataStream, BulkCopySimpleResultSet bulkCopyHandler, TdsParserStateObject stateObj, Boolean& dataReady)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryHasMoreRows(Boolean& moreRows)
+   at Microsoft.Data.SqlClient.SqlDataReader.TryReadInternal(Boolean setTimeout, Boolean& more)
+   at Microsoft.Data.SqlClient.SqlDataReader.ReadAsyncExecute(Task task, Object state)
+   at Microsoft.Data.SqlClient.SqlDataReader.InvokeAsyncCall[T](SqlDataReaderBaseAsyncCallContext`1 context)
+--- End of stack trace from previous location ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+ClientConnectionId:c81788ad-7534-4d86-93cf-797517d7dff6
+Error Number:515,State:2,Class:16
+   --- End of inner exception stack trace ---
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeResultSetAsync(Int32 startCommandIndex, RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.AffectedCountModificationCommandBatch.ConsumeAsync(RelationalDataReader reader, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.ReaderModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Update.Internal.SqlServerModificationCommandBatch.ExecuteAsync(IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Update.Internal.BatchExecutor.ExecuteAsync(IEnumerable`1 commandBatches, IRelationalConnection connection, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.Storage.RelationalDatabase.SaveChangesAsync(IList`1 entries, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(IList`1 entriesToSave, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.ChangeTracking.Internal.StateManager.SaveChangesAsync(StateManager stateManager, Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.SqlServer.Storage.Internal.SqlServerExecutionStrategy.ExecuteAsync[TState,TResult](TState state, Func`4 operation, Func`4 verifySucceeded, CancellationToken cancellationToken)
+   at Microsoft.EntityFrameworkCore.DbContext.SaveChangesAsync(Boolean acceptAllChangesOnSuccess, CancellationToken cancellationToken)
+2026-07-17 23:33:14.017 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:33:33.941 +03:30 [INF] 1 servers were removed due to timeout
+2026-07-17 23:33:34.233 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-17 23:33:45.000 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:34:15.009 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:34:45.015 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent
+2026-07-17 23:35:15.020 +03:30 [DBG] Server desktop-vjsq4i2:14160:c25cbe77 heartbeat successfully sent

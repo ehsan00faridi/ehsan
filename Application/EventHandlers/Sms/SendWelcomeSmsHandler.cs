@@ -1,4 +1,4 @@
-﻿using Application.Features.Products.Orders.Event;
+﻿using Application.Features.Orders.Event;
 using Application.Services.Sms;
 using MediatR;
 

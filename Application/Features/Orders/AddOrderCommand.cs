@@ -1,7 +1,7 @@
 ﻿using Application.Command.MediatR;
 using MediatR;
 
-namespace Application.Features.Products.Orders
+namespace Application.Features.Orders
 {
     public class AddOrderCommand:BaseCommandRequest,IRequest<bool>
     {

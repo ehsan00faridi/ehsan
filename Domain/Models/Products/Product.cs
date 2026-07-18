@@ -14,9 +14,9 @@ namespace Domain.Models.Products
         public Mechanicalproppertis Property { get; private set; } 
         public ICollection<OrderItems> Items { get; }
         public string Img { get; set; } = string.Empty;//neme img
-        public Product(string name, decimal price, int qty)
+        public Product(string name, decimal price, int qty,string Img)
         {
-
+            this.Img=Img;
             Name = name;
             Price = price;
             Qty = qty;

@@ -1,5 +1,4 @@
 ﻿using Application.Command.Pagination;
-using Application.Features.Products.Dto;
 using Application.Features.Products.Query;
 using Dapper;
 using System.Data;
@@ -17,7 +16,7 @@ namespace Infrastructure.Queries
             _connection = connection;
         }
 
-        public async Task<PaginatedList<ProductDto>> GetProductsAsync(
+        public async Task<PaginatedList<Domain.Models.Products.ProductDto>> GetProductsAsync(
             string? search,
             int pageNumber,
             int pageSize,
@@ -54,17 +53,17 @@ namespace Infrastructure.Queries
         ";
 
             var items = disablePaging
-     ? await _connection.QueryAsync<ProductDto>(sql.Replace("OFFSET @Offset ROWS FETCH NEXT @PageSize ROWS ONLY", "")
+     ? await _connection.QueryAsync<Domain.Models.Products.ProductDto>(sql.Replace("OFFSET @Offset ROWS FETCH NEXT @PageSize ROWS ONLY", "")
                 , new { Search = $"%{search}%" })
 
-                : await _connection.QueryAsync<ProductDto>(sql, new
+                : await _connection.QueryAsync<Domain.Models.Products.ProductDto>(sql, new
                 {
                     Search = $"%{search}%",
                     Offset = (pageNumber - 1) * pageSize,
                     PageSize = pageSize
                 });
 
-            return new PaginatedList<ProductDto>(
+            return new PaginatedList<Domain.Models.Products.ProductDto>(
                  items.ToList(),
                  pageNumber,
                  pageSize,

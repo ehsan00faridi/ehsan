@@ -41,7 +41,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "Application.Features.Products.Orders.AddOrderCommand",
+        "Type": "Application.Features.Orders.AddOrderCommand",
         "IsRequired": true
       }
     ],

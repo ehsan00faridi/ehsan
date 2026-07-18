@@ -25,20 +25,9 @@
         @await Component.InvokeAsync("ProductList", new
         {
             pageNumber = pageNumber,
-                pageSize = pageSize,
+                pageSize = 20,
                 search = search,
                 disablePaging = false
                 })
     </div>
 </div>
-<form asp-controller="OrderController" asp-action="AddOrder" method="post">
-  
-    <div class="form-group">
-        <label >pr</label>
-        <input name="ProductId" class="form-control" />
-        <label>qty</label>
-        <input name="ProductId" class="form-control" />
-    </div>
-
-    <button type="submit" class="btn btn-primary">Send</button>
-</form>

@@ -3,14 +3,54 @@
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "AddProduct",
     "RelativePath": "AddProduct",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "AddProduct",
+    "RelativePath": "AddProduct",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "Application.Features.Products.Command.AddProductCommand",
-        "IsRequired": true
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Qty",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "imgname",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Img",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      },
+      {
+        "Name": "Weight",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "material",
+        "Type": "System.String",
+        "IsRequired": false
       }
     ],
     "ReturnTypes": []

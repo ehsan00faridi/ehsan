@@ -18,7 +18,7 @@ namespace Application.Features.Products.Dto
         public string Weight { get; set; }
         public string material { get; set; }
      //   public string? imgname { get; set; }
-       public string? Img {  get; set; }
+        public string? Img {  get; set; }
         public IFormFile? Imgfile { get; set; }
 
     }

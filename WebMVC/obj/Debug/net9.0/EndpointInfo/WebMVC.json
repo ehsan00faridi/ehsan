@@ -156,25 +156,74 @@
       }
     },
     "/AddProduct": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      },
       "post": {
         "tags": [
           "Product"
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/AddProductCommand"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/AddProductCommand"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/AddProductCommand"
+                "type": "object",
+                "properties": {
+                  "Name": {
+                    "type": "string"
+                  },
+                  "Price": {
+                    "type": "number",
+                    "format": "double"
+                  },
+                  "Qty": {
+                    "type": "integer",
+                    "format": "int32"
+                  },
+                  "imgname": {
+                    "type": "string"
+                  },
+                  "Img": {
+                    "type": "string",
+                    "format": "binary"
+                  },
+                  "Weight": {
+                    "type": "string"
+                  },
+                  "material": {
+                    "type": "string"
+                  }
+                }
+              },
+              "encoding": {
+                "Name": {
+                  "style": "form"
+                },
+                "Price": {
+                  "style": "form"
+                },
+                "Qty": {
+                  "style": "form"
+                },
+                "imgname": {
+                  "style": "form"
+                },
+                "Img": {
+                  "style": "form"
+                },
+                "Weight": {
+                  "style": "form"
+                },
+                "material": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -230,41 +279,6 @@
           "qty": {
             "type": "integer",
             "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "AddProductCommand": {
-        "type": "object",
-        "properties": {
-          "name": {
-            "type": "string",
-            "nullable": true
-          },
-          "price": {
-            "type": "number",
-            "format": "double"
-          },
-          "qty": {
-            "type": "integer",
-            "format": "int32"
-          },
-          "imgname": {
-            "type": "string",
-            "nullable": true
-          },
-          "img": {
-            "type": "string",
-            "format": "binary",
-            "nullable": true
-          },
-          "weight": {
-            "type": "string",
-            "nullable": true
-          },
-          "material": {
-            "type": "string",
-            "nullable": true
           }
         },
         "additionalProperties": false
