@@ -26,8 +26,9 @@ namespace Domain.Models.Products
         {
             Property= mechanicalproppertis;
         }
-        public void  Update( string name, decimal price, int qty )
+        public void  Update( string name, decimal price, int qty, string Img)
         {
+            this.Img = Img;
             Name = name;
             Price = price;
             Qty = qty;

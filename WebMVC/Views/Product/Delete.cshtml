@@ -3,29 +3,74 @@
 
 <div class="container py-5" dir="rtl">
     <div class="row justify-content-center">
-        <div class="col-md-6">
-            <div class="card shadow-sm border-0">
-                <div class="card-header bg-danger text-white">
-                    <h4 class="mb-0">حذف محصول: @Model.Name</h4>
+        <div class="col-md-8">
+            <div class="card shadow-lg border-0">
+                <div class="card-header bg-danger text-white d-flex align-items-center">
+                    <i class="bi bi-exclamation-triangle-fill me-2"></i>
+                    <h4 class="mb-0">تایید حذف محصول</h4>
                 </div>
 
                 <div class="card-body p-4">
-                    <div class="alert alert-warning">
-                        آیا مطمئن هستید که می‌خواهید محصول <strong>@Model.Name</strong> را حذف کنید؟
+                    <div class="alert alert-danger d-flex align-items-center" role="alert">
+                        <div>
+                            هشدار: شما در حال حذف محصول <strong>@Model.Name</strong> هستید. این عملیات غیرقابل بازگشت است!
+                        </div>
                     </div>
 
-                    <form action="/Product/Delete" method="post">
+                    <div class="row mt-4">
+                 
+                        <div class="col-md-4 text-center mb-3">
+                            @if (!string.IsNullOrEmpty(Model.Img))
+                            {
+                                <img src="~/api/Fileroot/GetFile?filename=@Model.Img"
+                                     class="card-img-top" alt="@Model.Name" class="img-thumbnail shadow-sm" style="max-height: 200px;">
+                            }
+                            else
+                            {
+                                <div class="bg-light d-flex align-items-center justify-content-center border rounded" style="height: 200px;">
+                                    <span class="text-muted">فاقد تصویر</span>
+                                </div>
+                            }
+                        </div>
+
+              
+                        <div class="col-md-8">
+                            <dl class="row">
+                                <dt class="col-sm-4 text-secondary">شناسه محصول:</dt>
+                                <dd class="col-sm-8 fw-bold">#@Model.Id</dd>
+
+                                <dt class="col-sm-4 text-secondary">نام محصول:</dt>
+                                <dd class="col-sm-8">@Model.Name</dd>
+
+                                <dt class="col-sm-4 text-secondary">قیمت:</dt>
+                                <dd class="col-sm-8 text-success fw-bold">@Model.Price.ToString("N0") ریال</dd>
+
+                                <dt class="col-sm-4 text-secondary">موجودی انبار:</dt>
+                                <dd class="col-sm-8">@Model.Qty عدد</dd>
+
+                                <dt class="col-sm-4 text-secondary">وزن:</dt>
+                                <dd class="col-sm-8">@Model.Weight</dd>
+
+                                <dt class="col-sm-4 text-secondary">جنس/متریال:</dt>
+                                <dd class="col-sm-8">@Model.material</dd>
+                            </dl>
+                        </div>
+                    </div>
+
+                    <hr />
+
+                    <form action="/Product/Delete" method="post" class="mt-4">
                         @Html.AntiForgeryToken()
+           
+                        <input type="hidden" asp-for="Id" />
 
-                        <input type="hidden" name="id" value="@Model.Id" />
-
-                        <div class="d-flex justify-content-end gap-2">
-                            <a href="/Product/GetProducts" class="btn btn-secondary">
-                                انصراف
+                        <div class="d-flex justify-content-end gap-3">
+                            <a href="/Product/GetProducts" class="btn btn-outline-secondary px-4">
+                                <i class="bi bi-arrow-right me-1"></i> بازگشت به لیست
                             </a>
 
-                            <button type="submit" class="btn btn-danger">
-                                بله، حذف شود
+                            <button type="submit" class="btn btn-danger px-4">
+                                <i class="bi bi-trash me-1"></i> تایید و حذف نهایی
                             </button>
                         </div>
                     </form>

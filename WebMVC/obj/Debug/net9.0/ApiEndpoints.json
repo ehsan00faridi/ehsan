@@ -169,14 +169,65 @@
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "UpdateProduct",
-    "RelativePath": "UpdateProduct",
+    "RelativePath": "Product/UpdateProduct",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "command",
-        "Type": "Application.Features.Products.Command.UpdateProductCommand",
+        "Name": "Id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Name",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Price",
+        "Type": "System.Decimal",
+        "IsRequired": false
+      },
+      {
+        "Name": "Qty",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "Weight",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "material",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Img",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "Imgfile",
+        "Type": "Microsoft.AspNetCore.Http.IFormFile",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "UpdateProduct",
+    "RelativePath": "UpdateProduct/{Id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],

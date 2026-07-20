@@ -1,4 +1,5 @@
 ﻿using Application.Features.Products.Command;
+using Application.Features.Products.Dto;
 using Application.Features.Products.Query;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
@@ -14,6 +15,7 @@ namespace WebMVC.Controllers
         {
             _mediator = mediator;
         }
+
         [Authorize]
         [HttpGet("GetProduct/{Id}")]
         public async Task<IActionResult> GetProduct(int Id)////valifation nadarad
@@ -33,7 +35,7 @@ namespace WebMVC.Controllers
             return View(data);
         }
 
-
+        [Authorize(Roles = "Admin")]
         [HttpGet("Product/Delete/{id}")] 
         public async Task<IActionResult> Delete(int id)
         {
@@ -44,7 +46,7 @@ namespace WebMVC.Controllers
 
             return View(data);
         }
-
+        [Authorize(Roles = "Admin")]
         [HttpPost("Product/Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Delete([FromForm] DeleteProductCommand command)
@@ -84,17 +86,34 @@ namespace WebMVC.Controllers
             TempData["SuccessMessage"] = "محصول با موفقیت ثبت شد.";
             return RedirectToAction(nameof(AddProduct));
         }
-    
 
-      
+        [Authorize(Roles = "Admin")]
+        [HttpGet("UpdateProduct/{Id:int}")]
+        public async Task<IActionResult> UpdateProduct( int Id)
+        {
+            var query = new GetProductByIdQuery() { Id = Id };
+            var data = await _mediator.Send(query);
+            //ProductDto product =new ProductDto() {Id=data.Id,
+            //Img=data.Img,
+            //Name=data.Name,
+            //material=data.material,
+            //Weight=data.Weight,
+            //Price=data.Price,
+            //Qty=data.Qty
+            //} ;
+            return View(data);
 
-        [HttpPost("UpdateProduct")]
-        public async Task<IActionResult> UpdateProduct([FromBody] UpdateProductCommand command)
+        }
+
+        [Authorize(Roles = "Admin")]
+        [HttpPost("Product/UpdateProduct")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdateProduct( UpdateProductCommand command)
         {
           var data=   await _mediator.Send(command);
-            
-            return Ok(data);
 
+
+            return RedirectToAction(nameof(ProductList));
         }
     }
 }

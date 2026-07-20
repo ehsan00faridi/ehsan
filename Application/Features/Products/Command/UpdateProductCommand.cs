@@ -1,4 +1,6 @@
-﻿using MediatR;
+﻿using Application.Features.Products.Dto;
+using MediatR;
+using Microsoft.AspNetCore.Http;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -7,11 +9,9 @@ using System.Threading.Tasks;
 
 namespace Application.Features.Products.Command
 {
-    public record UpdateProductCommand(int id,
-        string name,
-        decimal price,
-        int qty,
-        string weight,
-        string material
-        ):IRequest<bool>;
+    public class UpdateProductCommand : ProductDto,IRequest<bool>{
+
+
+
+}
 }

@@ -29,11 +29,7 @@ namespace Application.Features.Products.Command
             var product = new Product(request.Name, request.Price, request.Qty,fileName);
             product.SetProperty(new Mechanicalproppertis(request.Weight, request.material));
 
-            // اگر داخل مدل Product فیلد/پراپرتی تصویر داری:
-            // product.SetImage(fileName);
-            // یا:
-            // product.ImgName = fileName;
-
+ 
             await _productRepository.AddAsync(product);
             await _productRepository.UnitOfWork.SaveEntitiesAsync(cancellationToken);
 

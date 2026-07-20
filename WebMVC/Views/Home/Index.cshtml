@@ -20,6 +20,26 @@
     string search = Context.Request.Query["search"].ToString() ?? "";
 }
 
+
+
+
+<form class="d-flex justify-content-center mb-4"
+      asp-controller="Product"
+      asp-action="ProductList"
+      method="get">
+    <div class="input-group w-50">
+        <input value="@ViewBag.search"
+               name="Search"
+               class="form-control"
+               placeholder="جستجوی محصولات یا توضیحات..." />
+
+        <button class="btn btn-primary" type="submit">
+            <i class="fa fa-search"></i>
+        </button>
+    </div>
+</form>
+
+
 <div class="container">
     <div class="row g-4">
         @await Component.InvokeAsync("ProductList", new
