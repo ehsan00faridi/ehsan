@@ -29,6 +29,7 @@ namespace WebMVC.Controllers
         {
          
             var data = await _mediator.Send(Query);
+            ViewBag.search=Query.Search;
             return View(data);
         }
 
@@ -55,15 +56,7 @@ namespace WebMVC.Controllers
         }
 
 
-        //    [HttpPost("DeleteProduct")]
-        //public async Task<IActionResult> DeleteProduct([FromBody] DeleteProductCommand command)
-        //{
-
-        //  //  var Query = new GetProductByIdQuery() { Id = Id };
-        //    var data = await _mediator.Send(command);
-        //    return Ok(data);
-
-        //}
+      
         [Authorize(Roles = "Admin")]
         [HttpGet("AddProduct")]
         public IActionResult AddProduct()

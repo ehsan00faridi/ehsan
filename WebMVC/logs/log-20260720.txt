@@ -366,3 +366,57 @@
 2026-07-20 09:52:41.894 +03:30 [DBG] Server desktop-vjsq4i2:9800:d6f1d8c5 heartbeat successfully sent
 2026-07-20 09:53:11.901 +03:30 [DBG] Server desktop-vjsq4i2:9800:d6f1d8c5 heartbeat successfully sent
 2026-07-20 09:53:41.903 +03:30 [DBG] Server desktop-vjsq4i2:9800:d6f1d8c5 heartbeat successfully sent
+2026-07-20 10:09:12.611 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-20 10:09:15.554 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-20 10:09:16.059 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-20 10:09:16.062 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-20 10:09:16.063 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-20 10:09:16.099 +03:30 [DBG] Execution loop BackgroundServerProcess:65b742fe has started in 5.6212 ms
+2026-07-20 10:09:16.293 +03:30 [INF] Server desktop-vjsq4i2:13116:e8394c5e successfully announced in 187.5332 ms
+2026-07-20 10:09:16.299 +03:30 [DBG] Execution loop ServerHeartbeatProcess:11064820 has started in 1.9415 ms
+2026-07-20 10:09:16.300 +03:30 [INF] Server desktop-vjsq4i2:13116:e8394c5e is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-20 10:09:16.304 +03:30 [DBG] Execution loop ServerWatchdog:c158a485 has started in 0.5773 ms
+2026-07-20 10:09:16.304 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:ea1aac22 has started in 0.4103 ms
+2026-07-20 10:09:16.305 +03:30 [DBG] Execution loop ExpirationManager:ca69efb7 has started in 0.6617 ms
+2026-07-20 10:09:16.306 +03:30 [DBG] Execution loop CountersAggregator:86fab689 has started in 0.3129 ms
+2026-07-20 10:09:16.314 +03:30 [DBG] Execution loop Worker:70c7080a has started in 7.4671 ms
+2026-07-20 10:09:16.307 +03:30 [DBG] Execution loop Worker:0548c424 has started in 0.7983 ms
+2026-07-20 10:09:16.308 +03:30 [DBG] Execution loop Worker:9d1ce82b has started in 1.2112 ms
+2026-07-20 10:09:16.308 +03:30 [DBG] Execution loop Worker:71d10bec has started in 1.5573 ms
+2026-07-20 10:09:16.308 +03:30 [DBG] Execution loop Worker:58f3d17f has started in 1.822 ms
+2026-07-20 10:09:16.309 +03:30 [DBG] Execution loop Worker:4583ac88 has started in 2.0901 ms
+2026-07-20 10:09:16.309 +03:30 [DBG] Execution loop Worker:473088ff has started in 2.4272 ms
+2026-07-20 10:09:16.312 +03:30 [DBG] Execution loop Worker:d1ea1472 has started in 5.0687 ms
+2026-07-20 10:09:16.312 +03:30 [DBG] Execution loop Worker:d7723927 has started in 5.3712 ms
+2026-07-20 10:09:16.312 +03:30 [DBG] Execution loop Worker:18388b98 has started in 5.6415 ms
+2026-07-20 10:09:16.313 +03:30 [DBG] Execution loop Worker:b9d7c45a has started in 6.0031 ms
+2026-07-20 10:09:16.313 +03:30 [DBG] Execution loop Worker:8314fea4 has started in 6.3788 ms
+2026-07-20 10:09:16.313 +03:30 [DBG] Execution loop Worker:dd1e9cad has started in 6.6523 ms
+2026-07-20 10:09:16.313 +03:30 [DBG] Execution loop Worker:6a63ff12 has started in 6.9099 ms
+2026-07-20 10:09:16.306 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:8ba84167 has started in 0.7949 ms
+2026-07-20 10:09:16.314 +03:30 [INF] 1 servers were removed due to timeout
+2026-07-20 10:09:16.314 +03:30 [DBG] Execution loop Worker:67bcb82b has started in 7.792 ms
+2026-07-20 10:09:16.315 +03:30 [DBG] Execution loop Worker:f02d0176 has started in 8.0672 ms
+2026-07-20 10:09:16.315 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-20 10:09:16.315 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-20 10:09:16.315 +03:30 [DBG] Execution loop Worker:520579ce has started in 8.43 ms
+2026-07-20 10:09:16.315 +03:30 [DBG] Execution loop Worker:717d3774 has started in 8.754 ms
+2026-07-20 10:09:16.316 +03:30 [DBG] Execution loop Worker:4784a275 has started in 8.9889 ms
+2026-07-20 10:09:16.316 +03:30 [DBG] Execution loop Worker:00d55935 has started in 9.307 ms
+2026-07-20 10:09:16.316 +03:30 [DBG] Execution loop DelayedJobScheduler:759e30ee has started in 0.311 ms
+2026-07-20 10:09:16.317 +03:30 [INF] Server desktop-vjsq4i2:13116:e8394c5e all the dispatchers started
+2026-07-20 10:09:16.317 +03:30 [DBG] Execution loop RecurringJobScheduler:96f9f702 has started in 0.5361 ms
+2026-07-20 10:09:16.419 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-20 10:09:16.432 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-20 10:09:16.437 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-20 10:09:16.442 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-20 10:09:16.770 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-20 10:09:16.928 +03:30 [WRN] Failed to determine the https port for redirect.
+2026-07-20 10:09:23.288 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-20 10:09:23.292 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-20 10:09:46.299 +03:30 [DBG] Server desktop-vjsq4i2:13116:e8394c5e heartbeat successfully sent
+2026-07-20 10:10:16.318 +03:30 [DBG] Server desktop-vjsq4i2:13116:e8394c5e heartbeat successfully sent

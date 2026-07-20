@@ -19,7 +19,7 @@
     <!-- Search -->
     <form class="d-flex justify-content-center mb-4"
           asp-action="ProductList"
-          asp-route-page="1">
+          asp-route-PageNumber="1">
         <div class="input-group w-50">
             <input value="@ViewBag.search"
                    name="search"
@@ -63,15 +63,15 @@
     </div>
 
 
-@*     <!-- Pagination -->
+    <!-- Pagination -->
     <nav class="mt-5 d-flex justify-content-center">
         <ul class="pagination">
 
-            @for (int i = 1; i <= Model.TotalPage; i++)
+            @for (int i = 1; i <= Model.TotalCount; i++)
             {
-                <li class="page-item @(i == Model.Page ? "active" : "")">
+                <li class="page-item @(i == Model.PageNumber ? "active" : "")">
                     <a class="page-link"
-                       asp-action="BookList"
+                       asp-action="ProductList"
                        asp-route-search="@ViewBag.search"
                        asp-route-page="@i">
                         @i
@@ -83,4 +83,8 @@
     </nav>
 
 </div>
+<<<<<<< HEAD
  *@ 
+=======
+ 
+>>>>>>> 2d10e35 (Create a Pagination List view  -)
