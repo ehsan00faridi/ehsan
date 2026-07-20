@@ -93,14 +93,7 @@ namespace WebMVC.Controllers
         {
             var query = new GetProductByIdQuery() { Id = Id };
             var data = await _mediator.Send(query);
-            //ProductDto product =new ProductDto() {Id=data.Id,
-            //Img=data.Img,
-            //Name=data.Name,
-            //material=data.material,
-            //Weight=data.Weight,
-            //Price=data.Price,
-            //Qty=data.Qty
-            //} ;
+          
             return View(data);
 
         }
