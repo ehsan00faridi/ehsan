@@ -5,7 +5,7 @@ namespace Application.Command.MediatR
     {
         public string Search {  get; set; }=string.Empty;
         public int PageNumber { get; set; } = 1;
-        public int PageSize { get; set; } = 3;
+        public int PageSize { get; set; } = 30;
         public bool DisablePaging { get; set; } = false;
 
     }

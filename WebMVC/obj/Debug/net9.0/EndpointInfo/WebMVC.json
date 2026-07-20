@@ -80,7 +80,7 @@
         }
       }
     },
-    "/GetProducts": {
+    "/GetProductList": {
       "get": {
         "tags": [
           "Product"
@@ -124,26 +124,50 @@
         }
       }
     },
-    "/DeleteProduct": {
+    "/Product/Delete/{id}": {
+      "get": {
+        "tags": [
+          "Product"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Success"
+          }
+        }
+      }
+    },
+    "/Product/Delete": {
       "post": {
         "tags": [
           "Product"
         ],
         "requestBody": {
           "content": {
-            "application/json": {
+            "multipart/form-data": {
               "schema": {
-                "$ref": "#/components/schemas/DeleteProductCommand"
-              }
-            },
-            "text/json": {
-              "schema": {
-                "$ref": "#/components/schemas/DeleteProductCommand"
-              }
-            },
-            "application/*+json": {
-              "schema": {
-                "$ref": "#/components/schemas/DeleteProductCommand"
+                "type": "object",
+                "properties": {
+                  "id": {
+                    "type": "integer",
+                    "format": "int32"
+                  }
+                }
+              },
+              "encoding": {
+                "id": {
+                  "style": "form"
+                }
               }
             }
           }
@@ -277,16 +301,6 @@
             "format": "int32"
           },
           "qty": {
-            "type": "integer",
-            "format": "int32"
-          }
-        },
-        "additionalProperties": false
-      },
-      "DeleteProductCommand": {
-        "type": "object",
-        "properties": {
-          "id": {
             "type": "integer",
             "format": "int32"
           }

@@ -124,3 +124,156 @@
 2026-07-18 22:10:08.863 +03:30 [DBG] Server desktop-vjsq4i2:15636:f245bb19 heartbeat successfully sent
 2026-07-18 22:10:38.869 +03:30 [DBG] Server desktop-vjsq4i2:15636:f245bb19 heartbeat successfully sent
 2026-07-18 22:11:08.881 +03:30 [DBG] Server desktop-vjsq4i2:15636:f245bb19 heartbeat successfully sent
+2026-07-18 22:11:33.961 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-18 22:11:34.414 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-18 22:11:35.085 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-18 22:11:35.087 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-18 22:11:35.089 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-18 22:11:35.147 +03:30 [DBG] Execution loop BackgroundServerProcess:a6c8f806 has started in 7.0456 ms
+2026-07-18 22:11:35.330 +03:30 [INF] Server desktop-vjsq4i2:8952:b8928426 successfully announced in 172.4495 ms
+2026-07-18 22:11:35.335 +03:30 [DBG] Execution loop ServerHeartbeatProcess:6164cb7c has started in 1.7201 ms
+2026-07-18 22:11:35.336 +03:30 [INF] Server desktop-vjsq4i2:8952:b8928426 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-18 22:11:35.340 +03:30 [DBG] Execution loop ServerWatchdog:7001ce0c has started in 0.5706 ms
+2026-07-18 22:11:35.340 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:f45f6633 has started in 0.3842 ms
+2026-07-18 22:11:35.343 +03:30 [DBG] Execution loop Worker:7fec393a has started in 1.2231 ms
+2026-07-18 22:11:35.345 +03:30 [DBG] Execution loop Worker:52f15eb1 has started in 3.006 ms
+2026-07-18 22:11:35.342 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:ed98fd54 has started in 0.4531 ms
+2026-07-18 22:11:35.343 +03:30 [DBG] Execution loop Worker:6932adbe has started in 0.7102 ms
+2026-07-18 22:11:35.341 +03:30 [DBG] Execution loop ExpirationManager:70301c08 has started in 0.4725 ms
+2026-07-18 22:11:35.343 +03:30 [DBG] Execution loop Worker:e15b2c4e has started in 1.5555 ms
+2026-07-18 22:11:35.344 +03:30 [DBG] Execution loop Worker:81ee0b09 has started in 1.8174 ms
+2026-07-18 22:11:35.344 +03:30 [DBG] Execution loop Worker:3ea0c39f has started in 2.1389 ms
+2026-07-18 22:11:35.344 +03:30 [DBG] Execution loop Worker:442f7768 has started in 2.4852 ms
+2026-07-18 22:11:35.345 +03:30 [DBG] Execution loop Worker:2f95b897 has started in 2.7732 ms
+2026-07-18 22:11:35.341 +03:30 [DBG] Execution loop CountersAggregator:95f08687 has started in 0.3081 ms
+2026-07-18 22:11:35.345 +03:30 [DBG] Execution loop Worker:43280320 has started in 3.2958 ms
+2026-07-18 22:11:35.346 +03:30 [DBG] Execution loop Worker:ef0acea5 has started in 3.6514 ms
+2026-07-18 22:11:35.346 +03:30 [DBG] Execution loop Worker:9425f159 has started in 3.944 ms
+2026-07-18 22:11:35.346 +03:30 [DBG] Execution loop Worker:b6a0a182 has started in 4.257 ms
+2026-07-18 22:11:35.346 +03:30 [DBG] Execution loop Worker:f26946d2 has started in 4.5289 ms
+2026-07-18 22:11:35.347 +03:30 [DBG] Execution loop Worker:4b9a0868 has started in 4.8161 ms
+2026-07-18 22:11:35.347 +03:30 [DBG] Execution loop Worker:83e5960a has started in 5.0853 ms
+2026-07-18 22:11:35.347 +03:30 [DBG] Execution loop Worker:26efb345 has started in 5.3604 ms
+2026-07-18 22:11:35.347 +03:30 [DBG] Execution loop Worker:77e5775a has started in 5.6009 ms
+2026-07-18 22:11:35.348 +03:30 [DBG] Execution loop Worker:06ba5610 has started in 5.8586 ms
+2026-07-18 22:11:35.348 +03:30 [DBG] Execution loop Worker:36f5f364 has started in 6.1842 ms
+2026-07-18 22:11:35.348 +03:30 [DBG] Execution loop Worker:1d0ca168 has started in 6.4183 ms
+2026-07-18 22:11:35.349 +03:30 [DBG] Execution loop DelayedJobScheduler:1124b9c0 has started in 0.3232 ms
+2026-07-18 22:11:35.349 +03:30 [INF] Server desktop-vjsq4i2:8952:b8928426 all the dispatchers started
+2026-07-18 22:11:35.349 +03:30 [DBG] Execution loop RecurringJobScheduler:f59246a5 has started in 0.3551 ms
+2026-07-18 22:11:35.354 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-18 22:11:35.363 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-18 22:11:35.421 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-18 22:11:35.425 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-18 22:11:35.428 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-18 22:11:35.431 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-18 22:12:05.341 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:12:35.355 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:13:05.369 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:13:35.384 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:14:05.398 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:14:09.721 +03:30 [WRN] You do not have a valid license key for the Lucky Penny software MediatR. This is allowed for development and testing scenarios. If you are running in production you are required to have a licensed version. Please visit https://luckypennysoftware.com to obtain a valid license.
+2026-07-18 22:14:11.171 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'OrderItems'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-18 22:14:11.175 +03:30 [WRN] No store type was specified for the decimal property 'Price' on entity type 'Product'. This will cause values to be silently truncated if they do not fit in the default precision and scale. Explicitly specify the SQL server column type that can accommodate all the values in 'OnModelCreating' using 'HasColumnType', specify precision and scale using 'HasPrecision', or configure a value converter using 'HasConversion'.
+2026-07-18 22:14:35.399 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:15:05.414 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:15:35.431 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:16:05.444 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:16:35.426 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-18 22:16:35.460 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:17:05.473 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:17:35.475 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:18:05.486 +03:30 [DBG] Server desktop-vjsq4i2:8952:b8928426 heartbeat successfully sent
+2026-07-18 22:18:29.409 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-18 22:18:30.039 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-18 22:18:30.708 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-18 22:18:30.710 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-18 22:18:30.712 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-18 22:18:30.755 +03:30 [DBG] Execution loop BackgroundServerProcess:e0e88dc0 has started in 4.8526 ms
+2026-07-18 22:18:30.948 +03:30 [INF] Server desktop-vjsq4i2:7072:05998ecd successfully announced in 187.6931 ms
+2026-07-18 22:18:30.953 +03:30 [DBG] Execution loop ServerHeartbeatProcess:0d2576e7 has started in 1.7472 ms
+2026-07-18 22:18:30.954 +03:30 [INF] Server desktop-vjsq4i2:7072:05998ecd is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-18 22:18:30.957 +03:30 [DBG] Execution loop ServerWatchdog:01c9ca96 has started in 0.4319 ms
+2026-07-18 22:18:30.957 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:fd8ba589 has started in 0.3634 ms
+2026-07-18 22:18:30.958 +03:30 [DBG] Execution loop ExpirationManager:c4813150 has started in 0.6043 ms
+2026-07-18 22:18:30.962 +03:30 [DBG] Execution loop Worker:4256579b has started in 3.266 ms
+2026-07-18 22:18:30.959 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:ad2e9a07 has started in 0.3752 ms
+2026-07-18 22:18:30.960 +03:30 [DBG] Execution loop Worker:3c6fcfff has started in 0.7577 ms
+2026-07-18 22:18:30.960 +03:30 [DBG] Execution loop Worker:73190cf4 has started in 1.0122 ms
+2026-07-18 22:18:30.960 +03:30 [DBG] Execution loop Worker:93bccfb2 has started in 1.3205 ms
+2026-07-18 22:18:30.961 +03:30 [DBG] Execution loop Worker:a396e845 has started in 1.8813 ms
+2026-07-18 22:18:30.961 +03:30 [DBG] Execution loop Worker:624810d5 has started in 2.1906 ms
+2026-07-18 22:18:30.961 +03:30 [DBG] Execution loop Worker:50731a85 has started in 2.4464 ms
+2026-07-18 22:18:30.962 +03:30 [DBG] Execution loop Worker:019b5a3a has started in 2.7383 ms
+2026-07-18 22:18:30.962 +03:30 [DBG] Execution loop Worker:17ded913 has started in 2.9695 ms
+2026-07-18 22:18:30.958 +03:30 [DBG] Execution loop CountersAggregator:8bd0244a has started in 0.3417 ms
+2026-07-18 22:18:30.963 +03:30 [DBG] Execution loop Worker:61e6db71 has started in 3.7355 ms
+2026-07-18 22:18:30.963 +03:30 [DBG] Execution loop Worker:56b2861f has started in 4.2971 ms
+2026-07-18 22:18:30.963 +03:30 [DBG] Execution loop Worker:7b1a7e63 has started in 4.5922 ms
+2026-07-18 22:18:30.964 +03:30 [DBG] Execution loop Worker:df33164f has started in 4.936 ms
+2026-07-18 22:18:30.964 +03:30 [DBG] Execution loop Worker:470e84e3 has started in 5.1875 ms
+2026-07-18 22:18:30.964 +03:30 [DBG] Execution loop Worker:dd2782ab has started in 5.4715 ms
+2026-07-18 22:18:30.965 +03:30 [DBG] Execution loop Worker:7edc35be has started in 5.8674 ms
+2026-07-18 22:18:30.965 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-18 22:18:30.965 +03:30 [DBG] Execution loop Worker:0f9bfa99 has started in 6.1486 ms
+2026-07-18 22:18:30.965 +03:30 [DBG] Execution loop Worker:0bfbd3dd has started in 6.363 ms
+2026-07-18 22:18:30.965 +03:30 [DBG] Execution loop Worker:4c0a7488 has started in 6.5981 ms
+2026-07-18 22:18:30.966 +03:30 [DBG] Execution loop Worker:243d53f1 has started in 6.8484 ms
+2026-07-18 22:18:30.966 +03:30 [DBG] Execution loop DelayedJobScheduler:54a6a51a has started in 0.334 ms
+2026-07-18 22:18:30.966 +03:30 [INF] Server desktop-vjsq4i2:7072:05998ecd all the dispatchers started
+2026-07-18 22:18:30.966 +03:30 [DBG] Execution loop RecurringJobScheduler:09829ba3 has started in 0.3162 ms
+2026-07-18 22:18:30.981 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-18 22:18:31.058 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-18 22:18:31.067 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-18 22:18:31.072 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-18 22:18:31.076 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-18 22:19:00.971 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:19:30.974 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:20:00.993 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:20:30.996 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:21:01.014 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:21:31.028 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:22:01.028 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:22:31.043 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:23:01.057 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:23:30.965 +03:30 [INF] 1 servers were removed due to timeout
+2026-07-18 22:23:31.071 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-18 22:23:31.072 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:24:01.087 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:24:31.099 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:25:01.116 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:25:31.135 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:26:01.150 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:26:31.164 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:27:01.180 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:27:31.197 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:28:01.195 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:28:31.093 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-18 22:28:31.212 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:29:01.224 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:29:31.239 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:30:01.253 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:30:31.268 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:31:01.273 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:31:31.282 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:32:01.298 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:32:31.302 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:33:01.306 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:33:31.137 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-18 22:33:31.310 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:34:01.315 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:34:31.325 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:35:01.340 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:35:31.366 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:36:01.369 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:36:31.383 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:37:01.383 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent
+2026-07-18 22:37:31.398 +03:30 [DBG] Server desktop-vjsq4i2:7072:05998ecd heartbeat successfully sent

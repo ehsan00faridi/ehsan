@@ -1,0 +1,36 @@
+﻿@using Domain.Models.Products
+@model ProductDto
+
+<div class="container py-5" dir="rtl">
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="card shadow-sm border-0">
+                <div class="card-header bg-danger text-white">
+                    <h4 class="mb-0">حذف محصول: @Model.Name</h4>
+                </div>
+
+                <div class="card-body p-4">
+                    <div class="alert alert-warning">
+                        آیا مطمئن هستید که می‌خواهید محصول <strong>@Model.Name</strong> را حذف کنید؟
+                    </div>
+
+                    <form action="/Product/Delete" method="post">
+                        @Html.AntiForgeryToken()
+
+                        <input type="hidden" name="id" value="@Model.Id" />
+
+                        <div class="d-flex justify-content-end gap-2">
+                            <a href="/Product/GetProducts" class="btn btn-secondary">
+                                انصراف
+                            </a>
+
+                            <button type="submit" class="btn btn-danger">
+                                بله، حذف شود
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -42,9 +42,7 @@ namespace Infrastructure.Queries
 
             var sql = $@"
             SELECT 
-                Id,
-                Name,
-                Price
+                *
             FROM Products
             {whereClause}
             ORDER BY Id

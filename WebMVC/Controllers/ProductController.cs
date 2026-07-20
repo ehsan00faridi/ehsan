@@ -2,7 +2,6 @@
 using Application.Features.Products.Query;
 using MediatR;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace WebMVC.Controllers
@@ -25,23 +24,46 @@ namespace WebMVC.Controllers
 
         }
 
-        [HttpGet("GetProducts")]
-        public async Task<IActionResult> GetProducts([FromQuery] GetProductsQuery Query)
+        [HttpGet("GetProductList")]
+        public async Task<IActionResult> ProductList([FromQuery] GetProductsQuery Query)
         {
          
             var data = await _mediator.Send(Query);
-            return Ok(data);
+            return View(data);
         }
 
-            [HttpPost("DeleteProduct")]
-        public async Task<IActionResult> DeleteProduct([FromBody] DeleteProductCommand command)
+
+        [HttpGet("Product/Delete/{id}")] 
+        public async Task<IActionResult> Delete(int id)
         {
+            var query = new GetProductByIdQuery() { Id = id };
+            var data = await _mediator.Send(query);
 
-          //  var Query = new GetProductByIdQuery() { Id = Id };
-            var data = await _mediator.Send(command);
-            return Ok(data);
+            if (data == null) return NotFound(); 
 
+            return View(data);
         }
+
+        [HttpPost("Product/Delete")]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> Delete([FromForm] DeleteProductCommand command)
+        {
+            var result = await _mediator.Send(command);
+
+            
+            return RedirectToAction(nameof(ProductList));
+        }
+
+
+        //    [HttpPost("DeleteProduct")]
+        //public async Task<IActionResult> DeleteProduct([FromBody] DeleteProductCommand command)
+        //{
+
+        //  //  var Query = new GetProductByIdQuery() { Id = Id };
+        //    var data = await _mediator.Send(command);
+        //    return Ok(data);
+
+        //}
         [Authorize(Roles = "Admin")]
         [HttpGet("AddProduct")]
         public IActionResult AddProduct()
@@ -69,15 +91,9 @@ namespace WebMVC.Controllers
             TempData["SuccessMessage"] = "محصول با موفقیت ثبت شد.";
             return RedirectToAction(nameof(AddProduct));
         }
+    
 
-
-        //[HttpPost("AddProduct")]
-        //public async Task<IActionResult> AddProduct([FromBody]AddProductCommand command) { 
-        //var data= await _mediator.Send(command); 
-        //    return Ok(data);
-
-        //}
-
+      
 
         [HttpPost("UpdateProduct")]
         public async Task<IActionResult> UpdateProduct([FromBody] UpdateProductCommand command)

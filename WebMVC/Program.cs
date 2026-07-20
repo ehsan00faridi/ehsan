@@ -21,28 +21,46 @@ Log.Logger = new LoggerConfiguration()
 builder.Host.UseSerilog();
 
 
-var jwtSection = builder.Configuration.GetSection("Jwt");
-var key = jwtSection["Key"] ?? throw new InvalidOperationException("JWT Key is missing");
+//var jwtSection = builder.Configuration.GetSection("Jwt");
+//var key = jwtSection["Key"] ?? throw new InvalidOperationException("JWT Key is missing");
 
-builder.Services.AddAuthentication(options =>
-{
-    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
-    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
-})
-.AddJwtBearer(options =>
-{
-    options.TokenValidationParameters = new TokenValidationParameters
+//builder.Services.AddAuthentication(options =>
+//{
+//    options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
+//    options.DefaultChallengeScheme = JwtBearerDefaults.AuthenticationScheme;
+//})
+//.AddJwtBearer(options =>
+//{
+//    options.TokenValidationParameters = new TokenValidationParameters
+//    {
+//        ValidateIssuer = true,
+//        ValidateAudience = true,
+//        ValidateLifetime = true,
+//        ValidateIssuerSigningKey = true,
+//        ValidIssuer = jwtSection["Issuer"],
+//        ValidAudience = jwtSection["Audience"],
+//        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)),
+//        ClockSkew = TimeSpan.Zero
+//    };
+//});
+
+builder.Services.AddAuthentication("Bearer")
+    .AddJwtBearer("Bearer", options =>
     {
-        ValidateIssuer = true,
-        ValidateAudience = true,
-        ValidateLifetime = true,
-        ValidateIssuerSigningKey = true,
-        ValidIssuer = jwtSection["Issuer"],
-        ValidAudience = jwtSection["Audience"],
-        IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(key)),
-        ClockSkew = TimeSpan.Zero
-    };
-});
+        options.TokenValidationParameters = new TokenValidationParameters
+        {
+            ValidateIssuer = true,
+            ValidateAudience = true,
+            ValidateIssuerSigningKey = true,
+            ValidIssuer = "WebAPI",
+            ValidAudience = "WebAPI",
+            IssuerSigningKey = new SymmetricSecurityKey(
+                Encoding.UTF8.GetBytes("YourSuperSecretKey-WebApi-sadfdgadc@!wrrrrrrrrrrrrrre"))
+        };
+    });
+
+builder.Services.AddAuthorization();
+
 
 builder.Services.AddIdentity<User, Domain.Models.Roles.Role>()
     .AddEntityFrameworkStores<ApplicationDbContext>()
@@ -66,15 +84,6 @@ builder.Services.AddAuthorization(options =>
         policy.RequireClaim("Permission", "CanEdit"));
 });
 
-//dotnet remove package Serilog
-
-
-//builder.Services.AddControllers(options =>
-//{
-//    options.Filters.Add<CustomActionFilter>();
-//    options.Filters.Add<CustomExceptionFilter>();
-
-//});
 
 
 
@@ -106,6 +115,8 @@ app.UseHttpsRedirection();
 app.UseRouting();
 
 app.UseAuthorization();
+//app.UseAuthentication();
+
 
 app.MapStaticAssets();
 

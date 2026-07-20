@@ -73,22 +73,6 @@
   },
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
-    "Method": "DeleteProduct",
-    "RelativePath": "DeleteProduct",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "command",
-        "Type": "Application.Features.Products.Command.DeleteProductCommand",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "GetProduct",
     "RelativePath": "GetProduct/{Id}",
     "HttpMethod": "GET",
@@ -105,8 +89,8 @@
   },
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
-    "Method": "GetProducts",
-    "RelativePath": "GetProducts",
+    "Method": "ProductList",
+    "RelativePath": "GetProductList",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -145,6 +129,38 @@
       {
         "Name": "model",
         "Type": "WebMVC.Models.AddBasketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "Delete",
+    "RelativePath": "Product/Delete",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "Delete",
+    "RelativePath": "Product/Delete/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": true
       }
     ],
