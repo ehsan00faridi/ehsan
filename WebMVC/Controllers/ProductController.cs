@@ -78,8 +78,7 @@ namespace WebMVC.Controllers
         [Authorize(Roles = "Admin")]
         [HttpPost("AddProduct")]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> AddProduct(
-            [FromForm] AddProductCommand command)
+        public async Task<IActionResult> AddProduct([FromForm] AddProductCommand command)
         {
             if (!ModelState.IsValid)
                 return View(command);
