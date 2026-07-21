@@ -16,7 +16,7 @@ namespace Infrastrucure.Repository
 
         public async Task<IEnumerable<Domain.Models.Products.ProductDto>> GetAllProducts()
         {
-            var sql = "SELECT * FROM products";
+            var sql = "SELECT * FROM products  WHERE Enable = 1";
             return await _connection.QueryAsync<Domain.Models.Products.ProductDto>(sql);
         }
 

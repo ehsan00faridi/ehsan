@@ -7,8 +7,7 @@ namespace Application.Features.Products.Query
 
 
 
-    public class GetProductsQueryHandler
-      : IRequestHandler<GetProductsQuery, PaginatedList<Domain.Models.Products.ProductDto>>
+    public class GetProductsQueryHandler: IRequestHandler<GetProductsQuery, PaginatedList<Domain.Models.Products.ProductDto>>
     {
         private readonly IProductQueries _productQueries;
 

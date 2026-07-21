@@ -179,7 +179,7 @@
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "UpdateProduct",
-    "RelativePath": "Product/UpdateProduct",
+    "RelativePath": "UpdateProduct",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,

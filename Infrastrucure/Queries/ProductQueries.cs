@@ -41,9 +41,10 @@ namespace Infrastructure.Queries
             );
 
             var sql = $@"
-            SELECT 
-                *
-            FROM Products
+            select
+      Id,Img,Name,Price 
+     from 
+    products
             {whereClause}
             ORDER BY Id
             OFFSET @Offset ROWS

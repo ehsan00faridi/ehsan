@@ -16,6 +16,15 @@ namespace WebMVC.Controllers
             _mediator = mediator;
         }
 
+        [Authorize(Roles ="Admin")]
+        public async Task<IActionResult> Index()
+        {
+            ProductList date = new ProductList();
+            var ProductList= await _mediator.Send(date);
+            return View(ProductList);
+        }
+
+
         [Authorize]
         [HttpGet("GetProduct/{Id}")]
         public async Task<IActionResult> GetProduct(int Id)
@@ -54,7 +63,7 @@ namespace WebMVC.Controllers
             var result = await _mediator.Send(command);
 
             
-            return RedirectToAction(nameof(ProductList));
+            return RedirectToAction(nameof(Index));
         }
 
 
@@ -84,7 +93,7 @@ namespace WebMVC.Controllers
             }
 
             TempData["SuccessMessage"] = "محصول با موفقیت ثبت شد.";
-            return RedirectToAction(nameof(AddProduct));
+            return RedirectToAction(nameof(Index));
         }
 
         [Authorize(Roles = "Admin")]
@@ -99,14 +108,14 @@ namespace WebMVC.Controllers
         }
 
         [Authorize(Roles = "Admin")]
-        [HttpPost("Product/UpdateProduct")]
+        [HttpPost("UpdateProduct")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> UpdateProduct( UpdateProductCommand command)
         {
           var data=   await _mediator.Send(command);
 
 
-            return RedirectToAction(nameof(ProductList));
+            return RedirectToAction(nameof(Index));
         }
     }
 }
