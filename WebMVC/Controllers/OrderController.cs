@@ -5,6 +5,7 @@ using System.Security.Claims;
 using WebMVC.Models;
 namespace WebMVC.Controllers
 {
+    [Route("Order")]
     public class OrderController : Controller
     {
         private readonly IMediator _mediator;
@@ -19,7 +20,7 @@ namespace WebMVC.Controllers
             return View();
         }
         [HttpPost]
-        [Route("Order/AddOrder")]
+        [Route("AddOrder")]
         public async Task<IActionResult> AddOrder([FromBody] AddBasketDto model)
         {
             if (model == null)
@@ -29,22 +30,22 @@ namespace WebMVC.Controllers
 
             try
             {
-                // ۱. ساخت کامند با استفاده از مقادیر DTO
+                
                 var command = new AddOrderCommand()
                 {
                     ProductId = model.ProductId,
                     Qty = model.qty
                 };
 
-                // ۲. ارسال کامند به مدیتور و await کردن آن
+              
                 var result = await _mediator.Send(command);
 
-                // ۳. خروجی موفقیت‌آمیز کاملاً JSON
+              
                 return Ok(new { res = true });
             }
             catch (Exception ex)
             {
-                // در صورت بروز هرگونه خطای داخلی، ساختار JSON معتبر برگردانده شود تا فرانت کرش نکند
+              
                 return StatusCode(500, new { res = false, msg = ex.Message });
             }
         }

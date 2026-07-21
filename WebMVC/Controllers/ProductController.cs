@@ -18,7 +18,7 @@ namespace WebMVC.Controllers
 
         [Authorize]
         [HttpGet("GetProduct/{Id}")]
-        public async Task<IActionResult> GetProduct(int Id)////valifation nadarad
+        public async Task<IActionResult> GetProduct(int Id)
         {
             var Query = new GetProductByIdQuery() { Id=Id};
             var data = await _mediator.Send(Query);

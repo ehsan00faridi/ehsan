@@ -120,6 +120,16 @@
   },
   {
     "ContainingType": "WebMVC.Controllers.OrderController",
+    "Method": "Index",
+    "RelativePath": "Order",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.OrderController",
     "Method": "AddOrder",
     "RelativePath": "Order/AddOrder",
     "HttpMethod": "POST",

@@ -1,5 +1,4 @@
 ﻿@using Domain.Models.Products
-
 @model ProductDto
 
 @{
@@ -9,85 +8,80 @@
 <div class="container py-5" dir="rtl">
     <div class="row justify-content-center">
         <div class="col-lg-8 col-md-10">
-            <div class="card border-0 shadow-sm">
-                <div class="card-header bg-warning text-dark py-3">
-                    <h4 class="mb-0">ویرایش محصول: @Model.Name</h4>
+            <div class="card border-0 shadow-sm rounded-4">
+                <div class="card-header bg-white border-0 py-4 px-4">
+                    <h4 class="mb-0 text-primary fw-bold">ویرایش محصول: <span class="text-dark">@Model.Name</span></h4>
                 </div>
 
                 <div class="card-body p-4">
 
                     @if (TempData["SuccessMessage"] is string successMessage)
                     {
-                        <div class="alert alert-success alert-dismissible fade show">
+                        <div class="alert alert-success alert-dismissible fade show mb-4">
                             @successMessage
                             <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
                         </div>
                     }
 
-                    <form asp-action="UpdateProduct"
-                          asp-controller="Product"
-                          method="post"
-                          enctype="multipart/form-data">
-
-                        @* فیلد مخفی برای نگه داشتن شناسه محصول *@
+                    <form asp-action="UpdateProduct" asp-controller="Product" method="post" enctype="multipart/form-data">
                         <input type="hidden" asp-for="Id" />
+                        <input type="hidden" asp-for="Img" id="currentImgUrl" />
 
                         <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
-                        <div class="row g-3">
-
+                        <div class="row g-4">
+                            <!-- فیلدهای متنی -->
                             <div class="col-md-6">
-                                <label asp-for="Name" class="form-label">نام محصول</label>
-                                <input asp-for="Name" class="form-control" />
-                                <span asp-validation-for="Name" class="text-danger"></span>
+                                <label asp-for="Name" class="form-label fw-bold">نام محصول</label>
+                                <input asp-for="Name" class="form-control rounded-3" />
+                                <span asp-validation-for="Name" class="text-danger small"></span>
                             </div>
 
                             <div class="col-md-6">
-                                <label asp-for="Price" class="form-label">قیمت (تومان)</label>
-                                <input asp-for="Price" type="number" class="form-control" />
-                                <span asp-validation-for="Price" class="text-danger"></span>
+                                <label asp-for="Price" class="form-label fw-bold">قیمت (تومان)</label>
+                                <input asp-for="Price" type="number" class="form-control rounded-3" />
+                                <span asp-validation-for="Price" class="text-danger small"></span>
                             </div>
 
                             <div class="col-md-6">
-                                <label asp-for="Qty" class="form-label">تعداد موجودی</label>
-                                <input asp-for="Qty" type="number" class="form-control" />
-                                <span asp-validation-for="Qty" class="text-danger"></span>
+                                <label asp-for="Qty" class="form-label fw-bold">تعداد موجودی</label>
+                                <input asp-for="Qty" type="number" class="form-control rounded-3" />
+                                <span asp-validation-for="Qty" class="text-danger small"></span>
                             </div>
 
                             <div class="col-md-6">
-                                <label asp-for="Weight" class="form-label">وزن</label>
-                                <input asp-for="Weight" class="form-control" />
-                                <span asp-validation-for="Weight" class="text-danger"></span>
+                                <label asp-for="Weight" class="form-label fw-bold">وزن</label>
+                                <input asp-for="Weight" class="form-control rounded-3" />
+                                <span asp-validation-for="Weight" class="text-danger small"></span>
                             </div>
 
                             <div class="col-12">
-                                <label asp-for="material" class="form-label">جنس یا مواد تشکیل‌دهنده</label>
-                                <textarea asp-for="material" class="form-control" rows="3"></textarea>
-                                <span asp-validation-for="material" class="text-danger"></span>
+                                <label asp-for="material" class="form-label fw-bold">جنس یا مواد تشکیل‌دهنده</label>
+                                <textarea asp-for="material" class="form-control rounded-3" rows="3"></textarea>
+                                <span asp-validation-for="material" class="text-danger small"></span>
                             </div>
 
+                            <!-- بخش تصویر -->
                             <div class="col-12">
-                              
-                                <div id="imagePreviewContainer" class="mt-3">
-                                   @*  <img id="imagePreview"
-                                         src="@(!string.IsNullOrEmpty(Model.Img) ? "/images/products/" + Model.Img : "#")"
+                                <label class="form-label fw-bold d-block">تصویر محصول</label>
+                                <div class="image-upload-wrapper mt-2 border rounded-3 p-3 d-flex align-items-center gap-3">
+                                    <img id="imagePreview"
+                                         src="@(string.IsNullOrEmpty(Model.Img) ? "/images/placeholder.png" : $"/api/Fileroot/GetFile?filename={Model.Img}")"
                                          alt="تصویر محصول"
-                                         class="img-thumbnail @(string.IsNullOrEmpty(Model.Img) ? "d-none" : "")"
-                                         style="width: 180px; height: 180px; object-fit: cover;" /> *@
+                                         class="img-thumbnail"
+                                         style="width: 120px; height: 120px; object-fit: cover;" />
 
-                                    <input name="Imgfile"
-                                           type="file"
-                                           style="width: 180px; height: 180px; object-fit: cover;" />
+                                    <div class="flex-grow-1">
+                                        <p class="text-muted small mb-2">تصویر جدید را انتخاب کنید:</p>
+                                        <input name="Imgfile" type="file" id="imageInput" class="form-control form-control-sm" accept="image/*" />
+                                    </div>
                                 </div>
                             </div>
 
-                            <input asp-for="Img" type="hidden" />
-
                             <div class="col-12 mt-4">
-                                <hr />
                                 <div class="d-flex justify-content-end gap-2">
-                                    <a asp-action="Index" asp-controller="Product" class="btn btn-outline-secondary">انصراف</a>
-                                    <button type="submit" class="btn btn-warning px-4 text-white">ذخیره تغییرات</button>
+                                    <a asp-action="Index" asp-controller="Product" class="btn btn-outline-secondary px-4 rounded-pill">انصراف</a>
+                                    <button type="submit" class="btn btn-warning px-5 text-white rounded-pill shadow-sm">ذخیره تغییرات</button>
                                 </div>
                             </div>
                         </div>
@@ -101,14 +95,25 @@
 @section Scripts {
     <partial name="_ValidationScriptsPartial" />
     <script>
-        function showImagePreview(event) {
+        document.getElementById('imageInput').addEventListener('change', function (event) {
             const file = event.target.files[0];
             const preview = document.getElementById("imagePreview");
 
             if (file) {
-                preview.src = URL.createObjectURL(file);
-                preview.classList.remove("d-none");
+                // ساخت URL موقت برای نمایش تصویر جدید
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    preview.src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+
+                // افکت محو شدن ملایم برای جذابیت بیشتر
+                preview.style.opacity = "0";
+                setTimeout(() => {
+                    preview.style.opacity = "1";
+                    preview.style.transition = "opacity 0.3s ease";
+                }, 50);
             }
-        }
+        });
     </script>
 }

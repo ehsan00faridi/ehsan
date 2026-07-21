@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
 using Application.Services.Sms;
-using Infrastrucure.Migrations;
 
 namespace AppWebAPI.Controllers
 {
