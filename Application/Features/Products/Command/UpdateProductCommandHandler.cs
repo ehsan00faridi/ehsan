@@ -35,22 +35,16 @@ namespace Application.Features.Products.Command
             string? fileName = request.Img;
 
 
-            if (request.Img != null && request.Img.Length > 0)
+            if (request.Imgfile != null )
             {
                 await _fileUploadservice.DeleteFile(fileName);
                 fileName = await _fileUploadservice.UploadFileAsync(request.Imgfile);
             }
-
-
-
-
-
-
             var data =await _repository.Get(i=> i.Id==request.Id).FirstOrDefaultAsync();
             //i.Enable &&
             if (data is null) {
-
-               // throw new CustomException("محصول یافت نشد");
+                return false;
+  //              throw new CustomException();
             }
             data.Update(request.Name, request.Price, request.Qty,fileName);
             data.SetProperty(new Mechanicalproppertis(request.Weight,request.material));

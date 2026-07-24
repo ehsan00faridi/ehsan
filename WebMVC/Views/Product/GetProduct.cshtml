@@ -19,7 +19,7 @@
                 </div>
 
                 <input type="hidden" id="ProductId" value="@Model.Id" />
-
+             
                 <div class="card-body p-4">
                     <h3 class="card-title fw-bold text-primary mb-3">@Model.Name</h3>
 
@@ -27,6 +27,7 @@
                         <li class="d-flex justify-content-between py-2 border-bottom">
                             <span class="text-muted">قیمت:</span>
                             <span class="fw-bold">@Model.Price.ToString("N0") تومان</span>
+
                         </li>
 
                         <li class="d-flex justify-content-between py-2 border-bottom">
@@ -38,9 +39,12 @@
 
                         <li class="d-flex justify-content-between py-2 border-bottom">
                             <span class="text-muted">تعداد:</span>
+                           
                             <input id="countInput" type="number" min="1" value="1" max="@Model.Qty"  class="form-control w-25">
-                        </li>
+                         
 
+                        </li>
+                   
                         <li class="d-flex justify-content-between py-2 border-bottom">
                             <span class="text-muted">قیمت کل:</span>
                             <strong>@Model.Price.ToString("N0") تومان</strong>

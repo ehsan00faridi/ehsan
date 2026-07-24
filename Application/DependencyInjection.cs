@@ -15,8 +15,9 @@ namespace Application
 {
     public static class DependencyInjection
     {
-        public static IServiceCollection AddApplication(this IServiceCollection services ,IConfiguration configuration) {
-
+        public static IServiceCollection AddApplication(this IServiceCollection services 
+            ,IConfiguration configuration) {
+          
             services.AddMediatR(cfg => cfg.RegisterServicesFromAssemblies(Assembly.GetExecutingAssembly()));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(LoggingBehavior<,>));
             services.AddTransient(typeof(IPipelineBehavior<,>), typeof(PresetBehavior<,>));
@@ -25,8 +26,10 @@ namespace Application
             services.AddValidatorsFromAssemblyContaining(typeof(AddProductValidator));
             services.AddAutoMapper(Assembly.GetExecutingAssembly());
 
-            services.AddHangfire(config => config.SetDataCompatibilityLevel(CompatibilityLevel.Version_170).UseSimpleAssemblyNameTypeSerializer()
+            services.AddHangfire(config => config.SetDataCompatibilityLevel(CompatibilityLevel.Version_170)
+            .UseSimpleAssemblyNameTypeSerializer()
             .UseRecommendedSerializerSettings()
+
             .UseSqlServerStorage(configuration.GetConnectionString("HangfireConnection"), new SqlServerStorageOptions
             {
                 CommandBatchMaxTimeout = TimeSpan.FromSeconds(5),

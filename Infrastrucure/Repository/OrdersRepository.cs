@@ -8,7 +8,7 @@ using Infrastrucure.BaseRepository;
 
 namespace Infrastrucure.Repository
 {
-    internal class OrdersRepository : BaseRepository<Order, int>, IOrdersRepository
+    public class OrdersRepository : BaseRepository<Order, int>, IOrdersRepository
     {
         public OrdersRepository(ApplicationDbContext context) : base(context)
         {

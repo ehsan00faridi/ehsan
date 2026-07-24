@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using Application.Application_DTO;
+﻿using Application.Application_DTO;
 using Domain.Models.User;
 using MediatR;
 using Microsoft.AspNetCore.Identity;

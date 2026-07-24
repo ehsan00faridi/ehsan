@@ -24,6 +24,7 @@ namespace Infrastrucure
     {
         public static IServiceCollection AddInfrastructure(this IServiceCollection services
             ,IConfiguration configuration) {
+
             services.AddDbContext<ApplicationDbContext>( option=>
             option.UseSqlServer(configuration.GetConnectionString("ConnectionString")));
             services.AddScoped<IProductRepository, ProductRepository>();
@@ -37,6 +38,7 @@ namespace Infrastrucure
         sp.GetRequiredService<IConfiguration>()
         .GetConnectionString("ConnectionString")));
 
+            //productlist
             services.AddScoped<IProductQueries, ProductQueries>();
 
             services.AddScoped<IProductById,ProductById>();
@@ -48,7 +50,7 @@ namespace Infrastrucure
 
             services.AddSingleton<IConnectionMultiplexer>(sp =>
             {
-                var configuration = ConfigurationOptions.Parse(redisConnectionString, true);
+                var configuration = ConfigurationOptions.Parse(redisConnectionString, true);    
 
              
                 configuration.AbortOnConnectFail = false;

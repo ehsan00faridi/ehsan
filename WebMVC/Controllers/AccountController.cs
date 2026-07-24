@@ -2,20 +2,17 @@
 using Application.Features.Account.Command;
 using Application.Interfaces;
 using Domain.Models.User;
-using Domain.Models.User;
 using MediatR;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using WebMVC.Models;
-using static Microsoft.EntityFrameworkCore.DbLoggerCategory.Database;
 namespace WebMVC.Controllers
 {
-    //[AllowAnonymous]
+    
 
     public class AccountController : Controller
     {
-        //    private readonly ISmsService _sms;
 
         private readonly IOtpService _otpService;
         private readonly UserManager<User> _userManager;
@@ -26,12 +23,12 @@ namespace WebMVC.Controllers
         {
             _userManager = userManager;
             _signInManager = signInManager;
-            //_sms = sms;
+    
             _mediator = mediator;
             _otpService = otpService;
         }
 
-        //[Authorize(Roles = "Admin")]
+
         public IActionResult Register()
         {
             return View();

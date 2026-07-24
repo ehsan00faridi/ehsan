@@ -23,10 +23,12 @@
                         </div>
                     }
 
-                    <form asp-action="UpdateProduct" asp-controller="Product" method="post" enctype="multipart/form-data">
+                    <form action="/UpdateProduct" method="post" enctype="multipart/form-data">
+                        @Html.AntiForgeryToken()
+
+                        <!-- فیلد مخفی برای فرستادن مقدار ID محصول به Command -->
                         <input type="hidden" asp-for="Id" />
                         <input type="hidden" asp-for="Img" id="currentImgUrl" />
-
                         <div asp-validation-summary="ModelOnly" class="alert alert-danger"></div>
 
                         <div class="row g-4">

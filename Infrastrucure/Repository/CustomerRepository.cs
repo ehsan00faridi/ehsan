@@ -1,14 +1,8 @@
 ﻿using Dapper;
 using Domain.Models.Customers;
-using Domain.Models.Products;
 using Infrastrucure.BaseRepository;
 using Microsoft.EntityFrameworkCore;
-using System;
-using System.Collections.Generic;
 using System.Data;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace Infrastrucure.Repository
 {

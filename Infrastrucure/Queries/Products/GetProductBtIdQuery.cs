@@ -1,7 +1,5 @@
-﻿using Application.Features.Products.Dto;
-using Application.Interfaces;
+﻿using Application.Interfaces;
 using Dapper;
-using Domain.Models.Products;
 using System.Data;
 
 namespace Infrastructure.Queries.Products

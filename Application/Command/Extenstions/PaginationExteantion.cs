@@ -9,7 +9,6 @@ namespace Application.Command.Extenstions
 {
     public static class PaginationExteantion
     {
-        ///test
         public static async Task<PaginatedList<TDestination>> PaginatedListAsync<TDestination>(this IQueryable<TDestination> gueryable ,
             int pageNumber,
             int pageSie,bool disablepaging=false) { 
