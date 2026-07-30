@@ -8,11 +8,11 @@ namespace Application.Command.MediatR
         public int? UserId { get ; set; } 
         [BindNever]
         public bool IsAdmin {  get; set; }=false;
-
+  
         public bool IsAuthenticated = false;
-
+        [BindNever]
         public string? UserName { get; set; }
-
+        [BindNever]
         public string? Email { get; set; }
 
         public bool IsInRole(string role)

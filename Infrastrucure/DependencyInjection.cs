@@ -8,6 +8,7 @@ using Infrastructure.FileUploadservice;
 using Infrastructure.Queries;
 using Infrastructure.Queries.Products;
 using Infrastructure.Redis;
+using Infrastructure.Repository;
 using Infrastrucure.Email;
 using Infrastrucure.Repository;
 using Infrastrucure.Services.Sms;
@@ -30,9 +31,10 @@ namespace Infrastrucure
             services.AddScoped<IProductRepository, ProductRepository>();
             services.AddScoped<ICustomerRepository, CustomerRepository>();
             services.AddScoped<IOrdersRepository, OrdersRepository>();
+            services.AddScoped<IOrderItemsRepository, OrderItemsRepository>();
             services.Configure<SmsSettings>(configuration.GetSection("Sms"));
             services.AddScoped<ISmsService, SmsService>();
-
+           
             services.AddScoped<IDbConnection>(sp =>
     new SqlConnection(
         sp.GetRequiredService<IConfiguration>()

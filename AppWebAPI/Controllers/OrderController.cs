@@ -1,4 +1,5 @@
-﻿using Application.Features.Orders;
+﻿using Application.Features.Orders.command;
+using Application.Features.Orders.Query;
 using Application.Features.Products.Command;
 using Hangfire;
 using MediatR;
@@ -10,6 +11,7 @@ namespace AppWebAPI.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
+    
     public class OrderController : ControllerBase
     {
 
@@ -23,8 +25,8 @@ namespace AppWebAPI.Controllers
             this._jobmanger = jobmanger;
         }
 
+       
 
-        
 
         [HttpPost("AddOrder")]
         public async Task<IActionResult> AddOrder([FromBody] AddOrderCommand command)

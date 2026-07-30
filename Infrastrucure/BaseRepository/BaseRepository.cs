@@ -57,6 +57,8 @@ namespace Infrastrucure.BaseRepository
             return query;
         }
 
+
+
         public Task UpdateAsync(T entity)
         {
             _dbset.Update(entity);

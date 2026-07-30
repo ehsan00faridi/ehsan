@@ -33,6 +33,16 @@
   },
   {
     "ContainingType": "AppWebAPI.Controllers.OrderController",
+    "Method": "Index",
+    "RelativePath": "api/Order",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "AppWebAPI.Controllers.OrderController",
     "Method": "AddOrder",
     "RelativePath": "api/Order/AddOrder",
     "HttpMethod": "POST",
@@ -41,7 +51,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "Application.Features.Orders.AddOrderCommand",
+        "Type": "Application.Features.Orders.command.AddOrderCommand",
         "IsRequired": true
       }
     ],

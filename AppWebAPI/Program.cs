@@ -24,82 +24,79 @@ builder.Host.UseSerilog();
 
 
 
-builder.Services.AddAuthentication("Bearer")
-    .AddJwtBearer("Bearer", options =>
-    {
-        options.TokenValidationParameters = new TokenValidationParameters
-        {
-            ValidateIssuer = true,
-            ValidateAudience = true,
-            ValidateIssuerSigningKey = true,
-            ValidIssuer = "WebAPI",
-            ValidAudience = "WebAPI",
-            IssuerSigningKey = new SymmetricSecurityKey(
-                Encoding.UTF8.GetBytes("YourSuperSecretKey-WebApi-sadfdgadc@!wrrrrrrrrrrrrrre"))
-        };
-    });
-
-builder.Services.AddAuthorization();
+//builder.Services.AddAuthentication("Bearer")
+//    .AddJwtBearer("Bearer", options =>
+//    {
+//        options.TokenValidationParameters = new TokenValidationParameters
+//        {
+//            ValidateIssuer = true,
+//            ValidateAudience = true,
+//            ValidateIssuerSigningKey = true,
+//            ValidIssuer = "WebAPI",
+//            ValidAudience = "WebAPI",
+//            IssuerSigningKey = new SymmetricSecurityKey(
+//                Encoding.UTF8.GetBytes("YourSuperSecretKey-WebApi-sadfdgadc@!wrrrrrrrrrrrrrre"))
+//        };
+//    });
 
 
 
 
+//builder.Services.AddSwaggerGen(c =>
+//{
+//    c.SwaggerDoc("v1", new OpenApiInfo { Title = "JWT Auth API", Version = "v1" });
 
-builder.Services.AddSwaggerGen(c =>
-{
-    c.SwaggerDoc("v1", new OpenApiInfo { Title = "JWT Auth API", Version = "v1" });
+//    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
+//    {
+//        Name = "Authorization",
+//        Type = SecuritySchemeType.Http,
+//        Scheme = "bearer",
+//        BearerFormat = "JWT",
+//        In = ParameterLocation.Header,
+//        Description = "Please enter JWT token into field"
+//    });
 
-    c.AddSecurityDefinition("Bearer", new OpenApiSecurityScheme
-    {
-        Name = "Authorization",
-        Type = SecuritySchemeType.Http,
-        Scheme = "bearer",
-        BearerFormat = "JWT",
-        In = ParameterLocation.Header,
-        Description = "Please enter JWT token into field"
-    });
-
-    c.AddSecurityRequirement(new OpenApiSecurityRequirement
-    {
-        {
-            new OpenApiSecurityScheme
-            {
-                Reference = new OpenApiReference
-                {
-                    Type = ReferenceType.SecurityScheme,
-                    Id = "Bearer"
-                }
-            },
-            new string[] {}
-        }
-    });
-});
-
+//    c.AddSecurityRequirement(new OpenApiSecurityRequirement
+//    {
+//        {
+//            new OpenApiSecurityScheme
+//            {
+//                Reference = new OpenApiReference
+//                {
+//                    Type = ReferenceType.SecurityScheme,
+//                    Id = "Bearer"
+//                }
+//            },
+//            new string[] {}
+//        }
+//    });
+//});
 
 
 
-builder.Services.AddIdentity<User, Role>()
-    .AddEntityFrameworkStores<ApplicationDbContext>()
-    .AddDefaultTokenProviders();
-builder.Services.Configure<IdentityOptions>(option => {
-    option.Password.RequireDigit = true;
-    option.Password.RequireLowercase = true;
-    option.Password.RequireUppercase = true;
-    option.Password.RequireNonAlphanumeric = false;
-    option.Password.RequiredLength = 8;
-    option.User.RequireUniqueEmail = true;
-    option.SignIn.RequireConfirmedPhoneNumber = true;
-    option.SignIn.RequireConfirmedAccount = true;
-});
-//dotnet remove package Serilog
+
+//builder.Services.AddIdentity<User, Role>()
+//    .AddEntityFrameworkStores<ApplicationDbContext>()
+//    .AddDefaultTokenProviders();
+//builder.Services.Configure<IdentityOptions>(option => {
+//    option.Password.RequireDigit = true;
+//    option.Password.RequireLowercase = true;
+//    option.Password.RequireUppercase = true;
+//    option.Password.RequireNonAlphanumeric = false;
+//    option.Password.RequiredLength = 8;
+//    option.User.RequireUniqueEmail = true;
+//    option.SignIn.RequireConfirmedPhoneNumber = true;
+//    option.SignIn.RequireConfirmedAccount = true;
+//});
+////dotnet remove package Serilog
 
 
-builder.Services.AddControllers(options =>
-{
-    options.Filters.Add<CustomActionFilter>();
-    options.Filters.Add<CustomExceptionFilter>();
+//builder.Services.AddControllers(options =>
+//{
+//    options.Filters.Add<CustomActionFilter>();
+//    options.Filters.Add<CustomExceptionFilter>();
 
-});
+//});
 
 
 

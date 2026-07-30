@@ -1,7 +1,8 @@
-﻿using Application.Features.Orders;
+﻿using Application.Features.Orders.command;
+using Application.Features.Orders.Query;
 using MediatR;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using System.Security.Claims;
 using WebMVC.Models;
 namespace WebMVC.Controllers
 {
@@ -14,10 +15,13 @@ namespace WebMVC.Controllers
         {
             _mediator = mediator;
         }
-
-        public IActionResult Index()
+        [Authorize]
+        public async Task<IActionResult> Index()
         {
-            return View();
+            GetOrdersQuery query = new GetOrdersQuery();
+            var data = await _mediator.Send(query);
+
+            return View(data);
         }
         [HttpPost]
         [Route("AddOrder")]

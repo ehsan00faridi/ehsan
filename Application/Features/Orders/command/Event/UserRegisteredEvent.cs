@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Application.Features.Orders.Event
+namespace Application.Features.Orders.command.Event
 {
     public class UserRegisteredEvent :INotification
     {

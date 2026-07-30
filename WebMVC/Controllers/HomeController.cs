@@ -1,3 +1,5 @@
+using Application.Features.Products.Query;
+using MediatR;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
 using System.Security.Claims;
@@ -8,16 +10,21 @@ namespace WebMVC.Controllers
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
-
-        public HomeController(ILogger<HomeController> logger)
+        private readonly IMediator _mediator;
+        public HomeController(ILogger<HomeController> logger, IMediator mediator)
         {
             _logger = logger;
+            _mediator = mediator;
         }
 
-        public IActionResult Index()
+        public async Task <IActionResult> Index( )
         {
-            return View();
+            GetProductsQuery Query=new GetProductsQuery();
+            var data = await _mediator.Send(Query);
+            ViewBag.search = Query.Search;
+            return View(data);
         }
+      
 
         public IActionResult Privacy()
         {

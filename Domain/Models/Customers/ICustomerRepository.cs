@@ -10,5 +10,6 @@ namespace Domain.Models.Customers
     public interface ICustomerRepository:IBaseRepository<Customer,int>
     {
         Task <IEnumerable<Customer>> GetAll ();
+        Task<Customer?> GetUserIdAsync(int? Usrid);
     }
 }

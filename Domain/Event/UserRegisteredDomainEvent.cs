@@ -1,5 +1,5 @@
 ﻿using Domain.Abstractions;
-using MediatR;
+//using MediatR;
 namespace Domain.Event
 {
     public record UserRegisteredDomainEvent(int UserId, string Email) : IDomainEvent

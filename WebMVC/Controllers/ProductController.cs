@@ -6,7 +6,8 @@
     using Microsoft.AspNetCore.Mvc;
 
     namespace WebMVC.Controllers
-    {
+{
+        [Route("Product")]
         public class ProductController : Controller
         {
             private readonly IMediator _mediator;
@@ -56,7 +57,7 @@
                 return View(data);
             }
             [Authorize(Roles = "Admin")]
-            [HttpPost("Product/Delete")]
+            [HttpPost("Delete")]
             [ValidateAntiForgeryToken]
             public async Task<IActionResult> Delete([FromForm] DeleteProductCommand command)
             {

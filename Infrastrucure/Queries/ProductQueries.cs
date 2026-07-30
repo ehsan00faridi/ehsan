@@ -51,11 +51,10 @@ namespace Infrastructure.Queries
             FETCH NEXT @PageSize ROWS ONLY
         ";
 
-            var items = disablePaging
-     ? await _connection.QueryAsync<Domain.Models.Products.ProductDto>(sql.Replace("OFFSET @Offset ROWS FETCH NEXT @PageSize ROWS ONLY", "")
+            var items = disablePaging?
+                await _connection.QueryAsync<Domain.Models.Products.ProductDto>(sql.Replace("OFFSET @Offset ROWS FETCH NEXT @PageSize ROWS ONLY", "")
                 , new { Search = $"%{search}%" })
-
-                : await _connection.QueryAsync<Domain.Models.Products.ProductDto>(sql, new
+               : await _connection.QueryAsync<Domain.Models.Products.ProductDto>(sql, new
                 {
                     Search = $"%{search}%",
                     Offset = (pageNumber - 1) * pageSize,

@@ -3,7 +3,6 @@ using Domain.Models.Customers;
 using Infrastrucure.BaseRepository;
 using Microsoft.EntityFrameworkCore;
 using System.Data;
-
 namespace Infrastrucure.Repository
 {
     public class CustomerRepository : BaseRepository<Customer, int>, ICustomerRepository
@@ -19,5 +18,20 @@ namespace Infrastrucure.Repository
             var sql = "SELECT Id, Name FROM Customers";
             return await _connection.QueryAsync<Customer>(sql);
         }
+
+        public async Task<Customer?> GetUserIdAsync(int? usrId)
+        {
+            if (!usrId.HasValue)
+            {
+                return null;
+            }
+
+            var sql = "SELECT * FROM Customers WHERE UserId = @UserId";
+
+            return await _connection.QueryFirstOrDefaultAsync<Customer>(sql, new { UserId = usrId.Value });
+        }
+
+
+       
     }
 }

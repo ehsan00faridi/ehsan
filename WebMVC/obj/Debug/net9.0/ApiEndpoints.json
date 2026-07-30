@@ -1,8 +1,60 @@
 [
   {
+    "ContainingType": "WebMVC.Controllers.FilerootController",
+    "Method": "DownloadFile",
+    "RelativePath": "api/Fileroot/GetFile",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "filename",
+        "Type": "System.String",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.OrderController",
+    "Method": "Index",
+    "RelativePath": "Order",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.OrderController",
+    "Method": "AddOrder",
+    "RelativePath": "Order/AddOrder",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "model",
+        "Type": "WebMVC.Models.AddBasketDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "Index",
+    "RelativePath": "Product",
+    "HttpMethod": "",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "AddProduct",
-    "RelativePath": "AddProduct",
+    "RelativePath": "Product/AddProduct",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -12,7 +64,7 @@
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "AddProduct",
-    "RelativePath": "AddProduct",
+    "RelativePath": "Product/AddProduct",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -56,16 +108,16 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebMVC.Controllers.FilerootController",
-    "Method": "DownloadFile",
-    "RelativePath": "api/Fileroot/GetFile",
-    "HttpMethod": "GET",
+    "ContainingType": "WebMVC.Controllers.ProductController",
+    "Method": "Delete",
+    "RelativePath": "Product/Delete",
+    "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
     "Parameters": [
       {
-        "Name": "filename",
-        "Type": "System.String",
+        "Name": "id",
+        "Type": "System.Int32",
         "IsRequired": false
       }
     ],
@@ -74,7 +126,7 @@
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "GetProduct",
-    "RelativePath": "GetProduct/{Id}",
+    "RelativePath": "Product/GetProduct/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -90,7 +142,7 @@
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "ProductList",
-    "RelativePath": "GetProductList",
+    "RelativePath": "Product/GetProductList",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -119,51 +171,9 @@
     "ReturnTypes": []
   },
   {
-    "ContainingType": "WebMVC.Controllers.OrderController",
-    "Method": "Index",
-    "RelativePath": "Order",
-    "HttpMethod": "",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebMVC.Controllers.OrderController",
-    "Method": "AddOrder",
-    "RelativePath": "Order/AddOrder",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "model",
-        "Type": "WebMVC.Models.AddBasketDto",
-        "IsRequired": true
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "Delete",
-    "RelativePath": "Product/Delete",
-    "HttpMethod": "POST",
-    "IsController": true,
-    "Order": 0,
-    "Parameters": [
-      {
-        "Name": "id",
-        "Type": "System.Int32",
-        "IsRequired": false
-      }
-    ],
-    "ReturnTypes": []
-  },
-  {
-    "ContainingType": "WebMVC.Controllers.ProductController",
-    "Method": "Delete",
-    "RelativePath": "Product/Delete/{id}",
+    "RelativePath": "Product/Product/Delete/{id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
@@ -179,7 +189,7 @@
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "UpdateProduct",
-    "RelativePath": "UpdateProduct",
+    "RelativePath": "Product/UpdateProduct",
     "HttpMethod": "POST",
     "IsController": true,
     "Order": 0,
@@ -230,7 +240,7 @@
   {
     "ContainingType": "WebMVC.Controllers.ProductController",
     "Method": "UpdateProduct",
-    "RelativePath": "UpdateProduct/{Id}",
+    "RelativePath": "Product/UpdateProduct/{Id}",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,

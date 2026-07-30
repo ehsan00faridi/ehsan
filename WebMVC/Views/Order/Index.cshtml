@@ -1,0 +1,131 @@
+﻿@using Domain.Models.Products
+@model IEnumerable<ProductDto>
+
+@{
+    ViewData["Title"] = "Index";
+}
+<style>
+
+    [data-bs-theme="dark"] body {
+        background-color: #121212 !important;
+        color: #f8f9fa !important;
+    }
+
+
+    [data-bs-theme="light"] body {
+        background-color: #f8f9fa !important;
+        color: #212529 !important;
+    }
+
+    [data-bs-theme="dark"] .card {
+        background-color: #1e1e1e;
+        border-color: #2d2d2d;
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.15) !important;
+    }
+
+    [data-bs-theme="dark"] .card-footer {
+        background-color: #1e1e1e !important;
+    }
+
+    body, .card, .card-footer, a, button {
+        transition: background-color 0.3s ease, border-color 0.3s ease, color 0.3s ease;
+    }
+</style>
+
+
+
+<div class="container mt-4">
+
+    <div class="d-flex justify-content-between align-items-center mb-4 pb-2 border-bottom">
+        <h2 class="h4 mb-0 text-body">Product List</h2>
+
+        <button id="themeToggler" class="btn btn-outline-secondary d-flex align-items-center gap-2" type="button">
+            <span id="themeIcon">☀️</span>
+            <span id="themeText">Light Mode</span>
+        </button>
+
+    </div>
+    
+
+
+    <div class="row row-cols-1 row-cols-md-3 g-4">
+        @foreach (var item in Model)
+        {
+            <div class="col">
+                <div class="card h-100 shadow-sm transition-all">
+                    <img src="~/api/Fileroot/GetFile?filename=@item.Img" class="card-img-top" alt="@item.Name" style="height: 220px; object-fit: cover;" />
+
+                    <div class="card-body">
+                        <h5 class="card-title text-primary">@item.Name</h5>
+
+                        <div class="mt-3">
+                            <p class="card-text mb-2 text-body-secondary">
+                                <strong>Weight:</strong> @item.Weight
+                            </p>
+                            <p class="card-text mb-2 text-body-secondary">
+                                <strong>Qty:</strong> @item.Qty
+                            </p>
+                            <p class="card-text mb-2 text-body-secondary">
+                                <strong>Material:</strong> @item.material
+                            </p>
+                            <h6 class="card-text mt-3 text-success">
+                                <strong>TotalPrice:</strong> @item.Price
+                            </h6>
+                        </div>
+                    </div>
+
+                    <div class="card-footer bg-white border-0 pt-0 pb-3">
+                        <div class="d-flex flex-wrap gap-2">
+                          
+
+                            <a asp-action="Delete"
+                               asp-route-Id="@item.Id"
+                               asp-controller="Order"
+                               class="btn btn-outline-danger btn-sm flex-fill">
+                                Delete
+                            </a>
+
+                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        const themeToggler = document.getElementById('themeToggler');
+        const themeIcon = document.getElementById('themeIcon');
+        const themeText = document.getElementById('themeText');
+        const htmlElement = document.documentElement;
+
+
+        const savedTheme = localStorage.getItem('theme') ||
+            (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+
+        applyTheme(savedTheme);
+
+        themeToggler.addEventListener('click', () => {
+            const currentTheme = htmlElement.getAttribute('data-bs-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            applyTheme(newTheme);
+        });
+
+        function applyTheme(theme) {
+            htmlElement.setAttribute('data-bs-theme', theme);
+            localStorage.setItem('theme', theme);
+
+            if (theme === 'dark') {
+                themeIcon.textContent = '🌙';
+                themeText.textContent = 'Dark Mode';
+                themeToggler.classList.replace('btn-outline-secondary', 'btn-outline-light');
+            } else {
+                themeIcon.textContent = '☀️';
+                themeText.textContent = 'Light Mode';
+                themeToggler.classList.replace('btn-outline-light', 'btn-outline-secondary');
+            }
+        }
+    });
+</script>

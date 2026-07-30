@@ -1,6 +1,4 @@
-﻿using Application.Features.Products.Command;
-using Application.Features.Products.Dto;
-using AutoMapper;
+﻿using AutoMapper;
 using Domain.Models.Products;
 
 namespace Application.Mapper
@@ -12,10 +10,9 @@ namespace Application.Mapper
 
             CreateMap<Product, Domain.Models.Products.ProductDto>()
                 .ForMember(dest => dest.Weight, opt => opt.MapFrom(src => src.Property.Weight))
-                .ForMember(m=>m.material,opt=>opt.MapFrom(src=>src.Property.material)).ReverseMap()
-            ;
+                .ForMember(m=>m.material,opt=>opt.MapFrom(src=>src.Property.material)).ReverseMap();
 
-            //    
+            
         }
 
 

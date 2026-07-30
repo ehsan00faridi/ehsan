@@ -1,4 +1,5 @@
 ﻿using Domain.BaseRepository;
+using Domain.Models.Products;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,5 +10,6 @@ namespace Domain.Models.Ordera
 {
     public interface IOrdersRepository:IBaseRepository<Order,int>
     {
+        Task<IEnumerable<ProductDto>> GetOrders(int? UserId);
     }
 }

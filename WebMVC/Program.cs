@@ -73,8 +73,6 @@ builder.Services.AddInfrastructure(builder.Configuration);
 
 builder.Services.AddApplication(builder.Configuration);
 
-//builder.Services.AddScoped<ISmsService, SmsService>();
-
 builder.Services.AddHttpContextAccessor();
 
 

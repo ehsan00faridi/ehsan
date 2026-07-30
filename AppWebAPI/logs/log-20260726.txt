@@ -1,0 +1,230 @@
+2026-07-26 10:49:59.823 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-26 10:50:00.332 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-26 10:50:01.016 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-26 10:50:01.019 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-26 10:50:01.021 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-26 10:50:01.069 +03:30 [DBG] Execution loop BackgroundServerProcess:8a21757e has started in 7.44 ms
+2026-07-26 10:50:01.350 +03:30 [INF] Server desktop-vjsq4i2:10020:71d11e79 successfully announced in 273.7681 ms
+2026-07-26 10:50:01.354 +03:30 [DBG] Execution loop ServerHeartbeatProcess:16ee3041 has started in 1.9113 ms
+2026-07-26 10:50:01.356 +03:30 [INF] Server desktop-vjsq4i2:10020:71d11e79 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-26 10:50:01.359 +03:30 [DBG] Execution loop ServerWatchdog:b962bf7b has started in 1.3548 ms
+2026-07-26 10:50:01.360 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:652cd68e has started in 0.5029 ms
+2026-07-26 10:50:01.361 +03:30 [DBG] Execution loop ExpirationManager:2d8dbade has started in 0.6433 ms
+2026-07-26 10:50:01.362 +03:30 [DBG] Execution loop CountersAggregator:897ddf35 has started in 0.5874 ms
+2026-07-26 10:50:01.363 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:6afbac19 has started in 0.8357 ms
+2026-07-26 10:50:01.364 +03:30 [DBG] Execution loop Worker:9632fb0e has started in 0.979 ms
+2026-07-26 10:50:01.371 +03:30 [DBG] Execution loop Worker:6c056419 has started in 7.9541 ms
+2026-07-26 10:50:01.364 +03:30 [DBG] Execution loop Worker:ac45d7b8 has started in 1.402 ms
+2026-07-26 10:50:01.365 +03:30 [DBG] Execution loop Worker:986a9923 has started in 2.0364 ms
+2026-07-26 10:50:01.365 +03:30 [DBG] Execution loop Worker:60e121be has started in 2.4337 ms
+2026-07-26 10:50:01.365 +03:30 [DBG] Execution loop Worker:b0359bb7 has started in 2.7036 ms
+2026-07-26 10:50:01.366 +03:30 [DBG] Execution loop Worker:c2fd54e5 has started in 3.0692 ms
+2026-07-26 10:50:01.366 +03:30 [DBG] Execution loop Worker:624ef7b4 has started in 3.5538 ms
+2026-07-26 10:50:01.367 +03:30 [DBG] Execution loop Worker:11b84483 has started in 3.9915 ms
+2026-07-26 10:50:01.367 +03:30 [DBG] Execution loop Worker:794a9f51 has started in 4.3442 ms
+2026-07-26 10:50:01.367 +03:30 [DBG] Execution loop Worker:7c03692a has started in 4.6599 ms
+2026-07-26 10:50:01.368 +03:30 [DBG] Execution loop Worker:e207fb6c has started in 5.1167 ms
+2026-07-26 10:50:01.368 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-26 10:50:01.368 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-26 10:50:01.368 +03:30 [DBG] Execution loop Worker:12861e9f has started in 5.4358 ms
+2026-07-26 10:50:01.368 +03:30 [DBG] Execution loop Worker:b9c036ab has started in 5.7391 ms
+2026-07-26 10:50:01.369 +03:30 [DBG] Execution loop Worker:fc3448c0 has started in 6.0316 ms
+2026-07-26 10:50:01.369 +03:30 [DBG] Execution loop Worker:77896a63 has started in 6.3523 ms
+2026-07-26 10:50:01.369 +03:30 [DBG] Execution loop Worker:8f8dc6b0 has started in 6.6662 ms
+2026-07-26 10:50:01.370 +03:30 [DBG] Execution loop Worker:d4085c64 has started in 6.9106 ms
+2026-07-26 10:50:01.370 +03:30 [DBG] Execution loop Worker:5565d15f has started in 7.3216 ms
+2026-07-26 10:50:01.370 +03:30 [DBG] Execution loop Worker:e7d7cbf9 has started in 7.6913 ms
+2026-07-26 10:50:01.371 +03:30 [DBG] Execution loop DelayedJobScheduler:c60e2539 has started in 0.4616 ms
+2026-07-26 10:50:01.371 +03:30 [INF] Server desktop-vjsq4i2:10020:71d11e79 all the dispatchers started
+2026-07-26 10:50:01.371 +03:30 [DBG] Execution loop RecurringJobScheduler:8d127242 has started in 0.3458 ms
+2026-07-26 10:50:01.455 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-26 10:50:01.459 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-26 10:50:01.462 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-26 10:50:01.465 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-26 10:50:02.165 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AppWebAPI.Controllers.OrderController.Index (AppWebAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-26 10:50:31.374 +03:30 [DBG] Server desktop-vjsq4i2:10020:71d11e79 heartbeat successfully sent
+2026-07-26 10:51:03.713 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-26 10:51:04.158 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-26 10:51:04.765 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-26 10:51:04.767 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-26 10:51:04.769 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-26 10:51:04.809 +03:30 [DBG] Execution loop BackgroundServerProcess:fce64703 has started in 5.7686 ms
+2026-07-26 10:51:04.996 +03:30 [INF] Server desktop-vjsq4i2:2888:c5fb61bb successfully announced in 181.4935 ms
+2026-07-26 10:51:05.002 +03:30 [DBG] Execution loop ServerHeartbeatProcess:10fcf40c has started in 2.2266 ms
+2026-07-26 10:51:05.003 +03:30 [INF] Server desktop-vjsq4i2:2888:c5fb61bb is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-26 10:51:05.006 +03:30 [DBG] Execution loop ServerWatchdog:16d621d9 has started in 0.6024 ms
+2026-07-26 10:51:05.008 +03:30 [DBG] Execution loop ExpirationManager:de351232 has started in 0.7263 ms
+2026-07-26 10:51:05.006 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:ff54e170 has started in 0.3963 ms
+2026-07-26 10:51:05.008 +03:30 [DBG] Execution loop CountersAggregator:6aa06f1c has started in 0.3625 ms
+2026-07-26 10:51:05.009 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:68f3e749 has started in 0.35 ms
+2026-07-26 10:51:05.009 +03:30 [DBG] Execution loop Worker:a65238cd has started in 0.8468 ms
+2026-07-26 10:51:05.010 +03:30 [DBG] Execution loop Worker:393c294d has started in 1.0792 ms
+2026-07-26 10:51:05.011 +03:30 [DBG] Execution loop Worker:04740d1e has started in 2.0859 ms
+2026-07-26 10:51:05.011 +03:30 [DBG] Execution loop Worker:66d79cc9 has started in 2.4458 ms
+2026-07-26 10:51:05.011 +03:30 [DBG] Execution loop Worker:259c2f86 has started in 2.8473 ms
+2026-07-26 10:51:05.012 +03:30 [DBG] Execution loop Worker:b3f3b7f8 has started in 3.1423 ms
+2026-07-26 10:51:05.012 +03:30 [DBG] Execution loop Worker:55ec339f has started in 3.399 ms
+2026-07-26 10:51:05.012 +03:30 [DBG] Execution loop Worker:94a1e6fd has started in 3.6584 ms
+2026-07-26 10:51:05.013 +03:30 [DBG] Execution loop Worker:0de32616 has started in 3.9186 ms
+2026-07-26 10:51:05.013 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-26 10:51:05.014 +03:30 [DBG] Execution loop Worker:98f573ff has started in 4.8915 ms
+2026-07-26 10:51:05.014 +03:30 [DBG] Execution loop Worker:6e46971e has started in 5.3632 ms
+2026-07-26 10:51:05.015 +03:30 [DBG] Execution loop Worker:e56b9cea has started in 5.8882 ms
+2026-07-26 10:51:05.015 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-26 10:51:05.015 +03:30 [DBG] Execution loop Worker:30ad1e8c has started in 6.1419 ms
+2026-07-26 10:51:05.015 +03:30 [DBG] Execution loop Worker:916591a3 has started in 6.4523 ms
+2026-07-26 10:51:05.015 +03:30 [DBG] Execution loop Worker:39a8a690 has started in 6.7159 ms
+2026-07-26 10:51:05.016 +03:30 [DBG] Execution loop Worker:30926c64 has started in 6.932 ms
+2026-07-26 10:51:05.016 +03:30 [DBG] Execution loop Worker:98bd6521 has started in 7.1932 ms
+2026-07-26 10:51:05.017 +03:30 [DBG] Execution loop Worker:4e576347 has started in 8.1377 ms
+2026-07-26 10:51:05.017 +03:30 [DBG] Execution loop Worker:bd73d65b has started in 8.6551 ms
+2026-07-26 10:51:05.018 +03:30 [DBG] Execution loop Worker:5b888fc7 has started in 9.57 ms
+2026-07-26 10:51:05.019 +03:30 [DBG] Execution loop DelayedJobScheduler:344d7177 has started in 0.4806 ms
+2026-07-26 10:51:05.019 +03:30 [INF] Server desktop-vjsq4i2:2888:c5fb61bb all the dispatchers started
+2026-07-26 10:51:05.019 +03:30 [DBG] Execution loop RecurringJobScheduler:3fdbfd5a has started in 0.3801 ms
+2026-07-26 10:51:05.095 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-26 10:51:05.098 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-26 10:51:05.102 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-26 10:51:05.106 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-26 10:51:05.246 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AppWebAPI.Controllers.OrderController.Index (AppWebAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-26 10:51:32.339 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-26 10:51:32.783 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-26 10:51:33.381 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-26 10:51:33.383 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-26 10:51:33.384 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-26 10:51:33.451 +03:30 [DBG] Execution loop BackgroundServerProcess:14a3e1a0 has started in 12.8363 ms
+2026-07-26 10:51:33.666 +03:30 [INF] Server desktop-vjsq4i2:2376:1226e554 successfully announced in 208.8449 ms
+2026-07-26 10:51:33.672 +03:30 [DBG] Execution loop ServerHeartbeatProcess:a6d26255 has started in 2.0947 ms
+2026-07-26 10:51:33.673 +03:30 [INF] Server desktop-vjsq4i2:2376:1226e554 is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-26 10:51:33.676 +03:30 [DBG] Execution loop ServerWatchdog:2f28fe2c has started in 0.5857 ms
+2026-07-26 10:51:33.676 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:5e71b0bc has started in 0.3464 ms
+2026-07-26 10:51:33.678 +03:30 [DBG] Execution loop ExpirationManager:d4ca0849 has started in 0.681 ms
+2026-07-26 10:51:33.678 +03:30 [DBG] Execution loop CountersAggregator:0dcd17ce has started in 0.4066 ms
+2026-07-26 10:51:33.683 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:7b2eb681 has started in 4.816 ms
+2026-07-26 10:51:33.684 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-26 10:51:33.684 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-26 10:51:33.685 +03:30 [DBG] Execution loop Worker:342ae2f2 has started in 1.2285 ms
+2026-07-26 10:51:33.686 +03:30 [DBG] Execution loop Worker:9f58c8b2 has started in 1.8919 ms
+2026-07-26 10:51:33.687 +03:30 [DBG] Execution loop Worker:8f731df2 has started in 2.7921 ms
+2026-07-26 10:51:33.687 +03:30 [DBG] Execution loop Worker:c39d1d99 has started in 3.3723 ms
+2026-07-26 10:51:33.687 +03:30 [DBG] Execution loop Worker:0ec4ad56 has started in 3.8017 ms
+2026-07-26 10:51:33.688 +03:30 [DBG] Execution loop Worker:8355b511 has started in 4.1365 ms
+2026-07-26 10:51:33.688 +03:30 [DBG] Execution loop Worker:a8fd4e2a has started in 4.6594 ms
+2026-07-26 10:51:33.689 +03:30 [DBG] Execution loop Worker:89024e17 has started in 5.013 ms
+2026-07-26 10:51:33.689 +03:30 [DBG] Execution loop Worker:3b03c366 has started in 5.2993 ms
+2026-07-26 10:51:33.689 +03:30 [DBG] Execution loop Worker:0807bb19 has started in 5.6014 ms
+2026-07-26 10:51:33.690 +03:30 [DBG] Execution loop Worker:85a45b02 has started in 5.9245 ms
+2026-07-26 10:51:33.690 +03:30 [DBG] Execution loop Worker:079a6de9 has started in 6.2692 ms
+2026-07-26 10:51:33.690 +03:30 [DBG] Execution loop Worker:0179ac77 has started in 6.6043 ms
+2026-07-26 10:51:33.691 +03:30 [DBG] Execution loop Worker:d465b13d has started in 6.9002 ms
+2026-07-26 10:51:33.691 +03:30 [DBG] Execution loop Worker:b4d94c0b has started in 7.5404 ms
+2026-07-26 10:51:33.692 +03:30 [DBG] Execution loop Worker:103b8544 has started in 8.0273 ms
+2026-07-26 10:51:33.693 +03:30 [DBG] Execution loop Worker:faae24ac has started in 8.8233 ms
+2026-07-26 10:51:33.693 +03:30 [DBG] Execution loop Worker:01bfa009 has started in 9.5186 ms
+2026-07-26 10:51:33.694 +03:30 [DBG] Execution loop Worker:e1b587a1 has started in 9.9585 ms
+2026-07-26 10:51:33.694 +03:30 [DBG] Execution loop Worker:fc3515f9 has started in 10.348 ms
+2026-07-26 10:51:33.695 +03:30 [DBG] Execution loop DelayedJobScheduler:b5cfce3f has started in 0.4379 ms
+2026-07-26 10:51:33.696 +03:30 [INF] Server desktop-vjsq4i2:2376:1226e554 all the dispatchers started
+2026-07-26 10:51:33.696 +03:30 [DBG] Execution loop RecurringJobScheduler:6a96f00a has started in 1.0692 ms
+2026-07-26 10:51:33.719 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-26 10:51:33.757 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-26 10:51:33.760 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-26 10:51:33.764 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-26 10:51:35.515 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AppWebAPI.Controllers.OrderController.Index (AppWebAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-26 10:51:37.567 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AppWebAPI.Controllers.OrderController.Index (AppWebAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-26 10:51:50.953 +03:30 [INF] Start installing Hangfire SQL objects...
+2026-07-26 10:51:51.402 +03:30 [INF] Hangfire SQL objects installed.
+2026-07-26 10:51:51.915 +03:30 [INF] Starting Hangfire Server using job storage: 'SQL Server: (localdb)\MSSQLLocalDB@Handfire'
+2026-07-26 10:51:51.915 +03:30 [INF] Using the following options for SQL Server job storage: Queue poll interval: 00:00:00.
+2026-07-26 10:51:51.916 +03:30 [INF] Using the following options for Hangfire Server:
+    Worker count: 20
+    Listening queues: 'default'
+    Shutdown timeout: 00:00:15
+    Schedule polling interval: 00:00:15
+2026-07-26 10:51:51.953 +03:30 [DBG] Execution loop BackgroundServerProcess:349c6274 has started in 4.6875 ms
+2026-07-26 10:51:52.162 +03:30 [INF] Server desktop-vjsq4i2:9420:fe7f1b0f successfully announced in 205.236 ms
+2026-07-26 10:51:52.165 +03:30 [DBG] Execution loop ServerHeartbeatProcess:a0618f97 has started in 1.8082 ms
+2026-07-26 10:51:52.166 +03:30 [INF] Server desktop-vjsq4i2:9420:fe7f1b0f is starting the registered dispatchers: ServerWatchdog, ServerJobCancellationWatcher, ExpirationManager, CountersAggregator, SqlServerHeartbeatProcess, Worker, DelayedJobScheduler, RecurringJobScheduler...
+2026-07-26 10:51:52.167 +03:30 [DBG] Execution loop ServerWatchdog:3742d2ff has started in 0.5487 ms
+2026-07-26 10:51:52.168 +03:30 [DBG] Execution loop ServerJobCancellationWatcher:410a41ce has started in 0.3466 ms
+2026-07-26 10:51:52.169 +03:30 [DBG] Execution loop ExpirationManager:436bfb05 has started in 0.4832 ms
+2026-07-26 10:51:52.169 +03:30 [DBG] Execution loop CountersAggregator:01f4e447 has started in 0.3661 ms
+2026-07-26 10:51:52.169 +03:30 [DBG] Execution loop SqlServerHeartbeatProcess:efb0a56a has started in 0.3476 ms
+2026-07-26 10:51:52.170 +03:30 [DBG] Aggregating records in 'Counter' table...
+2026-07-26 10:51:52.171 +03:30 [DBG] Removing outdated records from the 'AggregatedCounter' table...
+2026-07-26 10:51:52.171 +03:30 [DBG] Execution loop Worker:b4f9e633 has started in 1.9479 ms
+2026-07-26 10:51:52.172 +03:30 [DBG] Execution loop Worker:04ca9b0f has started in 2.7782 ms
+2026-07-26 10:51:52.173 +03:30 [DBG] Execution loop Worker:c304d8ea has started in 3.1758 ms
+2026-07-26 10:51:52.173 +03:30 [DBG] Execution loop Worker:2dea845d has started in 3.9509 ms
+2026-07-26 10:51:52.174 +03:30 [DBG] Execution loop Worker:2ffef428 has started in 4.4083 ms
+2026-07-26 10:51:52.174 +03:30 [DBG] Execution loop Worker:ac51ea52 has started in 4.9347 ms
+2026-07-26 10:51:52.175 +03:30 [DBG] Execution loop Worker:e8a6e04e has started in 5.7983 ms
+2026-07-26 10:51:52.176 +03:30 [DBG] Execution loop Worker:44a70d35 has started in 6.5205 ms
+2026-07-26 10:51:52.177 +03:30 [DBG] Execution loop Worker:6d511284 has started in 7.7621 ms
+2026-07-26 10:51:52.178 +03:30 [DBG] Execution loop Worker:4e8d0784 has started in 8.4604 ms
+2026-07-26 10:51:52.179 +03:30 [DBG] Execution loop Worker:a43bf739 has started in 9.1124 ms
+2026-07-26 10:51:52.179 +03:30 [DBG] Execution loop Worker:12cff97b has started in 9.9383 ms
+2026-07-26 10:51:52.180 +03:30 [DBG] Execution loop Worker:afc77abc has started in 10.9181 ms
+2026-07-26 10:51:52.181 +03:30 [DBG] Execution loop Worker:09a52e0d has started in 11.578 ms
+2026-07-26 10:51:52.181 +03:30 [DBG] Execution loop Worker:a53c032e has started in 11.9528 ms
+2026-07-26 10:51:52.182 +03:30 [DBG] Execution loop Worker:ef1d8755 has started in 12.4775 ms
+2026-07-26 10:51:52.182 +03:30 [DBG] Execution loop Worker:ec86cb16 has started in 12.9829 ms
+2026-07-26 10:51:52.183 +03:30 [DBG] Execution loop Worker:28fb68ae has started in 13.7379 ms
+2026-07-26 10:51:52.184 +03:30 [DBG] Execution loop Worker:91ed73d2 has started in 14.1053 ms
+2026-07-26 10:51:52.184 +03:30 [DBG] Execution loop Worker:c492fe55 has started in 14.6107 ms
+2026-07-26 10:51:52.185 +03:30 [DBG] Execution loop DelayedJobScheduler:1ba030b7 has started in 0.5037 ms
+2026-07-26 10:51:52.185 +03:30 [INF] Server desktop-vjsq4i2:9420:fe7f1b0f all the dispatchers started
+2026-07-26 10:51:52.185 +03:30 [DBG] Execution loop RecurringJobScheduler:b6d60783 has started in 0.573 ms
+2026-07-26 10:51:52.203 +03:30 [DBG] Removing outdated records from the 'Job' table...
+2026-07-26 10:51:52.234 +03:30 [DBG] Removing outdated records from the 'List' table...
+2026-07-26 10:51:52.236 +03:30 [DBG] Removing outdated records from the 'Set' table...
+2026-07-26 10:51:52.237 +03:30 [DBG] Removing outdated records from the 'Hash' table...
+2026-07-26 10:51:52.537 +03:30 [ERR] An unhandled exception has occurred while executing the request.
+Swashbuckle.AspNetCore.SwaggerGen.SwaggerGeneratorException: Ambiguous HTTP method for action - AppWebAPI.Controllers.OrderController.Index (AppWebAPI). Actions require an explicit HttpMethod binding for Swagger/OpenAPI 3.0
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GenerateOperations(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GeneratePaths(IEnumerable`1 apiDescriptions, SchemaRepository schemaRepository)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerDocumentWithoutFilters(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.SwaggerGen.SwaggerGenerator.GetSwaggerAsync(String documentName, String host, String basePath)
+   at Swashbuckle.AspNetCore.Swagger.SwaggerMiddleware.Invoke(HttpContext httpContext, ISwaggerProvider swaggerProvider)
+   at Microsoft.AspNetCore.Diagnostics.DeveloperExceptionPageMiddlewareImpl.Invoke(HttpContext context)
+2026-07-26 10:52:22.189 +03:30 [DBG] Server desktop-vjsq4i2:9420:fe7f1b0f heartbeat successfully sent
